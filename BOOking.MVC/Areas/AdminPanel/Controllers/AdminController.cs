@@ -5,12 +5,9 @@ using System.Data;
 namespace BOOking.MVC.Areas.AdminPanel.Controllers
 {
     [Area("AdminPanel")]
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+      
     }
 }

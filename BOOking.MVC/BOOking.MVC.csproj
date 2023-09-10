@@ -21,8 +21,4 @@
     <ProjectReference Include="..\BOOking.DAL\BOOking.DAL.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Areas\AdminPanel\Models\" />
-  </ItemGroup>
-
 </Project>

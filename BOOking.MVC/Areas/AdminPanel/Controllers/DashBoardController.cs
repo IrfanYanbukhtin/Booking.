@@ -2,7 +2,7 @@
 
 namespace BOOking.MVC.Areas.AdminPanel.Controllers
 {
-
+    
     public class DashBoardController : AdminController
     {
         public IActionResult Index()
