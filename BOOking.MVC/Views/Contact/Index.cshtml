@@ -1,0 +1,1418 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en" style="overflow: auto">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://cdn.worldvectorlogo.com/logos/bookingcom-1.svg">
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/contact.css">
+    <link rel="icon" type="image/x-icon" href="~/images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+    <title>Booking.com</title>
+</head>
+<body style="overflow-x: hidden">
+
+    <!-- HEADER START -->
+    <header>
+        <div class="header ">
+            <div class="nav-bar container1 ">
+                <div class="col-lg-12 brand">
+                    <h2><a asp-controller="home" asp-action="index">Booking.com</a></h2>
+                </div>
+                <div class="list-bt">
+                    <div class="d-grid gap-4 d-md-block">
+                        <button class="btn border-0 mx-1" data-bs-toggle="modal"
+                                data-bs-target="#currenciesModal" data-toggle="tooltip" data-placement="bottom" title="Select your currency ">
+                            <span id="val">AZN</span>
+                        </button>
+                    </div>
+                    <div class="modal fade" id="currenciesModal" tabindex="-1" aria-labelledby="currenciesModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 fw-bold" id="currenciesModalLabel">Select your currency</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6 class="fw-bold mb-3">All currencies</h6>
+                                    <div id="currencyModal" class="row">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flaq">
+                        <button data-toggle="tooltip" data-placement="bottom" title="Select your language " type="btn" value="button"><img src="~/img/UkFlag.png" alt="chooce your language"></button>
+                    </div>
+                    <div class="help">
+                        <a asp-controller="contact" asp-action="index">
+                            <i data-toggle="tooltip" data-placement="bottom" title="Custom Service help " class="fa-regular fa-circle-question"></i>
+                        </a>
+                    </div>
+                    <div class="property">
+                        <a target="_blank" asp-controller="account" asp-action="login"><p>List your property</p></a>
+                    </div>
+                    <div class="register">
+                        <a asp-controller="account" asp-action="register"><span> Register</span></a>
+                    </div>
+                    <div class="signIn">
+                        <a asp-controller="account" asp-action="login"><span> Sign in</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="help_centre">
+        <div class="all_help container2">
+            <div class="top">
+                <span>Help Centre</span>
+            </div>
+
+            <div class="centre">
+                <h1>Welcome to the Help Centre</h1>
+                <p>Sign in to contact Customer Service, we're available 24 hours a day</p>
+            </div>
+
+            <div class="help_top">
+                <div class="help">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="tag">
+                            <i class="fa-regular fa-comments"></i>
+                            <span>Send us a message</span>
+                            <p>Contact our agents about your booking, and we'll reply as soon as possible.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                        <div class="tag">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call us</span>
+                            <p>For anything urgent, you can call us 24/7 on a local or international phone number.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="sign_in">
+                    <a asp-controller="account" asp-action="login">Sign in</a>
+                </div>
+
+                <div class="without_account">
+                    <button>Continue without an account</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="questions">
+        <div class="freq">
+            <h1>Frequently asked questions</h1>
+
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Accomodation')" id="defaultOpen"><i class="fa-solid fa-building-user"></i><p>Accomodation</p> </button>
+                <button class="tablinks" onclick="openCity(event, 'Car_rentals')"><i class="fa-solid fa-car"></i><p>Car rentals</p></button>
+                <button class="tablinks" onclick="openCity(event, 'Flights')"><i class="fa-solid fa-plane"></i><p>Flights</p></button>
+                <button class="tablinks" onclick="openCity(event, 'Airport_taxis')"><i class="fa-solid fa-taxi"></i><p>Airport taxis</p></button>
+                <button class="tablinks" onclick="openCity(event, 'Insurance')"><i class="fa-solid fa-user-shield"></i><p>Insurance</p></button>
+            </div>
+
+            <div id="Accomodation" class="tabcontent">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Coronavirus-related support
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                Where can I get the latest information for my booking?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body"><p>The situation evolves every day. To get the latest information about your booking or to contact us, please sign in using your Booking.com account. If you do not have an account, you can use your booking confirmation number and PIN code to sign in on a desktop computer or a laptop. Please be aware that due to the current circumstances, it may take us longer than usual to respond to your questions and requests. We thank you for your patience.</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                How do I change or cancel my booking in this situation?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>For the best support, please sign in using your Booking.com account. If you do not have an account, you can use your booking confirmation number and PIN code to sign in on a desktop computer or a laptop.</p>
+                                                <p>If your booking is no longer free to cancel or is non-refundable, you may incur a cancellation fee. You can contact the property to see if it is possible to change the dates of your booking or cancel it.</p>
+                                                <p>If your booking was affected by Coronavirus-related events such as border closures or travel limitations enforced by authorities, but is no longer free to cancel or is non-refundable, sign in to check options to manage the booking.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                What is the policy for date change or cancellation related to Coronavirus?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>You chose a policy when you made a booking on our platform. If that policy allows a change of dates or a free cancellation, you are entitled to that.</p>
+                                                <p>For bookings made before 6 April 2020: You may be able to change or cancel your (non refundable) booking for free if you cannot travel to or stay at the property as a result of implications of the Coronavirus (COVID-19) outbreak, such as government travel restrictions (e.g. closed borders). This depends on several factors, including your country of origin, your destination, the date on which you made your booking, your departure date, your arrival date and your reason for travelling. If your booking falls within the above category, the property should allow your date change request or cancellation. If you wish to cancel your booking and have already made a prepayment, the property should offer you credit or a voucher for a future stay. If you prefer to receive a refund, you are entitled to that.</p>
+                                                <p>For bookings made on or after 6 April 2020: Your change/cancellation request will be handled by the property. The policy you chose and your mandatory consumer law, where applicable, is relevant.</p>
+                                                <p>Please sign in and select the relevant booking to see your options.</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Cancellations
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne_b">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne_b" aria-expanded="false" aria-controls="flush-collapseOne_b">
+                                                Can I cancel my booking?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne_b" class="accordion-collapse collapse" aria-labelledby="flush-headingOne_b" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body"><p>Yes, any cancellation fees are determined by the property and listed in your cancellation policy. You will pay any additional costs to the property.</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo_b">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo_b" aria-expanded="false" aria-controls="flush-collapseTwo_b">
+                                                If I need to cancel my booking, will I pay a fee?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo_b" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo_b" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body"><p>If you have a free cancellation booking, you won't pay a cancellation fee. If your booking is no longer free to cancel or is non-refundable, you may incur a cancellation fee. Any cancellation fees are determined by the property. You will pay any additional costs to the property.</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree_b">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree_b" aria-expanded="false" aria-controls="flush-collapseThree_b">
+                                                Can I cancel or change my dates for a non-refundable booking?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree_b" class="accordion-collapse collapse" aria-labelledby="flush-headingThree_b" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body"><p>Cancelling a Non-Refundable booking normally incurs a charge. However, you may have the option to request free cancellation when managing your booking. This sends a request to the property, who may decide to waive your cancellation fee. It is not possible to change dates for a Non-Refundable booking, though it is possible to re-book for your desired dates if your waive fees request is successful.</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingFour_b">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour_b" aria-expanded="false" aria-controls="flush-collapseFour_b">
+                                                How do I know if my booking was cancelled?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseFour_b" class="accordion-collapse collapse" aria-labelledby="flush-headingFour_b" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body"><p>After you cancel a booking with us, you should receive an email confirming the cancellation. Check your inbox and spam/junk mail folders. If you don’t receive an email within 24 hours, please contact the property to confirm they got your cancellation.</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingFive_b">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive_b" aria-expanded="false" aria-controls="flush-collapseFive_b">
+                                                Where can I find my property's cancellation policy?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseFive_b" class="accordion-collapse collapse" aria-labelledby="flush-headingFive_b" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body"><p>You can find this in your booking confirmation.</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Payment
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne_c">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne_c" aria-expanded="false" aria-controls="flush-collapseOne_c">
+                                                What payment methods are accepted?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne_c" class="accordion-collapse collapse" aria-labelledby="flush-headingOne_c" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>Credit cards are the most widely-accepted payment method for properties listed on Booking.com, and most of them use credit cards to validate your booking.</p>
+                                                <p>In some cases alternative payment methods such as PayPal etc. are also accepted. There are some exceptions to this, where it may be possible to book with a debit card.</p>
+                                                <p>The accepted payment types for your accommodation will be listed in your booking confirmation. You can also call them to confirm what they accept.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo_c">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo_c" aria-expanded="false" aria-controls="flush-collapseTwo_c">
+                                                Can I pay with a deposit, or prepayment?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo_c" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo_c" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>Some of our properties require a prepayment, also known as a deposit, before you stay. This prepayment can be up to the total cost of the booking, or just part of it. The rest is then paid when you stay at the property.</p>
+                                                <p>However, for some properties there is no deposit required, and you’ll pay the amount in full when you stay at the property. It’s best to check the payment policies in your confirmation for more details.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree_c">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree_c" aria-expanded="false" aria-controls="flush-collapseThree_c">
+                                                I’ve been charged. Do I need to do anything?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree_c" class="accordion-collapse collapse" aria-labelledby="flush-headingThree_c" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>In most cases, no action is required from you. As outlined in the payment policy for your booking, this is likely just a prepayment for all or part of the total cost.</p>
+                                                <p>If there is no prepayment policy, then the property may have taken a test payment from your card. This is a temporary hold, that’s used to guarantee your booking, and will be returned to you.</p>
+                                                <p>If you still feel the charge is unexpected, you can contact us for assistance. We can only contact the property on your behalf after you have submitted proof of charge.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Booking details
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                How do I get more information about the room or property's facilities?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body"><p>You can find the room and property facilities in your booking confirmation.</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                Is it possible to get an extra bed or cot for a child?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body"><p>It depends on the property's policy. Additional costs for children, including extra beds/cots, are not included in the reservation price. Please contact the property directly for this information.</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                How can I get an invoice?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">pThe property can provide you with an invoice for your stay, so please contact them directly.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Communications
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Why does the accommodation's email address end with property.booking.com?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>For each reservation, Booking.com provides a unique and anonymous alias email address for both you and the accommodation. All messages sent to this alias email will be forwarded to the accommodation, including links, images, and attachments (up to 15 MB).</p>
+                                            <p>For security purposes, Booking.com has an automated system that monitors communication for malicious content. This includes spam and the limitation of certain file types, such as: .zip, .rar and .exe.</p>
+                                            <p>Please be aware that email communication generated by the accommodation will be sent via Booking.com on their behalf. Booking.com cannot be held accountable for the content of the communication. If you suspect that the content of the communication is inappropriate, suspicious or contains spam, we ask that you report this information by clicking on the link located at the bottom right corner of the email.</p>
+                                            <p>These communications will be stored by Booking.com. Booking.com can access communications upon request from either you or the accommodation, and, if strictly necessary, for security or law enforcement purposes, such as fraud detection and prevention.</p>
+                                            <p>Booking.com may analyse communications to improve its services. If you do not want Booking.com to monitor or store your communications made via Booking.com, please do not make use of the communication feature offered by Booking.com, including communication via alias email addresses.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Room types
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            What's the difference between a Double room and a Twin room?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><p>A Double Room has one double bed and a Twin Room has 2 single beds. If a room is called Double/Twin, it can be set up for either type. You can specify your bedding preference in the ‘Special Requests’ box during the booking process.</p></div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            What do "non-refundable" and "free cancellation" mean?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>Every room or property has an individual policy which is determined by the property.</p>
+                                            <p>A “non-refundable” policy means that a fee will apply if you decide to change or cancel your booking. This fee is mentioned in the conditions during the booking process, and in the booking confirmation.</p>
+                                            <p>A “free cancellation” policy means you can change or cancel a booking for free, as long as you do it within the time period specified by the property (for example “Cancel up to x days” or “Cancel before dd/mm/yy hh:mm”). This is mentioned in the conditions during the booking process, and in the booking confirmation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Can I request an extra bed in my room and will there be extra costs?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                            Is it possible to get an extra bed or cot for a child?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            Pricing
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Is breakfast included in the price?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><p>Each room or accommodation that you can book has its own breakfast policy. If breakfast is included, you will see it listed on the property page when you compare different options to book. If breakfast isn’t included, you can see if the property provides it by checking the available facilities. After you book, this information can also be found in your confirmation email, and you can see it when you view your bookings in your account.</p></div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            What does the price include?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><p>All the facilities listed under the room or accommodation type are included in the price. You can also see if other things like breakfast, taxes or service charges are included when you compare different options to book. After you book, this information can also be found in your confirmation email, and you can see it when you view your bookings in your account.</p></div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Are the prices shown on Booking.com per person or per room?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><p>The price we show is for the room for the entire length of the stay, unless otherwise stated in the room type and description.</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            Credit cards
+                        </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Can I use a debit card to complete my reservation?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><p>Generally hotels cannot accept a debit card to guarantee a booking. However, there are some exceptions. If your chosen hotel can accept a debit card, you will see this option when making your booking.</p></div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Can I make a reservation without a credit card?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><p>A valid card is needed to guarantee your reservation with most properties. We do offer a number of properties, however, that will guarantee your reservation without a card. You can also make a booking using someone else’s card provided you have their permission. In this case please confirm the card holder’s name and that you have permission to use their card, in the ‘Special Requests’ box when making your booking.</p></div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            What’s the difference between a pre-authorisation and an actual charge to my credit card?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><p>Pre-authorisations are common but are often confused with actual charges. While in-store purchases are immediately charged and deducted from your available balance, pre-authorisations are temporary holds. The length of the hold will vary, and your credit card company can advise how they handle this.</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingNine">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            Property policies
+                        </button>
+                    </h2>
+                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            I want to check out after the stated check-out time. What should I do?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><p>You can ask the property about arranging a late check-out when you get there. Just be aware that it depends on what's available at the time of your stay.</p></div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            What are the check-in and check-out times of a property?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><p>Check-in and check-out times differ for each property. You can find them in the "House Rules" section on the property page when you make a booking. If you've already made a booking, you can see check-in and check-out times in your confirmation email and when you log into your account.</p></div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            How do I get more information about the facilities available?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><p>You can see which facilities are included with a booking when comparing different options offered by a particular property. To see which facilities are available at the property itself, go to "Facilities" at the top of the property page.</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTen">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                            Extra facilities
+                        </button>
+                    </h2>
+                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            How do I know if there is parking at the property and how can I reserve it?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><p>You can see whether or not the property has parking under "Facilities" before you make a booking. If the property requires you to reserve a space, please contact them directly with the contact details provided in your booking confirmation.</p></div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            How do I find out if a property has a certain facility (e.g. a lift)?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><p>Under ‘Facilities’ on the property page, you can see a list of all the property’s facilities, activities and services.</p></div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            How can I find out if the property offers a shuttle service and how can I book it?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><p>If the property offers a shuttle service it will be listed under "Facilities". After you make a booking, you can arrange the airport transfer directly with the property. You can find their contact information in your booking confirmation. Please remember to have your flight details ready as they will need these to make sure the driver can find you at the airport.</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEleven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                            Security and awareness
+                        </button>
+                    </h2>
+                    <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            What is social engineering?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><p>Social engineering is a strategy scammers use. They pretend to be a trusted source and then try to trick people into giving them access to sensitive personal data. Online scammers usually pretend to be a well-known company, using a seemingly logical reason to ask you for your personal data and payments.</p></div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            How can I avoid social engineering attempts?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>There are known security tips and tricks that can help you avoid online scams:</p>
+                                            <p>Phishing emails will usually have a sense of urgency or spelling mistakes</p>
+                                            <p>Need to contact us? It’s best to open a new tab and to go to our official website</p>
+                                            <p>Got an email with a link? Try to hover over it to see if the URL looks suspicious, or maybe is missing the known ‘https://’ at the beginning of it</p>
+                                            <p>Remember: Booking.com will never ask you to enter your credit card or gift card number via email, text message or phone</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            I was recently asked to pay using my gift card over the phone. Is that okay?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Car_rentals" class="tabcontent">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Most popular
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                What if I haven’t received my booking confirmation?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>Most bookings are confirmed straight away, so please check your spam folder if there’s nothing in your inbox.</p>
+                                                <p>You can always check the status of your booking online:</p>
+                                                <p><span class="strong">If you’re using the app</span>, tap ‘Bookings’ at the bottom of the screen.</p>
+                                                <p><span class="strong">If you’re using the website</span>, make sure you’re signed in and on the ‘Car rentals’ page - then hit ‘Manage booking’ at the top.</p>
+                                                <p class="strong">What’s the status?</p>
+                                                <p>If you find that your booking isn’t confirmed yet, we’re working on it - and we’ll email you as soon as it is. In the unlikely event that we run into any problems, we’ll let you know as soon as we can.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                Will I have to pay for anything when I pick up my car?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>The main driver will need to present a credit card in their own name to cover the security deposit. Very few rental companies accept debit cards for the deposit - please check the car’s rental terms.</p>
+                                                <p>They’ll also charge you for:</p>
+                                                <p>1. any extras (GPS, child seats, etc.)</p>
+                                                <p>2. any fees (young driver fee, one-way fee, etc.)</p>
+                                                <p>3. any additional cover that you buy from them.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                How do I access my booking online?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p><span class="strong">If you’re using the app, tap ‘Bookings’ at the bottom of the screen.</span>, tap ‘Bookings’ at the bottom of the screen.</p>
+                                                <p><span class="strong">If you’re using the website</span>, make sure you’re signed in and on the ‘Car rentals’ page - then hit ‘Manage booking’ at the top.</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Driver requirements and responsibilities
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne_b">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne_b" aria-expanded="false" aria-controls="flush-collapseOne_b">
+                                                Can I rent a car if I don't have a credit card?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne_b" class="accordion-collapse collapse" aria-labelledby="flush-headingOne_b" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>In the vast majority of cases, the main driver will need a credit card when picking up the car - although some rental companies also accept debit cards.</p>
+                                                <p>Either way, the card must be in the main driver’s name, and must have enough available funds for the car’s deposit.</p>
+                                                <p><span class="strong">Very important:</span> If you don’t have everything you need, the counter staff won’t be allowed to give you the car - so please check the car’s rental terms, under ‘What you need at pick-up’.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo_b">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo_b" aria-expanded="false" aria-controls="flush-collapseTwo_b">
+                                                What do I need to take to pick the car up?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo_b" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo_b" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>The main driver will need to take:</p>
+                                                <p>1. A credit card in their own name, with enough available funds for the car’s deposit (some rental companies also accept debit cards)</p>
+                                                <p>2. Their full driving licence, which they’ve held for at least two years (or longer, with some rental companies)</p>
+                                                <p>3. Their voucher.</p>
+                                                <p>In some cases, they’ll need other documents as well.</p>
+                                                <p>If anyone else is going to drive as well, they’ll also need to take their driving licence.</p>
+                                                <p><span class="strong">Very important:</span> If you don’t have everything you need, the counter staff won’t be allowed to give you the car - so please check the car’s rental terms, under ‘What you need at pick-up’.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree_b">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree_b" aria-expanded="false" aria-controls="flush-collapseThree_b">
+                                                How can I rent a car if I’m under 30?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree_b" class="accordion-collapse collapse" aria-labelledby="flush-headingThree_b" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>When you search for a car, just untick the box that asks if the driver is 30-65. Then, enter your age.</p>
+                                                <p>We’ll show you <span class="strong">just</span> the cars that someone your age can rent.</p>
+                                                <p><span class="strong">Please note…</span></p>
+                                                <p>1. Very few companies will rent cars to anyone under 21.</p>
+                                                <p>2. If you’re under 25, a lot of rental companies will charge you a young driver fee.</p>
+                                                <p>3. Most rental companies also need you to have a full driving licence, which you've held for at least two years (sometimes longer).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingFour_b">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour_b" aria-expanded="false" aria-controls="flush-collapseFour_b">
+                                                How can I rent a car if I’m over 65?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseFour_b" class="accordion-collapse collapse" aria-labelledby="flush-headingFour_b" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>When you search for a car, just untick the box that asks if the driver is 30-65. Then, enter your age.</p>
+                                                <p>We’ll show you <span class="strong">just</span> the cars that someone your age can rent.</p>
+                                                <p>Please note: Some rental companies may charge you a senior driver fee.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Fuel, mileage and travel plans
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne_c">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne_c" aria-expanded="false" aria-controls="flush-collapseOne_c">
+                                                Does my car have unlimited mileage?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne_c" class="accordion-collapse collapse" aria-labelledby="flush-headingOne_c" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body"><p>It depends, so please check the car’s rental terms, under ‘Included in the rental price’.</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo_c">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo_c" aria-expanded="false" aria-controls="flush-collapseTwo_c">
+                                                How do I know what fuel my car takes?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo_c" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo_c" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>Rental companies change their cars all the time, so we can't guarantee up front what type of fuel your car will take.</p>
+                                                <p>If the counter staff don't tell you when you pick your car up, just ask them.</p>
+                                                <p>There may also be a sign inside the fuel cap.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree_c">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree_c" aria-expanded="false" aria-controls="flush-collapseThree_c">
+                                                What is a fuel policy?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree_c" class="accordion-collapse collapse" aria-labelledby="flush-headingThree_c" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>The fuel policy for your rental explains how you’ll pay for fuel for your hire car.</p>
+                                                <p>In the vast majority of cases, your car will come with a ‘like for like’ policy. This means you need to drop it off with as much fuel (or charge, if it’s electric) as it had when you picked it up. If you don’t, you’ll need to pay for the missing fuel/charge - and pay an admin charge as well.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Insurance, cover and protection
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                What does ‘excess’ mean - and what’s my excess?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>The excess is the amount that <span class="strong">you</span> would need to pay if something went wrong. So…</p>
+                                                <p>If the car’s bodywork got damaged, you would pay the damage excess. The Collision Damage Waiver* would cover the rest.</p>
+                                                <p>If the car was stolen, you would pay the theft excess. The Theft Protection* would cover the rest.</p>
+                                                <p>You’ll find your damage and theft excess on your voucher - and in your car’s rental terms, under ‘Deposits, excess and cover’.</p>
+                                                <p><li>* This cover is only valid if you stick to the terms of the rental agreement.</li></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                What insurance/cover does my rental car have?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>All rentals must have Collision Damage Waiver and Theft Protection. Depending on where you’re renting, these could be:</p>
+                                                <p>1. Included with the car when you book it, or</p>
+                                                <p>2. Provided by the main driver’s credit card company, or</p>
+                                                <p>3. Bought from the rental company when you get to the rental counter.</p>
+                                                <p>You’ll find details on your voucher - and in your car’s rental terms, under ‘Deposits, excess and cover’.</p>
+                                                <p>You can also buy additional cover while you’re booking your car, or when you get to the rental counter.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                What is Theft Protection?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>Theft Protection is a kind of cover that’s usually provided with the rental car.</p>
+                                                <p>If someone stole the car during your rental, you wouldn’t have to pay the full cost - you’d just pay the Theft Protection excess.</p>
+                                                <p>Theft Protection is only valid if you stick to the terms of the rental agreement that you sign when you pick up the car. For example: if you left the car unlocked and it was stolen, you’d be liable for the full cost, not just the excess.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Extras
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            What does ‘additional driver’ mean - and do I have to pay to add one?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p><span class="strong">Very important:</span> Only people who are named as drivers on the rental agreement are allowed to drive the car.</p>
+                                            <p>That’ll include the ‘main driver’, whose details you provided when booking the car.</p>
+                                            <p><span class="strong">If</span> you want someone else named as a driver as well, you can give their details to the counter staff when you pick up the car. There’s normally a charge for this, although some rentals let you add one or more additional drivers at no extra cost.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Payment, fees and confirmation
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            How much is my deposit?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><p>Your voucher will show you how much the deposit is. So will the car’s rental terms - you’ll find it in the ‘Deposits, Excess and Cover’ section.</p></div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            What is my booking reference number?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>Your booking reference number is a 9-digit number that’s unique to your booking. You'll find it on the email we send you to confirm your booking, and on your rental voucher.</p>
+                                            <p>If you need to contact us, it'll help us find your details quickly if you have your booking number to hand.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Why do I have to pay a deposit at the rental counter?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>It’s a security deposit, so you’ll get it back after your rental.</p>
+                                            <p>Of course, if the car gets bumped or scraped during the time you’ve got it, the rental company will hang on to some or all of your deposit to pay for the damage.</p>
+                                            <p>They might also retain part of your deposit if the car’s really dirty - or if you drop it off late or at the wrong rental counter.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                            How do I pay for my car?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>When you’re booking your car, you can use most credit or debit cards to pay for it (we’ll tell you which cards we accept).</p>
+                                            <p>But very few rental companies accept debit cards for the security deposit you leave at the rental counter. So in the vast majority of cases, the main driver will need to present a credit card in their own name when they pick the car up. It doesn’t have to be the same card that was used to book the car.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            Changing your booking
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            What if I need to cancel my booking?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>If you cancel more than 48 hours before your rental is due to start, you’ll receive a full refund*.</p>
+                                            <p>If you cancel <span class="strong">less than</span> 48 hours before, or while you’re at the rental counter at pick-up time, we’ll refund* what you paid minus the cost of 3 days of your rental - so there won’t be any refund if your car was booked for 3 days or less.</p>
+                                            <p>If you cancel after your rental is due to start (or you just don’t turn up) you’ll receive no refund.</p>
+                                            <p><li>* Unless you’ve booked a car that’s labelled ‘non-refundable’.</li></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            How do I cancel my booking?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>The easiest way to do it is online - just sign in to your booking and cancel it.</p>
+                                            <p>To sign in to your booking…</p>
+                                            <p><span class="strong">If you’re using the app</span>, tap ‘Bookings’ at the bottom of the screen.</p>
+                                            <p><span class="strong">If you’re using the website</span>, make sure you’re signed in and on the ‘Car rentals’ page - then hit ‘Manage booking’ at the top.</p>
+                                            <p>There may be a cancellation fee…</p>
+                                            <p>If you cancel <span class="strong">more than</span> 48 hours before your rental is due to start, you’ll receive a full refund*.</p>
+                                            <p>If you cancel <span class="strong">less than</span> 48 hours before, or while you’re at the rental counter at pick-up time, we’ll refund* what you paid minus the cost of 3 days of your rental - so there won’t be any refund if your car was booked for 3 days or less.</p>
+                                            <p>If you cancel <span class="strong">after</span> your rental is due to start (or you just don’t turn up) you’ll receive no refund.</p>
+                                            <p><li>* Unless you’ve booked a car that’s labelled ‘non-refundable’.</li></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            How do I access my booking online?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p><span class="strong">If you’re using the app</span>, tap ‘Bookings’ at the bottom of the screen.</p>
+                                            <p><span class="strong">If you’re using the website</span>, make sure you’re signed in and on the ‘Car rentals’ page - then hit ‘Manage booking’ at the top.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            Picking up and dropping off
+                        </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            How do I find the rental counter?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>In most cases, your voucher will show the rental company's address and tell you how to find the counter.</p>
+                                            <p>At airports, look out for signs showing a car with a key above it. They might also say ‘Rent a car’ or ‘Car rental’.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            How do I drop the car off at the end of my rental?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>Just ask the counter staff when you pick your car up.</p>
+                                            <p>If no-one’s available when you’re dropping it off (e.g. if it’s in the middle of the night), there may be a ‘drop box’ where you can put the key. Again, check with the counter staff at pick-up.</p>
+                                            <p>It’s always a good idea to keep any paperwork they give you.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Will the rental company charge me anything when I drop off the car?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>As long as everything has gone as planned, they shouldn’t.</p>
+                                            <p>However, they will charge you:</p>
+                                            <p>1. if there’s any damage to the car, or to any extras you hired</p>
+                                            <p>2. if there’s any missing fuel (i.e. if you were meant to fill it up but didn’t)</p>
+                                            <p>3. if the car’s so dirty that they have to give it more than a ‘standard’ clean</p>
+                                            <p>4. if you drop the car off late, or at the wrong location.</p>
+                                            <p>These charges should be listed on your invoice.</p>
+                                            <p><span class="strong">After drop-off</span>, it’s possible that they’ll charge your card for something they didn’t know about when you dropped your car off - for example, a charge related to a traffic offence.</p>
+                                            <p>If you have any questions about any charges from the rental company, please contact them. You’ll find their contact details on your voucher, or if you access your booking online.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingNine">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            After your rental
+                        </button>
+                    </h2>
+                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Can I get a refund if I return my car early?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>No. When you book a car, the rental company sets it aside for you for the <span class="strong">entire</span> period that you requested, which means they don’t let anyone else book it for any part of that period. So we’re not able to refund any ‘unused’ time.</p>
+                                            <p>This is standard practice in the car rental industry.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            What if I have a question after my rental has finished?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>It depends what your question is about.</p>
+                                            <p>Please contact the rental company if you’ve left something in the car, or if you need them to provide any documents or information. You’ll find their contact details on your voucher, or if you access your booking online.</p>
+                                            <p>For anything else, please contact us and we’ll be happy to help.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Why have I been charged by the rental company?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>It depends. It varies by company, but in general…</p>
+                                            <p><span class="strong">When you pick your car up</span>, they’ll charge you for:</p>
+                                            <p>1. any extras (GPS, child seats, etc.)</p>
+                                            <p>2. any fees (young driver fee, one-way fee, etc.)</p>
+                                            <p>3. any additional cover that you buy from them.</p>
+                                            <p>These charges should be listed on your invoice.</p>
+                                            <p><span class="strong">When you drop your car off</span>, they’ll charge you:</p>
+                                            <p>1. if there’s any damage to the car, or to any extras you hired</p>
+                                            <p>2. if there’s any missing fuel (i.e. if you were meant to fill it up but didn’t)</p>
+                                            <p>3. if the car’s so dirty that they have to give it more than a ‘standard’ clean</p>
+                                            <p>4. if you drop the car off late, or at the wrong location.</p>
+                                            <p>These charges should be listed on your invoice.</p>
+                                            <p><span class="strong">After drop-off</span>, it’s possible that they’ll charge your card for something they didn’t know about when you dropped your car off - for example, a charge related to a traffic offence.</p>
+                                            <p>If you have any questions about any charges from the rental company, please contact them. You’ll find their contact details on your voucher, or if you access your booking online.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTen">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                            Electric cars
+                        </button>
+                    </h2>
+                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            How long does it take to charge an electric car?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>It can take as little as 30 minutes and up to 12 hours to charge your electric car. This depends on the car you choose and the speed of the charging point. A typical electric car (60kWh battery) takes just under 8 hours at most to fully charge with a 7kW charging point.</p>
+                                            <p>Many public charging stations are equipped with fast chargers. These can reach 50% charge within 30 minutes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            How much does it cost to charge an electric car?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>It's possible to charge your electric car at public charging stations. They can be free, pay-as-you-go or subscription-based, with prices set by energy companies or property owners. Some car manufacturers, such as Hyundai, Nissan and Tesla, may provide free charging stations along larger motorways for cars of their make.</p>
+                                            <p>You can also charge your electric car at home using a dedicated home charger (included with your car) that plugs into an ordinary socket.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            How far can an electric car drive on a single charge?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><p>The distance an electric car can drive on a full charge is referred to as its range. On average, fully electric cars have a range of around 250 miles on a single charge. However, newer models from companies like Tesla and Mercedes can go as far as 600 miles on one charge.</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="Flights" class="tabcontent">
+            <h3>Questions</h3>
+            <p>Ask Your Questions</p>
+        </div>
+
+        <div id="Airport_taxis" class="tabcontent">
+            <h3>Questions</h3>
+            <p>Ask Your Questions</p>
+        </div>
+
+        <div id="Insurance" class="tabcontent">
+            <h3>Questions</h3>
+            <p>Ask Your Questions</p>
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Lower Search Bar -->
+    <div id="lower_seachbar_container">
+        <p id="subs_head">Save time, save money!<p>
+        <p id="subs_desc">Sign up and we'll send the best deals to you</p>
+        <div>
+            <input id="subs_mail" type="text" placeholder="  Your email address">
+            <button id="subs_btn">Subscribe</button>
+        </div>
+    </div>
+
+
+    <!-- List Your Property -->
+    <div id="lyp">
+        <button id="lyp_btn">List your property</button>
+        <hr id="lyp_line">
+        <div id="lyp_msc">
+            <a href="">Mobile Version</a>
+            <a asp-controller="account" asp-action="login">Your account</a>
+            <a href="">Make changes to your booking online</a>
+            <a data-toggle="tooltip" data-placement="bottom" title="Your Reference ID is 'YAN6U71N' " href="">Customer Service Help</a>
+            <a data-toggle="tooltip" data-placement="bottom" title="Become An Affliate " href="">Bacome an affliate</a>
+            <a href="">Booking.com for Business</a>
+        </div>
+    </div>
+
+    <!-- FOOTER START -->
+
+    <footer>
+
+        <div id="Footer_part1">
+            <div class="footer_list_container">
+                <ul>
+                    <a href="">
+                    <li>Countries</li></a>
+                    <a href="">
+                    <li>Regions</li></a>
+                    <a href="">
+                    <li>Cities</li></a>
+                    <a href="">
+                    <li>Districts</li></a>
+                    <a href="">
+                    <li>Airports</li></a>
+                    <a href="">
+                    <li>Hotels</li></a>
+                    <a href="">
+                    <li>Places of Interest</li></a>
+                </ul>
+            </div>
+            <div class="footer_list_container">
+                <ul>
+                    <a href="">
+                    <li>Homes</li></a>
+                    <a href="">
+                    <li>Apartments</li></a>
+                    <a href="">
+                    <li>Resorts</li></a>
+                    <a href="">
+                    <li>Villas</li></a>
+                    <a href="">
+                    <li>Hostels</li></a>
+                    <a href="">
+                    <li>B&B's</li></a>
+                    <a href="">
+                    <li>Guest houses</li></a>
+                </ul>
+            </div>
+            <div class="footer_list_container">
+                <ul>
+                    <a href="">
+                    <li>Unique places to stay</li></a>
+                    <a href="">
+                    <li>All destinations</li></a>
+                    <a href="">
+                    <li>All flight destinations</li></a>
+                    <a href="">
+                    <li>All car hire locations</li></a>
+                    <a href="">
+                    <li>Discover</li></a>
+                    <a href="">
+                    <li>Reviews</li></a>
+                    <a href="">
+                    <li>Discover monthly stays</li></a>
+                    <a href="">
+                    <li>Unpacked: Travel articles</li></a>
+                    <a href="">
+                    <li>Seaonal and holiday deals</li></a>
+                    <a href="">
+                    <li>Traveller Review Awards</li></a>
+                </ul>
+            </div>
+            <div class="footer_list_container">
+                <ul>
+                    <a href="">
+                    <li>Car hire</li></a>
+                    <a href="">
+                    <li>Flight finder</li></a>
+                    <a href="">
+                    <li>Restaurant reservations</li></a>
+                    <a href="">
+                    <li>Booking.com for Travel Agents</li></a>
+                </ul>
+            </div>
+            <div class="footer_list_container">
+                <ul>
+                    <a href="">
+                    <li>Coronavirus (COVID-19) FAQS</li></a>
+                    <a href="">
+                    <li>About Booking.com</li></a>
+                    <a href="">
+                    <li>Customer Service Help</li></a>
+                    <a href="">
+                    <li>Partner Help</li></a>
+                    <a href=""></a>
+                    <a href="">
+                    <li>Sustainability</li></a>
+                    <a href="">
+                    <li>Press Center</li></a>
+                    <a href="">
+                    <li>Safety Resource Center</li></a>
+                    <a href="">
+                    <li>Investor Relations</li></a>
+                    <a href="">
+                    <li>Terms & Conditions</li></a>
+                    <a href="">
+                    <li>Partner Dispute</li></a>
+                    <a href="">
+                    <li>How we work</li></a>
+                    <a href="">
+                    <li>Privacy & Cookie Statement</li></a>
+                    <a href="">
+                    <li>MSA Statement </li></a>
+                    <a href="">
+                    <li>Corporate Contact</li></a>
+                    <a href="">
+                    <li>Content guidelines</li></a>
+                </ul>
+            </div>
+        </div>
+
+        <div id="Footer_part2"><a href="">Extranet Login</a></div>
+        <div id="Footer_part3"><p>Copyright © 1996-2023 Yanbukhtin™. All rights reserved.</p></div>
+        <div id="Footer_part4"><p>Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.</p></div>
+
+        <div id="Footer_part_5">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_rentalcars/6bc5ec89d870111592a378bbe7a2086f0b01abc4.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png" alt="">
+        </div>
+
+    </footer>
+
+    <!-- FOOTER END -->
+    </div>
+
+    <script type="module" src="~/js/main.js"></script>
+    <script src="~/js/"></script>
+    <script src="~/js/attractions.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&family=Poppins:ital,wght@0,100;0,200;0,400;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+#Gateway_backimage #backimage {
+  border-top: 1px solid #003580;
+  width: 100%;
+  background-image: url("https://cf.bstatic.com/static/img/deals/landing_page/bg_deals_lp_getaway_23_hero@2x/5d6928de209c35b0d68803cc2675cef19d41c3af.jpg");
+  height: 80vh;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Gateway_backimage #backimage div {
+  border: 0px solid greenyellow;
+  height: 300px;
+  margin-left: 140px;
+  width: 100%;
+}
+#Gateway_backimage #backimage div .heading {
+  width: 100%;
+  margin-top: 10px;
+  font-style: bold;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: sans-serif, Arial, Helvetica;
+  line-height: 50px;
+  color: white;
+}
+#Gateway_backimage #backimage div .upper {
+  font-style: bold;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: sans-serif, Arial, Helvetica;
+  line-height: 40px;
+  color: white;
+  margin-top: 70px;
+  width: 70%;
+}
+#Gateway_backimage #backimage div .tagline {
+  font-style: bold;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: sans-serif, Arial, Helvetica;
+  line-height: 40px;
+  color: white;
+  margin-top: 30px;
+  width: 70%;
+}
+
+#Gateway_search #searchBar {
+  position: absolute;
+  display: flex;
+  gap: 7px;
+  top: 500px;
+  width: 80%;
+  margin: auto;
+  height: 50px;
+  background-color: #febb02;
+  padding: 4px;
+  border-radius: 5px;
+  left: 14%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+#Gateway_search #searchBar #searchCity {
+  width: 30%;
+  background-color: white;
+  border: 0px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-left: 6px;
+}
+#Gateway_search #searchBar #searchCity i {
+  color: #0071c2;
+  font-size: 17px;
+}
+#Gateway_search #searchBar #searchCity #query {
+  border: none;
+  width: 90%;
+  height: 90%;
+}
+#Gateway_search #searchBar #searchCity #query ::-moz-placeholder {
+  color: black;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+#Gateway_search #searchBar #searchCity #query ::placeholder {
+  color: black;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+#Gateway_search #searchBar #searchCity #query :focus {
+  outline: 0px;
+  border: 0px solid white;
+  font-size: 15px;
+  color: black;
+}
+#Gateway_search #searchBar #dates {
+  border: 0px solid blue;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 14px;
+  gap: 10px;
+}
+#Gateway_search #searchBar #dates p {
+  font-family: sans-serif;
+}
+#Gateway_search #searchBar #dates #skCheckin {
+  color: black;
+  border: none;
+  width: 30%;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+#Gateway_search #searchBar #dates #skCheckin :focus {
+  outline: 0px;
+}
+#Gateway_search #searchBar #dates #skCheckout {
+  color: black;
+  border: none;
+  width: 30%;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+#Gateway_search #searchBar #dates #skCheckout :focus {
+  outline: 0px;
+}
+#Gateway_search #searchBar #skPerson {
+  border: 0px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+#Gateway_search #searchBar #skPerson i {
+  color: #0071c2;
+}
+#Gateway_search #searchBar #skPerson:hover {
+  background-color: #f2f2f2;
+}
+#Gateway_search #searchBar .searchBtn {
+  border: 0px solid black;
+  width: 21%;
+}
+#Gateway_search #searchBar .searchBtn #searchBtn {
+  height: 100%;
+  width: 100%;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+#Gateway_search #skPersonDiv {
+  border: 0px solid black;
+  width: 20%;
+  margin-top: 50px;
+  margin-left: 800px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#Gateway_search #skPersonDiv #AdultDiv, #Gateway_search #skPersonDiv #childDiv, #Gateway_search #skPersonDiv #roomDiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: sans-serif;
+}
+#Gateway_search #skPersonDiv #adultsForm, #Gateway_search #skPersonDiv #childForm, #Gateway_search #skPersonDiv #roomsForm {
+  border: 0px solid black;
+}
+#Gateway_search #skPersonDiv #adultsForm .value-button, #Gateway_search #skPersonDiv #childForm .value-button, #Gateway_search #skPersonDiv #roomsForm .value-button {
+  display: inline-block;
+  border: 0px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+}
+#Gateway_search #skPersonDiv #adultsForm .value-button:hover, #Gateway_search #skPersonDiv #childForm .value-button:hover, #Gateway_search #skPersonDiv #roomsForm .value-button:hover {
+  cursor: pointer;
+}
+#Gateway_search #skPersonDiv #adultsForm #decreaseAdult, #Gateway_search #skPersonDiv #adultsForm #decreaseChild, #Gateway_search #skPersonDiv #adultsForm #decreaseRoom, #Gateway_search #skPersonDiv #childForm #decreaseAdult, #Gateway_search #skPersonDiv #childForm #decreaseChild, #Gateway_search #skPersonDiv #childForm #decreaseRoom, #Gateway_search #skPersonDiv #roomsForm #decreaseAdult, #Gateway_search #skPersonDiv #roomsForm #decreaseChild, #Gateway_search #skPersonDiv #roomsForm #decreaseRoom {
+  border: 2px solid #0071c2;
+  background-color: none;
+}
+#Gateway_search #skPersonDiv #adultsForm #increaseAdult, #Gateway_search #skPersonDiv #adultsForm #increaseChild, #Gateway_search #skPersonDiv #adultsForm #increaseRoom, #Gateway_search #skPersonDiv #childForm #increaseAdult, #Gateway_search #skPersonDiv #childForm #increaseChild, #Gateway_search #skPersonDiv #childForm #increaseRoom, #Gateway_search #skPersonDiv #roomsForm #increaseAdult, #Gateway_search #skPersonDiv #roomsForm #increaseChild, #Gateway_search #skPersonDiv #roomsForm #increaseRoom {
+  border: 2px solid #0071c2;
+}
+#Gateway_search #skPersonDiv #adultsForm #Adultnumber, #Gateway_search #skPersonDiv #adultsForm #Childnumber, #Gateway_search #skPersonDiv #adultsForm #Roomnumber, #Gateway_search #skPersonDiv #childForm #Adultnumber, #Gateway_search #skPersonDiv #childForm #Childnumber, #Gateway_search #skPersonDiv #childForm #Roomnumber, #Gateway_search #skPersonDiv #roomsForm #Adultnumber, #Gateway_search #skPersonDiv #roomsForm #Childnumber, #Gateway_search #skPersonDiv #roomsForm #Roomnumber {
+  text-align: center;
+  border: none;
+  border-top: 0px solid #ddd;
+  border-bottom: 0px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  color: #0071c2;
+  font-weight: bold;
+}
+#Gateway_search .popup, #Gateway_search .searchPopUp {
+  text-align: center;
+  transform: scale(0.1);
+  background-color: white;
+  position: absolute;
+  visibility: hidden;
+  transition: transform 0.2s, top 0.1s;
+  z-index: 5;
+}
+#Gateway_search .open_popup, #Gateway_search .openSearch_popup {
+  visibility: visible;
+  transform: scale(1);
+}
+#Gateway_search #cross {
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid #0071c2;
+  font-family: sans-serif;
+  width: 45%;
+  border-radius: 5px;
+  margin-left: 120px;
+}
+#Gateway_search #cross:hover {
+  background-color: #ddd;
+}
+#Gateway_search #searchpopupdiv {
+  border: 0px solid black;
+  width: 20%;
+  margin-top: 35px;
+  margin-left: 205px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#Gateway_search #searchpopupdiv div {
+  border: 0px solid blue;
+  font-family: sans-serif;
+  text-align: left;
+  height: 90px;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 20px;
+}
+#Gateway_search #searchpopupdiv div p {
+  color: #6b6b6b;
+  margin-left: 20px;
+}
+#Gateway_search #searchpopupdiv div:hover {
+  background-color: #ddd;
+}
+#Gateway_search #searchpopupdiv div #cityicon {
+  display: flex;
+  gap: 10px;
+  height: 50px;
+}
+#Gateway_search #searchpopupdiv div #cityicon option {
+  font-weight: bold;
+}
+#Gateway_search #searchpopupdiv div #cityicon i {
+  color: #6b6b6b;
+}
+
+#gateway {
+  margin-top: 5rem;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+#gateway .course-area .row div .single-course {
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 10px;
+  margin: 15px;
+  height: 320px;
+}
+#gateway .course-area .row div .single-course img {
+  width: 325px;
+  height: 200px;
+  border-radius: 10px;
+}
+#gateway .course-area .row div .single-course .course-content p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+#gateway .course-area .row div .single-course .course-content p .green {
+  background-color: green;
+  color: white;
+  font-size: 14px;
+  padding: 3px 7px;
+  border-radius: 5px;
+}
+#gateway .course-area .row div .single-course .course-content p .green_price {
+  color: green;
+  font-size: 20px;
+  font-weight: 600;
+}
+#gateway .course-area .row div .single-course .course-content a {
+  background-color: #0071c2;
+  color: white;
+  font-size: 16px;
+  border: 0px;
+  border-radius: 3px;
+  padding: 5px 115px;
+  text-decoration: none;
+  margin-left: 0.6rem;
+}
+
+#about .all .left {
+  height: 160px;
+}
+#about .all .left h2 {
+  width: 60%;
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 2rem;
+}/*# sourceMappingURL=gateway.css.map */

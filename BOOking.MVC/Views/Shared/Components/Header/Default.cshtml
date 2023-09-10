@@ -1,0 +1,87 @@
+﻿@using BOOking.DAL.Entities;
+@model List<Header>
+
+<!-- HEADER START -->
+@foreach(var header in Model)
+{
+    <header>
+        <div class="header ">
+            <div class="nav-bar container1 ">
+                <div class="col-lg-12 brand">
+                    <h2><a asp-controller="home" asp-action="index">@header.Title</a></h2>
+                </div>
+                <div class="list-bt">
+                    <div class="d-grid gap-4 d-md-block">
+                        <button class="btn border-0 mx-1" data-bs-toggle="modal"
+                                data-bs-target="#currenciesModal" data-toggle="tooltip" data-placement="bottom" title="Select your currency ">
+                            <span id="val">AZN</span>
+                        </button>
+                    </div>
+                    <div class="modal fade" id="currenciesModal" tabindex="-1" aria-labelledby="currenciesModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 fw-bold" id="currenciesModalLabel">Select your currency</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6 class="fw-bold mb-3">All currencies</h6>
+                                    <div id="currencyModal" class="row">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flaq">
+                        <button data-toggle="tooltip" data-placement="bottom" title="Select your language " type="btn" value="button"><img src="~/img/UkFlag.png" alt="chooce your language"></button>
+                    </div>
+                    <div class="help">
+                        <a asp-controller="contact" asp-action="index">
+                            <i data-toggle="tooltip" data-placement="bottom" title="Custom Service help " class="fa-regular fa-circle-question"></i>
+                        </a>
+                    </div>
+                    <div class="property">
+                        <a target="_blank" href="/property.html"><p>@header.Property_text</p></a>
+                    </div>
+                    <div class="register">
+                        <a asp-controller="account" asp-action="register"><span> Register</span></a>
+                    </div>
+                    <div class="signIn">
+                        <a asp-controller="account" asp-action="login"><span> Sign in</span></a>
+                    </div>
+                </div>
+                <div class="hide">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <button data-toggle="tooltip" data-placement="bottom" title="Select your language " type="btn" value="button"><img src="/assets/img/UkFlag.png" alt="chooce your language"></button>
+                        <p>More</p>
+                        <a asp-controller="account" asp-action="login"><i class="fa-regular fa-user"></i>Account</a>
+                        <a href="/property.html"><i class="fa-solid fa-house-circle-check"></i>List your property</a>
+                        <a asp-controller="contact" asp-action="index"><i class="fa-regular fa-circle-question"></i>Contact</a>
+                        <a href="#"></a>
+                    </div>
+
+                    <span class="burger" style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SIDE NAV  START-->
+        <!-- SIDE NAV END-->
+        <!-- NAV  START-->
+        <nav>
+            <div id="navmenu">
+                <div id="navmenu_icon_container">
+                    @foreach (var item in header.HeaderNavigations.Where(x => x.HeaderId == header.Id).Take(5))
+                    {
+                        <div><a asp-controller="@item.TitleUrl" asp-action="index">@Html.Raw(item.LogoIcon)<span id="title">@item.Title</span> </a></div>
+                    }
+                </div>
+            </div>
+        </nav>
+        <!-- NAV END -->
+    </header>
+}
+
+<!-- HEADER END -->

@@ -1,0 +1,857 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BOOking.MVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BOOking.MVC.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\css\\maps\\style.css.map",
+      "PackagePath": "staticwebassets\\Admin\\css\\maps\\style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\css\\style.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Black.eot",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Black.eot"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Black.ttf",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Black.woff",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Black.woff"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Black.woff2",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Black.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Bold.eot",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Bold.ttf",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Bold.woff",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Bold.woff2",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Light.eot",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Light.eot"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Light.ttf",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Light.woff",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Light.woff2",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Light.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Medium.eot",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Medium.eot"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Medium.ttf",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Medium.woff",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Medium.woff"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Medium.woff2",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Medium.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Regular.eot",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Regular.ttf",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Regular.woff",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\fonts\\Roboto\\Roboto-Regular.woff2",
+      "PackagePath": "staticwebassets\\Admin\\fonts\\Roboto\\Roboto-Regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admin\\images\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\auth\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admin\\images\\auth\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\auth\\lockscreen-bg.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\auth\\lockscreen-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\auth\\login-bg.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\auth\\login-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\auth\\register-bg.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\auth\\register-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face1.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face10.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face11.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face12.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face13.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face14.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face15.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face16.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face17.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face18.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face19.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face2.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face20.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face21.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face21.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face22.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face22.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face23.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face23.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face24.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face24.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face25.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face25.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face26.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face26.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face27.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face27.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face3.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face4.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face5.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face6.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face7.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face8.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\faces\\face9.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\faces\\face9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\Admin\\images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\Admin\\images\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\logo-mini.svg",
+      "PackagePath": "staticwebassets\\Admin\\images\\logo-mini.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\images\\logo.svg",
+      "PackagePath": "staticwebassets\\Admin\\images\\logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\js\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admin\\js\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\js\\Chart.min.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\Chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\js\\chart.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\chart.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\js\\dashboard.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\dashboard.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\js\\data-table.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\data-table.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\js\\dataTables.bootstrap4.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\dataTables.bootstrap4.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\js\\documentation.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\documentation.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\js\\file-upload.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\file-upload.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\js\\hoverable-collapse.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\hoverable-collapse.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\js\\jquery.cookie.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\jquery.cookie.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\js\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\jquery.dataTables.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\js\\off-canvas.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\off-canvas.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\js\\tabs.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\tabs.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\js\\template.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\template.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admin\\scss\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\_background.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\_background.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\_demo.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\_demo.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\_fonts.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\_fonts.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\_footer.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\_functions.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\_layouts.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\_layouts.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\_misc.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\_misc.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\_navbar.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\_reset.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\_reset.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\_sidebar.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\_sidebar.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\_typography.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\_typography.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\_utilities.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\_vertical-wrapper.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\_vertical-wrapper.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\components\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admin\\scss\\components\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\components\\_badges.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\components\\_badges.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\components\\_bootstrap-progress.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\components\\_bootstrap-progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\components\\_buttons.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\components\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\components\\_cards.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\components\\_cards.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\components\\_checkbox-radio.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\components\\_checkbox-radio.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\components\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\components\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\components\\_forms.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\components\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\components\\_icons.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\components\\_icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\components\\_lists.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\components\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\components\\_tables.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\components\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\components\\plugin-overrides\\_data-tables.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\components\\plugin-overrides\\_data-tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\landing-screens\\_auth.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\landing-screens\\_auth.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\mixins\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admin\\scss\\mixins\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\mixins\\_animation.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\mixins\\_animation.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\mixins\\_badges.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\mixins\\_badges.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\mixins\\_blockqoute.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\mixins\\_blockqoute.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\mixins\\_cards.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\mixins\\_cards.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\mixins\\_misc.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\mixins\\_misc.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\Admin\\scss\\style.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\vendors\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admin\\vendors\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\vendors\\base\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\Admin\\vendors\\base\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\vendors\\base\\vendor.bundle.base.css",
+      "PackagePath": "staticwebassets\\Admin\\vendors\\base\\vendor.bundle.base.css"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\vendors\\base\\vendor.bundle.base.js",
+      "PackagePath": "staticwebassets\\Admin\\vendors\\base\\vendor.bundle.base.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\vendors\\chart.js\\Chart.min.js",
+      "PackagePath": "staticwebassets\\Admin\\vendors\\chart.js\\Chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.css",
+      "PackagePath": "staticwebassets\\Admin\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.css"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.js",
+      "PackagePath": "staticwebassets\\Admin\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\vendors\\datatables.net\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\Admin\\vendors\\datatables.net\\jquery.dataTables.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\vendors\\mdi\\css\\materialdesignicons.min.css",
+      "PackagePath": "staticwebassets\\Admin\\vendors\\mdi\\css\\materialdesignicons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\vendors\\mdi\\css\\materialdesignicons.min.css.map",
+      "PackagePath": "staticwebassets\\Admin\\vendors\\mdi\\css\\materialdesignicons.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.eot",
+      "PackagePath": "staticwebassets\\Admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.ttf",
+      "PackagePath": "staticwebassets\\Admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff",
+      "PackagePath": "staticwebassets\\Admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\Admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2",
+      "PackagePath": "staticwebassets\\Admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\airtaxis.css",
+      "PackagePath": "staticwebassets\\css\\airtaxis.css"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\airtaxis.css.map",
+      "PackagePath": "staticwebassets\\css\\airtaxis.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\airtaxis.scss",
+      "PackagePath": "staticwebassets\\css\\airtaxis.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\attractions.css",
+      "PackagePath": "staticwebassets\\css\\attractions.css"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\attractions.css.map",
+      "PackagePath": "staticwebassets\\css\\attractions.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\attractions.scss",
+      "PackagePath": "staticwebassets\\css\\attractions.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\contact.css",
+      "PackagePath": "staticwebassets\\css\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\contact.css.map",
+      "PackagePath": "staticwebassets\\css\\contact.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\contact.scss",
+      "PackagePath": "staticwebassets\\css\\contact.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\flights.css",
+      "PackagePath": "staticwebassets\\css\\flights.css"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\flights.css.map",
+      "PackagePath": "staticwebassets\\css\\flights.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\flights.scss",
+      "PackagePath": "staticwebassets\\css\\flights.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\gateway.css",
+      "PackagePath": "staticwebassets\\css\\gateway.css"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\gateway.css.map",
+      "PackagePath": "staticwebassets\\css\\gateway.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\gateway.scss",
+      "PackagePath": "staticwebassets\\css\\gateway.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\product.css",
+      "PackagePath": "staticwebassets\\css\\product.css"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\product.css.map",
+      "PackagePath": "staticwebassets\\css\\product.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\product.scss",
+      "PackagePath": "staticwebassets\\css\\product.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\property.css",
+      "PackagePath": "staticwebassets\\css\\property.css"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\property.css.map",
+      "PackagePath": "staticwebassets\\css\\property.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\property.scss",
+      "PackagePath": "staticwebassets\\css\\property.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\rental.css",
+      "PackagePath": "staticwebassets\\css\\rental.css"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\rental.css.map",
+      "PackagePath": "staticwebassets\\css\\rental.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\rental.scss",
+      "PackagePath": "staticwebassets\\css\\rental.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\signup.css",
+      "PackagePath": "staticwebassets\\css\\signup.css"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\signup.css.map",
+      "PackagePath": "staticwebassets\\css\\signup.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\signup.scss",
+      "PackagePath": "staticwebassets\\css\\signup.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\css\\style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\style.scss",
+      "PackagePath": "staticwebassets\\css\\style.scss"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\Airplane.jpg",
+      "PackagePath": "staticwebassets\\img\\Airplane.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\Baku.jpg",
+      "PackagePath": "staticwebassets\\img\\Baku.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\CustomerService@2x.png",
+      "PackagePath": "staticwebassets\\img\\CustomerService@2x.png"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\FreeCancellation@2x.png",
+      "PackagePath": "staticwebassets\\img\\FreeCancellation@2x.png"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\Gabala.jpg",
+      "PackagePath": "staticwebassets\\img\\Gabala.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\Globe.png",
+      "PackagePath": "staticwebassets\\img\\Globe.png"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\Istanbul.jpg",
+      "PackagePath": "staticwebassets\\img\\Istanbul.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\Reviews.png",
+      "PackagePath": "staticwebassets\\img\\Reviews.png"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\UkFlag.png",
+      "PackagePath": "staticwebassets\\img\\UkFlag.png"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\appart.jpeg",
+      "PackagePath": "staticwebassets\\img\\appart.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\baku1.jpg",
+      "PackagePath": "staticwebassets\\img\\baku1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\bbt.svg",
+      "PackagePath": "staticwebassets\\img\\bbt.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\bech.webp",
+      "PackagePath": "staticwebassets\\img\\bech.webp"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\bed.png",
+      "PackagePath": "staticwebassets\\img\\bed.png"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\bg-c.jpeg",
+      "PackagePath": "staticwebassets\\img\\bg-c.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\bigm.webp",
+      "PackagePath": "staticwebassets\\img\\bigm.webp"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\car.png",
+      "PackagePath": "staticwebassets\\img\\car.png"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\cat_chair_image.b4347622.png",
+      "PackagePath": "staticwebassets\\img\\cat_chair_image.b4347622.png"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\de.jpg",
+      "PackagePath": "staticwebassets\\img\\de.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\dehli.jpg",
+      "PackagePath": "staticwebassets\\img\\dehli.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\earth.png",
+      "PackagePath": "staticwebassets\\img\\earth.png"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\f-b.jpeg",
+      "PackagePath": "staticwebassets\\img\\f-b.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\ferrie.png",
+      "PackagePath": "staticwebassets\\img\\ferrie.png"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\flight.png",
+      "PackagePath": "staticwebassets\\img\\flight.png"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\flow.webp",
+      "PackagePath": "staticwebassets\\img\\flow.webp"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\hotel.jpeg",
+      "PackagePath": "staticwebassets\\img\\hotel.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\hotel.jpg",
+      "PackagePath": "staticwebassets\\img\\hotel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\hov.webp",
+      "PackagePath": "staticwebassets\\img\\hov.webp"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\le.webp",
+      "PackagePath": "staticwebassets\\img\\le.webp"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\ma.webp",
+      "PackagePath": "staticwebassets\\img\\ma.webp"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\map.png",
+      "PackagePath": "staticwebassets\\img\\map.png"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\mark.png",
+      "PackagePath": "staticwebassets\\img\\mark.png"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\new.webp",
+      "PackagePath": "staticwebassets\\img\\new.webp"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\re.webp",
+      "PackagePath": "staticwebassets\\img\\re.webp"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\resort.jpeg",
+      "PackagePath": "staticwebassets\\img\\resort.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\taxi-arrive-at-destination.b3ceb242.svg",
+      "PackagePath": "staticwebassets\\img\\taxi-arrive-at-destination.b3ceb242.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\taxi-book-taxi.4fcb8e24.svg",
+      "PackagePath": "staticwebassets\\img\\taxi-book-taxi.4fcb8e24.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\taxi-how-it-works.94ace4c2.svg",
+      "PackagePath": "staticwebassets\\img\\taxi-how-it-works.94ace4c2.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\taxi-meet-driver.d6713568.svg",
+      "PackagePath": "staticwebassets\\img\\taxi-meet-driver.d6713568.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\taxi.png",
+      "PackagePath": "staticwebassets\\img\\taxi.png"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\tbt.svg",
+      "PackagePath": "staticwebassets\\img\\tbt.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\user.png",
+      "PackagePath": "staticwebassets\\img\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\villa.jpeg",
+      "PackagePath": "staticwebassets\\img\\villa.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\img\\world-map.7d457a5d.png",
+      "PackagePath": "staticwebassets\\img\\world-map.7d457a5d.png"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\js\\account.js",
+      "PackagePath": "staticwebassets\\js\\account.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\js\\attractions.js",
+      "PackagePath": "staticwebassets\\js\\attractions.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\js\\cars.js",
+      "PackagePath": "staticwebassets\\js\\cars.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\js\\contact.js",
+      "PackagePath": "staticwebassets\\js\\contact.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\js\\loadmore.js",
+      "PackagePath": "staticwebassets\\js\\loadmore.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.BOOking.MVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.BOOking.MVC.props",
+      "PackagePath": "build\\BOOking.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.BOOking.MVC.props",
+      "PackagePath": "buildMultiTargeting\\BOOking.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.BOOking.MVC.props",
+      "PackagePath": "buildTransitive\\BOOking.MVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

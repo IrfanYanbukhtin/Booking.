@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&family=Poppins:ital,wght@0,100;0,200;0,400;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.container2 {
+  margin-left: 10rem;
+}
+
+#help_centre .all_help {
+  margin-top: 2rem;
+}
+#help_centre .all_help .top span {
+  font-size: 13px;
+  font-weight: 400;
+}
+#help_centre .all_help .centre h1 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 1.2rem;
+}
+#help_centre .all_help .help_top {
+  border: 1px solid rgb(226, 226, 226);
+  width: 90%;
+}
+#help_centre .all_help .help_top .help {
+  display: flex;
+  justify-content: space-around;
+}
+#help_centre .all_help .help_top .help .tag {
+  margin: 2rem 5rem;
+}
+#help_centre .all_help .help_top .help .tag i {
+  margin-right: 1rem;
+  font-size: 20px;
+}
+#help_centre .all_help .help_top .help .tag span {
+  font-size: 21px;
+  font-weight: 700;
+}
+#help_centre .all_help .help_top .help .tag p {
+  width: 100%;
+}
+#help_centre .all_help .help_top .sign_in {
+  text-decoration: none;
+  width: 90%;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #006FBF;
+  background-color: #006FBF;
+  padding: 10px;
+  margin-left: 3.5rem;
+}
+#help_centre .all_help .help_top .sign_in a {
+  text-decoration: none;
+  color: white;
+}
+#help_centre .all_help .help_top .without_account {
+  text-align: center;
+}
+#help_centre .all_help .help_top .without_account button {
+  margin: 2rem 0rem;
+  color: #006FBF;
+  background-color: white;
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+}
+#help_centre .all_help .help_top .without_account button:hover {
+  background-color: #ebeff5;
+}
+
+#questions {
+  width: 79.4%;
+  margin-left: 10rem;
+}
+#questions .freq h1 {
+  font-size: 21px;
+  font-weight: 700;
+  margin: 2rem 0rem;
+}
+#questions .freq .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+#questions .freq .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  margin-left: 1rem;
+}
+#questions .freq .tab button:hover {
+  background-color: #ddd;
+}
+#questions .freq .tab button p {
+  font-size: 14px;
+}
+#questions .freq .tab button.active {
+  border-bottom: 1px solid #006FBF;
+  background-color: white;
+  color: #006FBF;
+}
+#questions .freq .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+#questions .accordion-item .accordion-header button {
+  font-weight: 700;
+}
+#questions .strong {
+  font-weight: 700;
+}
+
+#lower_seachbar_container {
+  margin-top: 3rem;
+}/*# sourceMappingURL=contact.css.map */

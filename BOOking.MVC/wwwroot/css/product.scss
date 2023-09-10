@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&family=Poppins:ital,wght@0,100;0,200;0,400;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+
+.header_main{
+    height: 250px;
+}
+
+#Product_search{
+    #searchBar{
+        position: absolute;
+        display: flex;
+        gap: 7px;
+        width: 70%;
+        margin: auto;
+        height: 50px;
+        background-color: #febb02;
+        padding: 4px;
+        border-radius: 5px;
+        top: 140px;   
+        left: 14%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+        #searchCity{
+            width: 30%;
+            background-color: white;
+            border: 0px solid red;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            gap: 10px;
+            padding-left: 6px;
+
+            i{
+                color:#0071c2;
+                font-size: 17px;
+            }
+
+            #query{
+                border: none;
+                width: 90%;
+                height: 90%;
+
+                ::placeholder{
+                    color: black;
+                    font-family: sans-serif;
+                    font-size: 15px;
+                }
+
+                :focus{
+                    outline: 0px;
+                    border:0px solid white;
+                    font-size: 15px;
+                    color:black;
+                }
+            }
+        }
+
+        #dates{
+            border: 0px solid blue;
+            width:40%;
+            display:flex;
+            align-items: center;
+            background-color: white;
+            padding: 10px;
+            font-family: sans-serif;
+            font-size: 14px;
+            gap: 10px;
+
+            p{
+                font-family: sans-serif;
+            }
+
+            #skCheckin{
+                color:black;
+                border: none;
+                width: 30%;
+                font-family: sans-serif;
+                font-size: 14px;
+                text-transform: uppercase;
+
+                :focus{
+                    outline: 0px;
+                }
+            }
+
+            #skCheckout{
+                color:black;
+                border: none;
+                width: 30%;
+                font-family: sans-serif;
+                font-size: 14px;
+                text-transform: uppercase;
+
+                :focus{
+                    outline: 0px;
+                }
+            }
+        }
+
+        #skPerson{
+            border: 0px solid black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 10px;
+            background-color: white;
+            border: none;
+            padding-left: 10px;
+            padding-right:10px ;
+            cursor: pointer;
+            font-family: sans-serif;
+            font-size: 14px;
+
+            i{
+                color: #0071c2;
+            }
+
+            &:hover{
+                background-color: #f2f2f2;
+            }
+        }
+
+        .searchBtn{
+            border: 0px solid black;
+            width: 21%;
+
+            #searchBtn{
+                height: 100%;
+                width: 100%;
+                background-color:#0071c2;
+                color: white;
+                border: none;
+                font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    #skPersonDiv{
+        border: 0px solid black;
+        width: 20%;
+        margin-top: 50px;
+        margin-left: 800px;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        #AdultDiv,#childDiv,#roomDiv{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        #adultsForm,#childForm,#roomsForm {
+            border: 0px solid black;
+
+            .value-button {
+                display: inline-block;
+                border: 0px solid #ddd;
+                margin: 0px;
+                width: 40px;
+                height: 30px;
+                text-align: center;
+                vertical-align: middle;
+                padding: 11px 0;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            #decreaseAdult,#decreaseChild,#decreaseRoom{
+                border: 2px solid #0071c2;
+                background-color: none;
+            }
+
+            #increaseAdult,#increaseChild,#increaseRoom{
+                border: 2px solid #0071c2;
+            }
+
+            #Adultnumber,#Childnumber,#Roomnumber{
+                text-align: center;
+                border: none;
+                border-top: 0px solid #ddd;
+                border-bottom: 0px solid #ddd;
+                margin: 0px;
+                width: 40px;
+                height: 40px;
+                color: #0071c2;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .popup, .searchPopUp{
+        text-align: center;
+        transform: scale(0.1);
+        background-color:white;
+        position: absolute;
+        visibility:hidden;
+        transition: transform 0.2s, top 0.10s;
+        z-index:5;
+    }
+
+    .open_popup,.openSearch_popup{
+        visibility: visible;
+        transform: scale(1);
+    }
+
+    #cross{
+        font-size:15px;
+        cursor: pointer;
+        border: 1px solid #0071c2;
+        font-family: sans-serif;
+        width:45%;
+        border-radius: 5px;
+        margin-left: 120px;
+
+        &:hover{
+            background-color:#ddd;
+        }
+    }
+
+    #searchpopupdiv{
+        border: 0px solid black;
+        width:20%;
+        margin-top: 35px;
+        margin-left: 205px;
+        border-radius:10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        div{
+            border: 0px solid blue;
+            font-family: sans-serif;
+            text-align: left;
+            height: 90px;
+            align-items: center;
+            cursor: pointer;
+            padding-left: 20px;
+            
+
+            p{
+                color: #6b6b6b;
+                margin-left: 20px;
+            }
+
+            &:hover{
+                background-color: #ddd;
+            }
+
+            #cityicon{
+                display: flex;
+                gap: 10px;
+                height: 50px;
+
+                option{
+                    font-weight: bold;
+                }
+
+                i{
+                    color: #6b6b6b;
+                }
+            }
+        }
+    }
+}
+
+.main{
+    width: 97%;
+    max-height: fit-content;
+    margin: auto;
+    display: flex;
+    margin-bottom: 25px;
+    
+    .filter{
+        border: 1px solid gray;
+        width: 25%;
+        height: 720px;
+        max-height: fit-content;
+        position: sticky;
+        top: 0;
+        padding: 10px;
+        margin-right: 15px;
+        margin-top: 5px;
+
+        h3{
+            color: blue;
+        }
+
+        h4{
+            margin: 10px 0px;
+        }
+
+        .sort{
+            .sort-box{
+                border: 0px;
+                background-color: rgb(38, 80, 197);
+                color: white;
+                font-size: 17px;
+                padding: 10px 20px;
+                border-radius: 15px;
+                margin-bottom: 10px;
+
+                &:hover{
+                    cursor: pointer;
+                    border: 0px;
+                    background-color: rgb(82, 206, 228);
+                    color: black;
+                }
+
+                option{
+                    display: block;
+                    font-size: 20px;
+                    color: white;
+                    height: 200px;
+                    padding: 10px;
+                }
+            }
+        }
+
+        .box{
+            width: 20px;
+            height: 20px;
+            max-height: fit-content;
+            margin-right: 10px;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .product{
+        width: 75%;
+        padding: 5px;
+        max-height: fit-content;
+
+        .product-box{
+            border: 1px solid #78c7ff;
+            border-radius: 10px;
+            height: 260px;
+            max-height: fit-content;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0px 0px 8px 0px rgb(115, 188, 248);
+
+            .image{
+                width: 25%;
+
+                img{
+                    width: 90%;
+                }
+            }
+
+            .mid{
+                width: 50%;
+                padding: 10px;
+
+                p{
+                    color: rgb(46, 42, 42);
+                }
+
+                h3{
+                    color: rgb(64, 127, 209);
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+                    &:hover{
+                        cursor: pointer;
+                        color: rgb(63, 50, 50);
+                    }
+                }
+
+                .material-symbols-outlined {
+                    color: blueviolet;
+                    margin-right: 7px;
+                }
+            }
+
+            .right{
+                width: 20%;
+                text-align: end;
+                padding: 10px;
+
+                h2{
+                    margin: 0px;
+                }
+
+                p{
+                    font-size: 13px;
+                    color: gray;
+                    margin: 0px;
+                    margin-bottom: 1rem;
+                }
+
+                a{
+                    background-color: #0071c2;
+                    color: white;
+                    font-size: 16px;
+                    border: 0px;
+                    border-radius:3px;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    
+
+                    &:hover {
+                        background-color: rgb(28, 28, 114);
+                        transition: 200ms;
+                        transform: scale(1.1);
+                    }
+                }
+
+                .review{
+                    margin-bottom: 20px;
+
+                    h3{
+                        color: rgb(12, 114, 12);
+                        margin-top: -12px;
+                        margin-right: 60px;
+                        font-size: 19px;
+                    }
+
+                    div{
+                        width: 30px;
+                        height: 30px;
+                        max-height: fit-content;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 3px 15px 6px 1px;
+                        margin-left: 65%;
+                        margin-top: -5px;
+                        background-color: #02548f;
+
+                        h4{
+                            font-size: 18px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#lower_seachbar_container{
+    margin-top: 10rem;
+}

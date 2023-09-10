@@ -1,0 +1,14 @@
+C:\Users\Asery_valha\source\repos\BOOking.com\BOOking.DAL\bin\Debug\net6.0\BOOking.DAL.deps.json
+C:\Users\Asery_valha\source\repos\BOOking.com\BOOking.DAL\bin\Debug\net6.0\BOOking.DAL.runtimeconfig.json
+C:\Users\Asery_valha\source\repos\BOOking.com\BOOking.DAL\bin\Debug\net6.0\BOOking.DAL.dll
+C:\Users\Asery_valha\source\repos\BOOking.com\BOOking.DAL\bin\Debug\net6.0\BOOking.DAL.pdb
+C:\Users\Asery_valha\source\repos\BOOking.com\BOOking.DAL\obj\Debug\net6.0\BOOking.DAL.csproj.AssemblyReference.cache
+C:\Users\Asery_valha\source\repos\BOOking.com\BOOking.DAL\obj\Debug\net6.0\BOOking.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asery_valha\source\repos\BOOking.com\BOOking.DAL\obj\Debug\net6.0\BOOking.DAL.AssemblyInfoInputs.cache
+C:\Users\Asery_valha\source\repos\BOOking.com\BOOking.DAL\obj\Debug\net6.0\BOOking.DAL.AssemblyInfo.cs
+C:\Users\Asery_valha\source\repos\BOOking.com\BOOking.DAL\obj\Debug\net6.0\BOOking.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Asery_valha\source\repos\BOOking.com\BOOking.DAL\obj\Debug\net6.0\BOOking.DAL.dll
+C:\Users\Asery_valha\source\repos\BOOking.com\BOOking.DAL\obj\Debug\net6.0\refint\BOOking.DAL.dll
+C:\Users\Asery_valha\source\repos\BOOking.com\BOOking.DAL\obj\Debug\net6.0\BOOking.DAL.pdb
+C:\Users\Asery_valha\source\repos\BOOking.com\BOOking.DAL\obj\Debug\net6.0\BOOking.DAL.genruntimeconfig.cache
+C:\Users\Asery_valha\source\repos\BOOking.com\BOOking.DAL\obj\Debug\net6.0\ref\BOOking.DAL.dll

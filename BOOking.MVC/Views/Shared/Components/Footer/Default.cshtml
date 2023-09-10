@@ -1,0 +1,84 @@
+﻿@using BOOking.DAL.Entities;
+@model List<Footer>
+
+<!-- FOOTER START -->
+
+<footer>
+    @foreach(var footer in Model)
+    {
+
+        <div id="Footer_part1">
+            <div class="footer_list_container">
+               
+                    <ul>
+                    @foreach (var item in footer.FooterFirstNavs.Where(x => x.FooterId == footer.Id))
+                    {
+                        <a asp-controller="home" asp-action="index">
+                        <li>@item.PageTitle</li>
+                        </a>
+                    }
+                       
+                    </ul>
+            </div>
+            <div class="footer_list_container">
+                <ul>
+                    @foreach (var item in footer.FooterSecondNavs.Where(x => x.FooterId == footer.Id))
+                    {
+                        <a asp-controller="home" asp-action="index">
+                        <li>@item.PageTitle</li>
+                        </a> 
+                    }
+                    
+                </ul>
+            </div>
+            <div class="footer_list_container">
+                <ul>
+                    @foreach (var item in footer.FooterThirdNavs.Where(x => x.FooterId == footer.Id))
+                    {
+                        <a asp-controller="home" asp-action="index">
+                        <li>@item.PageTitle</li>
+                        </a>
+                    }
+                   
+                </ul>
+            </div>
+            <div class="footer_list_container">
+                <ul>
+                    @foreach (var item in footer.FooterFourthNavs.Where(x => x.FooterId == footer.Id))
+                    {
+                        <a asp-controller="home" asp-action="index">
+                        <li>@item.PageTitle</li>
+                        </a>
+                    }
+                    
+                </ul>
+            </div>
+            <div class="footer_list_container">
+                <ul>
+                    @foreach (var item in footer.FooterFifthtNavs.Where(x => x.FooterId == footer.Id))
+                    {
+                        <a asp-controller="@item.PageUrl" asp-action="index">
+                        <li>@item.PageTitle</li>
+                        </a>
+                    }
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="Footer_part2"><a href="">Extranet Login</a></div>
+        <div id="Footer_part3"><p>Copyright © 1996-2023 @footer.CreatedBy . All rights reserved.</p></div>
+        <div id="Footer_part4"><p>Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.</p></div>
+
+
+        <div id="Footer_part_5">
+            @foreach (var item in footer.Partners.Where(x => x.FooterId == footer.Id).Take(6)){
+                <img src="@item.ImageUrl" alt="">
+            }
+       
+        </div>
+    }
+
+</footer>
+
+<!-- FOOTER END -->

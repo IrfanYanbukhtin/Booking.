@@ -1,0 +1,591 @@
+﻿@{
+
+    RentalViewModel model = Model;
+    var carhire = model.CarHires;
+    var airportincountry = model.AirportInCountries;
+    var airporworldwide = model.AirportWorldWides;
+    var citiesworldwide = model.CitiesWorlwides;
+
+}
+
+<!-- Back ground image and heading -->
+<div id="backcolor">
+    <div>
+        <p class="heading">Car hire for any kind of trip</p>
+        <p class="tagline">Great deals at great prices, from the biggest car hire companies</p>
+    </div>
+</div>
+
+
+<section id="search_car_form">
+
+    <div id="Search_car">
+        <div id="search_car-data">
+            <div id="Car_rent_section">
+                <form action="" id="AKCsearchdata">
+                    <input type="text" placeholder="Pick-up location" id="AKfrom" />
+                    <input type="date" name="trip-start" value="2023-09-5" min="2023-08-29" max="2024-03-31" id="AKfromdate" />
+                    <select name="time" id="Akfromtime">
+                        <option value="00:00" data-key="00:00">00:00</option>
+                        <option value="00:30" data-key="00:30">00:30</option>
+                        <option value="01:00" data-key="01:00">01:00</option>
+                        <option value="01:30" data-key="01:30">01:30</option>
+                        <option value="02:00" data-key="02:00">02:00</option>
+                        <option value="02:30" data-key="02:30">02:30</option>
+                        <option value="03:00" data-key="03:00">03:00</option>
+                        <option value="03:30" data-key="03:30">03:30</option>
+                        <option value="04:00" data-key="04:00">04:00</option>
+                        <option value="04:30" data-key="04:30">04:30</option>
+                        <option value="05:00" data-key="05:00">05:00</option>
+                        <option value="05:30" data-key="05:30">05:30</option>
+                        <option value="06:00" data-key="06:00">06:00</option>
+                        <option value="06:30" data-key="06:30">06:30</option>
+                        <option value="07:00" data-key="07:00">07:00</option>
+                        <option value="07:30" data-key="07:30">07:30</option>
+                        <option value="08:00" data-key="08:00">08:00</option>
+                        <option value="08:30" data-key="08:30">08:30</option>
+                        <option value="09:00" data-key="09:00">09:00</option>
+                        <option value="09:30" data-key="09:30">09:30</option>
+                        <option value="10:00" data-key="10:00">10:00</option>
+                        <option value="10:30" data-key="10:30">10:30</option>
+                        <option value="11:00" data-key="11:00">11:00</option>
+                        <option value="11:30" data-key="11:30">11:30</option>
+                        <option value="12:00" data-key="12:00">12:00</option>
+                        <option value="12:30" data-key="12:30">12:30</option>
+                        <option value="13:00" data-key="13:00">13:00</option>
+                        <option value="13:30" data-key="13:30">13:30</option>
+                        <option value="14:00" data-key="14:00">14:00</option>
+                        <option value="14:30" data-key="14:30">14:30</option>
+                        <option value="15:00" data-key="15:00">15:00</option>
+                        <option value="15:30" data-key="15:30">15:30</option>
+                        <option value="16:00" data-key="16:00">16:00</option>
+                        <option value="16:30" data-key="16:30">16:30</option>
+                        <option value="17:00" data-key="17:00">17:00</option>
+                        <option value="17:30" data-key="17:30">17:30</option>
+                        <option value="18:00" data-key="18:00">18:00</option>
+                        <option value="18:30" data-key="18:30">18:30</option>
+                        <option value="19:00" data-key="19:00">19:00</option>
+                        <option value="19:30" data-key="19:30">19:30</option>
+                        <option value="20:00" data-key="20:00">20:00</option>
+                        <option value="20:30" data-key="20:30">20:30</option>
+                        <option value="21:00" data-key="21:00">21:00</option>
+                        <option value="21:30" data-key="21:30">21:30</option>
+                        <option value="22:00" data-key="22:00">22:00</option>
+                        <option value="22:30" data-key="22:30">22:30</option>
+                        <option value="23:00" data-key="23:00">23:00</option>
+                        <option value="23:30" data-key="23:30">23:30</option>
+                    </select>
+                    <input type="date" name="trip-start" value="2023-09-10" min="2023-09-10" max="2024-03-31" id="AKtodate" />
+                    <select name="time" id="Akfromtime">
+                        <option value="00:00" data-key="00:00">00:00</option>
+                        <option value="00:30" data-key="00:30">00:30</option>
+                        <option value="01:00" data-key="01:00">01:00</option>
+                        <option value="01:30" data-key="01:30">01:30</option>
+                        <option value="02:00" data-key="02:00">02:00</option>
+                        <option value="02:30" data-key="02:30">02:30</option>
+                        <option value="03:00" data-key="03:00">03:00</option>
+                        <option value="03:30" data-key="03:30">03:30</option>
+                        <option value="04:00" data-key="04:00">04:00</option>
+                        <option value="04:30" data-key="04:30">04:30</option>
+                        <option value="05:00" data-key="05:00">05:00</option>
+                        <option value="05:30" data-key="05:30">05:30</option>
+                        <option value="06:00" data-key="06:00">06:00</option>
+                        <option value="06:30" data-key="06:30">06:30</option>
+                        <option value="07:00" data-key="07:00">07:00</option>
+                        <option value="07:30" data-key="07:30">07:30</option>
+                        <option value="08:00" data-key="08:00">08:00</option>
+                        <option value="08:30" data-key="08:30">08:30</option>
+                        <option value="09:00" data-key="09:00">09:00</option>
+                        <option value="09:30" data-key="09:30">09:30</option>
+                        <option value="10:00" data-key="10:00">10:00</option>
+                        <option value="10:30" data-key="10:30">10:30</option>
+                        <option value="11:00" data-key="11:00">11:00</option>
+                        <option value="11:30" data-key="11:30">11:30</option>
+                        <option value="12:00" data-key="12:00">12:00</option>
+                        <option value="12:30" data-key="12:30">12:30</option>
+                        <option value="13:00" data-key="13:00">13:00</option>
+                        <option value="13:30" data-key="13:30">13:30</option>
+                        <option value="14:00" data-key="14:00">14:00</option>
+                        <option value="14:30" data-key="14:30">14:30</option>
+                        <option value="15:00" data-key="15:00">15:00</option>
+                        <option value="15:30" data-key="15:30">15:30</option>
+                        <option value="16:00" data-key="16:00">16:00</option>
+                        <option value="16:30" data-key="16:30">16:30</option>
+                        <option value="17:00" data-key="17:00">17:00</option>
+                        <option value="17:30" data-key="17:30">17:30</option>
+                        <option value="18:00" data-key="18:00">18:00</option>
+                        <option value="18:30" data-key="18:30">18:30</option>
+                        <option value="19:00" data-key="19:00">19:00</option>
+                        <option value="19:30" data-key="19:30">19:30</option>
+                        <option value="20:00" data-key="20:00">20:00</option>
+                        <option value="20:30" data-key="20:30">20:30</option>
+                        <option value="21:00" data-key="21:00">21:00</option>
+                        <option value="21:30" data-key="21:30">21:30</option>
+                        <option value="22:00" data-key="22:00">22:00</option>
+                        <option value="22:30" data-key="22:30">22:30</option>
+                        <option value="23:00" data-key="23:00">23:00</option>
+                        <option value="23:30" data-key="23:30">23:30</option>
+                    </select>
+                    <input type="submit" value="Search" id="AKsubmitsearch" />
+                </form>
+                <div id="AKCcheckdiv">
+                    <input type="checkbox" id="AKCcheck" name="check" value="" />
+                    <label for="check-24">Drop car off at different location </label>
+                    <input type="checkbox" checked id="AKCcheck" name="check" value="" />
+                    <label for="check-24">Driver aged between 30 - 65  </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="Brand_swiper">
+
+    <div id="car_hire_brand">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <h1>Popular car hire brands</h1>
+                <button class="slide-arrowPrev" id="slide-arrow-prevA">
+                    &#8249;
+                </button>
+                <button class="slide-arrowB" id="slide-arrow-nextA">&#8250;</button>
+                <ul class="slides-containerA" id="slides-containerA">
+                    <li class="slideA">
+                        <div class="swiper-slideB">
+                            <img src="https://cdn.rcstatic.com/images/supplier_logos/europcar_logo_lrg.gif"
+                                 alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.rcstatic.com/images/supplier_logos/alamo_logo_lrg.gif"
+                                 alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.rcstatic.com/images/suppliers/flat/sixt_logo_lrg.gif"
+                                 alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.rcstatic.com/images/supplier_logos/avis_logo_lrg.gif"
+                                 alt="" />
+                        </div>
+                    </li>
+                    <li class="slideA">
+                        <div class="swiper-slide">
+                            <img src="https://cdn.rcstatic.com/images/supplier_logos/enterprise_logo_lrg.gif"
+                                 alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.rcstatic.com/images/supplier_logos/dollar_logo_lrg.gif"
+                                 alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.rcstatic.com/images/supplier_logos/thrifty_logo_lrg.gif"
+                                 alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.rcstatic.com/images/suppliers/flat/sicily_by_car_logo_lrg.gif"
+                                 alt="" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section>
+
+    <div id="AKCsection-4">
+        <div>
+            <div>
+                <div>
+                    <img src="~/img/CustomerService@2x.png"
+                         alt="" />
+                </div>
+                <div>
+                    <h3>We’re here for you</h3>
+                    <p>Providing customer support in over 30 languages</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="~/img/FreeCancellation@2x.png"
+                         alt="" />
+                </div>
+                <div>
+                    <h3>Free cancellation</h3>
+                    <p>On most bookings, up to 48 hours before pick-up</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="~/img/Reviews.png"
+                         alt="" />
+                </div>
+                <div>
+                    <h3>5 million+ reviews</h3>
+                    <p>
+                        By verified customers
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="Accordion">
+
+    <h1>Frequently asked questions</h1>
+
+    <div id="car_info">
+
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        How much does it cost to rent a car in Azerbaijan for a week?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span>Based on the average daily cost of AZN 100, it will cost you around AZN 701 for a week on our site.</span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How much does it cost to rent a car in Azerbaijan for a month?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span>Based on the average daily cost of AZN 100, it will cost you around AZN 3,003 for a month on our site.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Which car do people usually rent in Azerbaijan?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span>Small is the most popular car group to rent in Azerbaijan among our users, followed by medium and premium.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        How much does it cost to rent Small car in Azerbaijan?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span>On average, renting Small car in Azerbaijan costs AZN 70 per day on our site.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        How much does it cost to rent Medium car in Azerbaijan?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span>On average, renting Medium car in Azerbaijan costs AZN 78 per day on our site.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        How much does it cost to rent Premium car in Azerbaijan?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span>On average, renting Premium car in Azerbaijan costs AZN 168 per day on our site.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Which car rental companies are available in Azerbaijan?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span>Based on our bookings, there are at least 9 car rental companies available in Azerbaijan, including these:</span>
+                        <li>Carhire Baku.</li>
+                        <li>Aznur Rent A Car.</li>
+                        <li>Thrifty</li>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        Which companies offer the cheapest car rates in Azerbaijan?
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span>In the past 6 months, 8 rental companies were offering the cheapest rates for Small car on our site:</span>
+                        <li>Surprice for an average daily price of AZN 58</li>
+                        <li>Aznur Rent A Car. for an average daily price of AZN 59</li>
+                        <li>Carhire Baku. for an average daily price of AZN 66</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        Which pick-up locations in Azerbaijan are the most popular?
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse " aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span>Our users often pick up their car in these locations:</span>
+                        <li>Bina</li>
+                        <li>Heydar Aliyev International Airport</li>
+                        <li>Sangachal</li>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        How far in advance should I book the car rental in Azerbaijan?
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span>The cheapest time to book a car is within the same week of your trip, for an average price of AZN 69 per day.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEleven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                        Why should I book a car rental in Azerbaijan with Booking.com?
+                    </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span>We make it easy to find a rental that’ll fit your needs. Here’s what we offer:</span>
+                        <li>Huge selection of cars – from compact vehicles to SUVs</li>
+                        <li>Support in 30+ languages</li>
+                        <li>Free cancellation up to 48 hours before pick-up time on most bookings.</li>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwelve">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                        What do I need to rent a car?
+                    </button>
+                </h2>
+                <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span>When you’re booking the car, you just need a debit or credit card.</span>
+                        <p>At the rental counter, you’ll need:</p>
+                        <li>Your passport</li>
+                        <li>Your voucher</li>
+                        <li>Each driver’s driving licence</li>
+                        <li>The main driver’s credit card (some rental companies also accept debit cards, but most don’t).</li>
+                        <span>Important: Please make sure you check the car’s rental terms as well, as each rental company has its own rules. For example? They might need to see some extra ID. They might not accept certain types of credit card. Or they might not rent to any driver who hasn’t held their driving licence for 36 months or more.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThirteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                        Am I old enough to rent a car?
+                    </button>
+                </h2>
+                <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span>Most companies will rent you a car if you’re at least 21 (and some will rent to younger drivers). But if you’re under 25, you might still have to pay a ‘young driver fee’.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFourteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                        Can I book a car for my partner, friend, colleague, etc?
+                    </button>
+                </h2>
+                <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span>Of course. Just put their details in the ‘Driver Details’ form when you’re booking the car.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFifteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                        Any tips on choosing the right car?
+                    </button>
+                </h2>
+                <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <li>Think about where you’re going. An SUV might be great for cruising down a Texas freeway, but a smaller car’s probably much easier to drive in Rome.</li>
+                        <li>See what other people think. You’ll find lots of reviews and ratings on our site, so find out what other customers liked (and didn’t like) about each rental company.</li>
+                        <li>Don’t forget the gearbox. In some countries, nearly everyone drives a manual car. In others, automatics are the norm. Make sure you rent one you can drive!</li>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSixteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                        Is the rental price all inclusive?
+                    </button>
+                </h2>
+                <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>The price you see includes the car, mandatory cover (e.g. Theft Protection and Collision Damage Waiver) and fees that, if they apply, are usually payable at pick-up (e.g. any one-way fees, airport surcharges or local taxes).</p>
+                        <p>It also includes any extras you’ve already added (e.g. GPS or baby seats).</p>
+                        <p>It doesn’t include any extra cover you buy when you get to the rental counter.</p>
+                        <p>Tip: There’s a full price breakdown on the Payment page.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="hire_destinations">
+
+    <div id="lower-mid">
+        <h4>Popular car hire destinations</h4>
+        <p>Explore more options to hire a car for cheap</p>
+
+
+
+        <div>
+
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="asia-tab" data-bs-toggle="tab" data-bs-target="#asia-home" type="button" role="tab" aria-controls="asia-home" aria-selected="true">Airports in Azerbaijan</button>
+                <button class="nav-link" id="northamerica-tab" data-bs-toggle="tab" data-bs-target="#northamerica-profile" type="button" role="tab" aria-controls="northamerica-profile" aria-selected="false">Cities worldwide</button>
+                <button class="nav-link" id="europe-tab" data-bs-toggle="tab" data-bs-target="#europe-contact" type="button" role="tab" aria-controls="europe-contact" aria-selected="false">Airport worldwide</button>
+            </div>
+
+        </div>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="asia-home" role="tabpanel" aria-labelledby="asia-home-tab">
+
+                <div id="flight-nearby">
+                    @foreach(var item in airportincountry)
+                    {
+                        <div id="flight-to">
+                            <div>
+                                <img src="@item.ImageUrl" alt="newdelhi" srcset="">
+                            </div>
+                            <div>
+                                <h6>@item.Country</h6>
+                                <span>@item.Description</span>
+                                <p>Average price of <span>AZN @item.Price</span> per day</p>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+
+            <!-- cities worldwide -->
+            <div class="tab-pane fade" id="northamerica-profile" role="tabpanel" aria-labelledby="northamerica-profile-tab">
+                <div id="flight-nearby">
+                    @foreach (var item in citiesworldwide.Take(4))
+                    {
+                        <div id="flight-to">
+                            <div>
+                                <img src="@item.ImageUrl" alt="" srcset="">
+                            </div>
+                            <div>
+                                <h6>@item.Country</h6>
+                                <span>@item.Description</span>
+                                <p>Average price of <span>AZN @item.Price</span> per day</p>
+                            </div>
+                        </div>
+                    }
+                    <div class="row justify-content-center">
+                        <input value="@ViewBag.CitiesCount" type="hidden" id="airportCount" />
+                        <button class="btn btn-primary" id="loadMore2">Load more</button>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+
+            <!-- airport worldwide -->
+            <div class="tab-pane fade" id="europe-contact" role="tabpanel" aria-labelledby="europe-contact-tab">
+                <div id="flight-nearby">
+
+                    @foreach (var item in airporworldwide.Take(4))
+                    {
+                        <div id="flight-to">
+                            <div>
+                                <img src="@item.ImageUrl" alt="newdelhi" srcset="">
+                            </div>
+                            <div>
+                                <h6>@item.Country</h6>
+                                <span>@item.Description</span>
+                                <p>Average price of <span>AZN @item.Price</span> per day</p>
+                            </div>
+                        </div>
+                    }
+
+                    <div class="row justify-content-center">
+                        <input value="@ViewBag.AirportCount" type="hidden" id="airportCount" />
+                        <button class="btn btn-primary" id="loadMore">Load more</button>
+                    </div>
+
+                </div>
+            </div>
+
+</section>
+
+
+
+<!-- Lower Search Bar -->
+<div id="lower_seachbar_container">
+    <p id="subs_head">Save time, save money!<p>
+    <p id="subs_desc">Sign up and we'll send the best deals to you</p>
+    <div>
+        <input id="subs_mail" type="text" placeholder="  Your email address">
+        <button id="subs_btn">Subscribe</button>
+    </div>
+</div>
+
+
+<!-- List Your Property -->
+<div id="lyp">
+    <button id="lyp_btn">List your property</button>
+    <hr id="lyp_line">
+    <div id="lyp_msc">
+        <a href="">Mobile Version</a>
+        <a asp-controller="account" asp-action="login">Your account</a>
+        <a href="">Make changes to your booking online</a>
+        <a data-toggle="tooltip" data-placement="bottom" title="Your Reference ID is 'YAN6U71N' " href="">Customer Service Help</a>
+        <a data-toggle="tooltip" data-placement="bottom" title="Become An Affliate " href="">Bacome an affliate</a>
+        <a href="">Booking.com for Business</a>
+    </div>
+</div>
+
+  

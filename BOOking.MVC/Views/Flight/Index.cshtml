@@ -1,0 +1,121 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn.worldvectorlogo.com/logos/bookingcom-1.svg">
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/flights.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Search flights at Booking.com</title>
+</head>
+<body>
+
+    <header>
+        <div class="header ">
+            <div class="nav-bar container1 d-flex justify-content-between">
+                <div class="col-lg-6 brand ">
+                    <h2><a asp-controller="home" asp-action="index">Booking.com</a></h2>
+                </div>
+                <div class="list-bt d-flex">
+                    <div class="flaq">
+                        <button type="btn" value="button"><img src="~/img/UkFlag.png" alt="chooce your language"></button>
+                    </div>
+                    <div class="help">
+                        <a asp-controller="contact" asp-action="index">
+                            <i class="fa-regular fa-circle-question"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- NAV  START-->
+        <nav>
+            <div id="navmenu">
+                <div id="navmenu_icon_container" class="flight">
+                    <div><a asp-controller="home" asp-action="index"><i class="fa-solid fa-bed"></i> <span id="title"> Stays</span> </a></div>
+                    <div id="letsFly"><a asp-controller="flight" asp-action="index"><i class="fa-solid fa-plane"></i><span id="title"> Flights</span></a></div>
+                    <div><a asp-controller="rental" asp-action="index"><i class="fa-solid fa-car"></i><span id="title">Car Rentals</span></a></div>
+                    <div><a asp-controller="attraction" asp-action="index"><i class="fa-solid fa-mountain-sun"></i><span id="title">Attractions</span></a></div>
+                    <div id="hide_taxis"><a asp-controller="airtaxis" asp-action="index"><i class="fa-solid fa-taxi"></i><span id="title">Airport taxis</span></a></div>
+                </div>
+            </div>
+        </nav>
+        <!-- NAV END -->
+    </header>
+
+
+    <section id="Where_to_go">
+
+        <div id="Search_Flight">
+            <div id="All_Flight">
+                <div id="Flight_form">
+                    <h1>Where do you want to go?</h1>
+                    <div id="Flightradiobutton">
+                        <select name="" class="AKselect">
+                            <option value="one_way">One-way</option>
+                            <option value="return">Return</option>
+                            <option value="multi_city">Multi-city</option>
+                        </select>
+                        <select name="" class="AKselect" id="">
+                            <option value="">1 adult</option>
+                            <option value="">Studentsover 18</option>
+                            <option value="">Youths12-17</option>
+                            <option value="">Children2-11</option>
+                            <option value="">Toddlers in own seatunder 2</option>
+                            <option value="">Youths12-17</option>
+                        </select>
+                        <select name="" class="AKselect">
+                            <option value="economy">Economy</option>
+                            <option value="premium_economy">Premium economy</option>
+                            <option value="business">Business</option>
+                            <option value="first_class">First-class</option>
+                            <option value="multiple">Multiple</option>
+                        </select>
+                    </div>
+                    <form action="" id="Flightsearchdata">
+                        <input type="text" placeholder="From" id="AKfrom">
+                        <input type="text" placeholder="Where to?" id="AKto">
+                        <input type="date" id="AKfromdate">
+                        <input type="date" id="AKtodate">
+                        <input type="submit" value="Search" id="AKsubmitsearch">
+                    </form>
+                </div>
+            </div>
+
+    </section>
+
+    <footer>
+        <div class="Footer_part1">
+            <div id="Footer_part1_1">
+                <ul>
+                    <a href="">Booking.com Privacy Policy</a>
+                    <a href="">Booking.com Terms of Use</a>
+                    <a href="">KAYAK Privacy Policy</a>
+                    <a href="">KAYAK Terms of Use</a>
+                </ul>
+            </div>
+        </div>
+
+        <div id="Footer_part4"><p>Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.</p></div>
+
+        <div id="Footer_part_5">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_rentalcars/6bc5ec89d870111592a378bbe7a2086f0b01abc4.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png" alt="">
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&family=Poppins:ital,wght@0,100;0,200;0,400;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+header nav #navmenu #navmenu_icon_container div:nth-child(1) {
+  border: none;
+  background-color: #003580;
+}
+header nav #navmenu #navmenu_icon_container div:nth-child(1):hover {
+  cursor: pointer;
+  background-color: rgb(47, 70, 133);
+}
+header nav #navmenu .rental div:nth-child(3) {
+  border: 1px solid white;
+}
+
+#backcolor {
+  border-top: 1px solid #003580;
+  width: 100%;
+  height: 200px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  background-color: #003580;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#backcolor div {
+  border: 0px solid greenyellow;
+  width: 70%;
+  height: 300px;
+  margin-left: 60px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+#backcolor div .heading {
+  width: 100%;
+  margin-top: 2.6rem;
+  font-style: bold;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: sans-serif, Arial, Helvetica;
+  line-height: 50px;
+  color: white;
+}
+#backcolor div .tagline {
+  font-style: bold;
+  font-size: 27px;
+  font-weight: 500;
+  font-family: sans-serif, Arial, Helvetica;
+  line-height: 40px;
+  color: white;
+  margin-top: 15px;
+  width: 100%;
+}
+#backcolor div #explore {
+  width: 180px;
+  height: 50px;
+  font-family: sans-serif, Arial, Helvetica;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+#backcolor div #explore:hover {
+  cursor: pointer;
+  background-color: rgb(22, 130, 173);
+}
+
+#Search_car {
+  border: 0px solid black;
+  width: 100%;
+  display: grid;
+  background-color: rgb(243, 242, 242);
+}
+#Search_car #search_car-data {
+  border: 0px solid black;
+  width: 90%;
+  height: 330px;
+  margin: auto;
+  position: absolute;
+  top: 300px;
+  left: 40px;
+}
+#Search_car #search_car-data #Car_rent_section {
+  width: 100%;
+  border: 0px solid blue;
+  height: auto;
+  margin-top: 30px;
+  line-height: 30px;
+}
+#Search_car #search_car-data #Car_rent_section #AKCsearchdata {
+  border: 3px solid rgb(237, 193, 32);
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+  width: 100%;
+  box-shadow: inset 0px 0px 0px 20px rgb(237, 193, 32);
+}
+#Search_car #search_car-data #Car_rent_section #AKCsearchdata input {
+  font-weight: 600;
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 3px solid rgb(237, 193, 32);
+  border-right: 3px solid rgb(237, 193, 32);
+  color: black;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+#Search_car #search_car-data #Car_rent_section #AKCsearchdata select {
+  font-weight: 600;
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 3px solid rgb(237, 193, 32);
+  border-right: 3px solid rgb(237, 193, 32);
+  color: black;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+#Search_car #search_car-data #Car_rent_section #AKCsearchdata input[type=text] {
+  width: 60%;
+}
+#Search_car #search_car-data #Car_rent_section #AKCsearchdata input[type=submit] {
+  background-color: rgb(50, 108, 194);
+  color: white;
+  cursor: pointer;
+  padding: 0px 10px 0px 10px;
+  border-right: 4px solid rgb(237, 193, 32);
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+#Search_car #search_car-data #Car_rent_section #AKCcheckdiv {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+#Search_car #search_car-data #Car_rent_section #AKCcheckdiv #AKCcheck {
+  width: 20px;
+  height: 20px;
+  border: 1px solid blue;
+  margin-left: 10px;
+}
+#Search_car #search_car-data #Car_rent_section #AKCcheckdiv label {
+  margin-left: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+
+#car_hire_brand .swiper {
+  border: 0px solid blue;
+}
+#car_hire_brand .swiper .swiper-wrapper {
+  margin: auto;
+  width: 80%;
+  border: 0px solid green;
+  margin-bottom: 5rem;
+}
+#car_hire_brand .swiper .swiper-wrapper h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 150px;
+  margin-bottom: -220px;
+}
+#car_hire_brand .swiper .swiper-wrapper .slide-arrowPrev {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  font-size: 25px;
+  position: relative;
+  top: 290px;
+  left: 7px;
+  cursor: pointer;
+}
+#car_hire_brand .swiper .swiper-wrapper .slide-arrowB {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  font-size: 25px;
+  position: relative;
+  top: 290px;
+  left: 1040px;
+  cursor: pointer;
+}
+#car_hire_brand .swiper .swiper-wrapper .slides-containerA {
+  border: 0px solid black;
+  display: flex;
+  overflow: scroll;
+  overflow: hidden;
+  list-style: none;
+  margin: auto;
+  padding: 5px;
+  padding-left: 25px;
+  margin-top: 210px;
+}
+#car_hire_brand .swiper .swiper-wrapper .slides-containerA .slideA {
+  border: 0px solid black;
+  display: flex;
+  gap: 10px;
+}
+#car_hire_brand .swiper .swiper-wrapper .slides-containerA .slideA .swiper-slideB,
+#car_hire_brand .swiper .swiper-wrapper .slides-containerA .slideA .swiper-slide {
+  border: 1px solid rgb(209, 207, 207);
+  padding: 30px 70px 30px 80px;
+}
+
+#AKCsection-4 {
+  border: 0px solid black;
+  width: 100%;
+  height: 200px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  background-color: rgb(243, 242, 242);
+  display: flex;
+  margin-top: 20px;
+}
+#AKCsection-4 div {
+  display: flex;
+  border: 0px solid blue;
+  width: 80%;
+  margin: auto;
+}
+#AKCsection-4 div div {
+  border: 0px solid red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 20px;
+  margin: auto;
+  position: relative;
+}
+#AKCsection-4 div div div:nth-child(1) {
+  border: 0px solid blue;
+  width: 30%;
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+#AKCsection-4 div div div:nth-child(1) img {
+  width: 100%;
+  text-align: left;
+  margin-right: 15px;
+}
+#AKCsection-4 div div div:nth-child(2) {
+  width: 80%;
+  border: 0px solid blue;
+}
+#AKCsection-4 div div div:nth-child(2) h3 {
+  font-size: 17px;
+  position: absolute;
+  bottom: 50px;
+  left: 0px;
+}
+#AKCsection-4 div div div:nth-child(2) p {
+  font-size: 13px;
+  color: rgb(105, 102, 102);
+}
+
+#Accordion h1 {
+  display: block;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+#Accordion #car_info {
+  display: flex;
+  justify-content: space-evenly;
+}
+#Accordion #car_info #accordionExample {
+  margin-top: 3rem;
+  border-radius: 10px;
+  width: 45%;
+}
+#Accordion #car_info #accordionExample .accordion-item {
+  width: 100%;
+  line-height: 30px;
+}
+#Accordion #car_info #accordionExample .accordion-item button {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#lower-mid {
+  width: 75%;
+  margin-top: 4rem;
+  margin-left: 3.5rem;
+}
+#lower-mid #flight-nearby {
+  display: grid;
+  grid-template-columns: repeat(2, 9fr);
+  gap: 20px;
+  margin-left: 50px;
+}
+#lower-mid h6 {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+}
+#lower-mid p {
+  width: 110%;
+  font-size: 13px;
+}
+#lower-mid p span {
+  font-weight: 700;
+}
+#lower-mid span {
+  font-size: 14px;
+}
+#lower-mid #flight-to {
+  display: flex;
+  height: auto;
+  gap: 10px;
+  margin-top: 20px;
+}
+#lower-mid #flight-to div img {
+  width: 70px;
+  border-radius: 7px;
+}
+#lower-mid #flight-to div:nth-child(2) {
+  padding-top: 10px;
+}
+
+@media (max-width: 556px) {
+  header nav #navmenu {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #AKCsection-4 h3 {
+    margin-bottom: 4rem;
+  }
+  #AKCsection-4 p {
+    margin-top: 4rem;
+  }
+}/*# sourceMappingURL=rental.css.map */

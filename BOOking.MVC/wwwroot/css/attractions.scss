@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&family=Poppins:ital,wght@0,100;0,200;0,400;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+
+header{
+    nav{
+        #navmenu{
+            #navmenu_icon_container{
+                div{
+    
+                    &:nth-child(1){
+                        border:none;
+                        background-color: #003580;
+
+                        &:hover{
+                            cursor: pointer;
+                            background-color: rgb(47, 70, 133);
+                        }
+                    }
+                }
+            }
+
+            .attraction{
+                div{
+                    &:nth-child(4){
+                        border:1px solid white;
+                        background-color: rgb(24, 66, 143); 
+                    }
+                }
+            }
+        }
+    }
+}
+ 
+
+#Attraction_backimage{
+    #backimage{
+        height: 450px;
+        max-height: fit-content;
+        background-image: url("https://xx.bstatic.com/xdata/images/xphoto/max1800/241985980.jpg?k=871b71c258a9092f437f9d6b555ce550b8e34404fd592b189408c1481046048a&o=");
+        background-size: cover;
+        background-position: center;
+        div{
+            border:0px solid greenyellow;
+            width:70%;
+            height: 300px;
+            margin-left: 140px;
+            .heading{
+                padding-top: 4rem;
+                width: 80%;
+                line-height: 65px;
+                font-style: bold;
+                font-size: 50px;
+                font-weight: 700;
+                font-family:sans-serif, Arial, Helvetica;
+                color: rgb(221, 220, 220);
+            }
+    
+            .tagline{
+                width: 80%;
+                font-style: bold;
+                font-size: 28px;
+                font-weight: 500;
+                font-family:sans-serif, Arial, Helvetica;
+                line-height: 40px;
+                color: rgb(221, 220, 220);
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+#Attraction_search{
+    #searchBar{
+        position: absolute;
+        display: flex;
+        gap: 7px;
+        width: 70%;
+        margin: auto;
+        top: 485px;
+        height: 60px;
+        background-color: #febb02;
+        padding: 4px;
+        border-radius: 5px;
+        left: 14%;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        #searchCity{
+            width: 50%;
+            background-color: white;
+            border: 0px solid red;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            gap: 10px;
+            padding-left: 6px;
+
+           i{
+              color:#0071c2;
+              font-size: 17px;
+           }
+
+            #query{
+                width: 100%;
+                border: none;
+                height: 90%;
+
+                ::placeholder{
+                    color: black;
+                    font-family: sans-serif;
+                    font-size: 15px;
+                }
+
+                :focus{
+                    outline: 0px;
+                    border:0px solid white;
+                    font-size: 15px;
+                    color:black;
+                }
+            }
+        }
+    
+        #dates{
+            border: 0px solid blue;
+            width:40%;
+            display:flex;
+            align-items: center;
+            background-color: white;
+            padding: 10px;
+            font-family: sans-serif;
+            font-size: 14px;
+            gap: 10px;
+
+            p{
+                font-family: sans-serif;
+            }
+
+            #skCheckin{
+                color:black;
+                border: none;
+                width: 30%;
+                font-family: sans-serif;
+                font-size: 14px;
+                text-transform: uppercase;
+
+                :focus{
+                    outline: 0px;
+                }
+            }
+
+            #skCheckout{
+                color:black;
+                border: none;
+                width: 30%;
+                font-family: sans-serif;
+                font-size: 14px;
+                text-transform: uppercase;
+
+                :focus{
+                    outline: 0px;
+                }
+            }
+        }
+
+        .searchBtn{
+            border: 0px solid black;
+            width: 21%;
+
+            #searchBtn{
+                height: 100%;
+                width: 100%;
+                background-color:#0071c2;
+                color: white;
+                border: none;
+                font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+#trend{
+    margin-top: 3rem;
+    height: 400px;
+    max-height: fit-content;
+    .course-area{
+        height: 150px;
+        .single-course{
+            height: 200px;
+            width: 30%;
+            border-radius: 10px;
+            position: relative;
+            margin-left: 2rem;
+
+            .course-img{
+                position: relative;
+                img{
+                    width: 350px;
+                    height: 180px;
+                    border-radius: 10px;
+                    opacity: 0.9;
+                }
+
+                p{
+                    position: absolute;
+                    left: 10px;
+                    bottom: 15px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: white;
+                }
+
+                .bottom{
+                    position: absolute;
+                    left: 10px;
+                    bottom: 0px;
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: white;
+                    width: 100%;
+                }
+            }
+
+            span{
+                position: absolute;
+                left: 20px;
+                bottom: 5px;
+                color: white;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    #collage2{
+        #collage2_img2{
+            height: 200px;
+            width: 30%;
+            border-radius: 10px;
+            position: relative;
+
+            p{
+                position: absolute;
+                left: 10px;
+                bottom: 15px;
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            span{
+                position: absolute;
+                left: 10px;
+                bottom: 5px;
+                color: white;
+            }
+        }
+    }
+}
+
+#save_time{
+    width: 80%;
+    margin-left: 8.3rem;
+    
+    .save_time{
+       border: 1px solid rgb(230, 230, 230);
+       border-radius: 10px;
+       height: 125px;
+       max-height: fit-content;
+
+       .top{
+        font-size: 16px;
+        font-weight: 700;
+        margin-left: 1rem;
+        margin-top: 1rem;
+       }
+
+       .bot{
+        margin-left: 1rem;
+        font-size: 14px;
+        font-weight: 400;
+       }
+
+       a{
+        text-decoration: none;
+        margin-left: 1rem;
+        font-size: 14px;
+        padding: 5px 15px;
+
+        &:hover{
+            background-color: rgb(241, 252, 255);
+            
+        }
+       }
+    }
+}
+
+#covered{
+    width: 80%;
+
+    hr{
+       width: 105%;
+       margin-left: 6.9rem;
+       color: rgb(173, 173, 173);
+    }
+
+    h2{
+      margin-left: 8.3rem;
+      font-size: 24px;
+    }
+
+    .all{
+        display: flex;
+        justify-content: space-between;
+        justify-items: end;
+        margin-left: 8.3rem;
+        margin-top: 2rem;
+
+        .help{
+            width: 100%;
+            margin-left: 3rem;
+            i{
+                color: green;
+                font-size: 23px;
+            }
+            span{
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            p{
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+#explore_more_destinations{
+    width: 80%;
+    margin-left: 8rem;
+    max-height: fit-content;
+    .tab {
+        overflow: hidden;
+        border-bottom: 1px solid #ccc;
+
+        button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+
+            &:hover {
+                background-color: #f0f0fd;
+            }
+        }
+
+        button.active {
+            color: blue;
+            border-bottom: 1px solid blue;
+        }
+    }
+
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border-top: none;
+        max-height: fit-content;
+
+        .row{
+            .tab-img{
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 150px;
+                    margin: 10px;
+                    border-radius: 10px;
+                }
+
+                p{
+                    position: absolute;
+                    left: 1.5rem;
+                    bottom: 1.9rem;
+                    color: white;
+                    font-weight: 500;
+                }
+
+                span{
+                    position: absolute;
+                    left: 1.5rem;
+                    bottom: 1.4rem;
+                    color: white;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.footer_atr{
+    margin-top: 3rem;
+    background-color: rgb(243, 242, 242);
+    #Footer_part1{
+        height: 300px;
+        .footer_list_container{
+            ul{
+                p{
+                    font-weight: 650;
+                    font-size: 14px;
+
+                }
+
+                li{
+                    color: black;
+                    line-height: 30px;
+
+                    &:hover{
+                        color: black;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    hr{
+        color: rgb(216, 201, 201);
+    }
+}
+
+@media (max-width:556px){
+    
+    header{
+        nav{
+            #navmenu{
+                display: flex;
+                justify-content: space-evenly;
+
+                #navmenu_icon_container{
+                    #hide_taxis{
+                        display: none;
+                    }
+                } 
+            }
+        }
+    }
+
+    #save_time{
+        margin-top: 51rem;
+    }
+
+}

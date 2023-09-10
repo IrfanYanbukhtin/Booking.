@@ -1,0 +1,1013 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en" style="overflow: auto">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://cdn.worldvectorlogo.com/logos/bookingcom-1.svg">
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/attractions.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+    <title>Booking.com</title>
+</head>
+<body style="overflow-x: hidden">
+
+    <!-- HEADER START -->
+    <header>
+        <div class="header ">
+            <div class="nav-bar container1 ">
+                <div class="col-lg-12 brand">
+                    <h2><a asp-controller="home" asp-action="index">Booking.com</a></h2>
+                </div>
+                <div class="list-bt">
+                    <div class="d-grid gap-4 d-md-block">
+                        <button class="btn border-0 mx-1" data-bs-toggle="modal"
+                                data-bs-target="#currenciesModal" data-toggle="tooltip" data-placement="bottom" title="Select your currency ">
+                            <span id="val">AZN</span>
+                        </button>
+                    </div>
+                    <div class="modal fade" id="currenciesModal" tabindex="-1" aria-labelledby="currenciesModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 fw-bold" id="currenciesModalLabel">Select your currency</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6 class="fw-bold mb-3">All currencies</h6>
+                                    <div id="currencyModal" class="row">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flaq">
+                        <button data-toggle="tooltip" data-placement="bottom" title="Select your language " type="btn" value="button"><img src="~/img/UkFlag.png" alt="chooce your language"></button>
+                    </div>
+                    <div class="help">
+                        <a asp-controller="contact" asp-action="index">
+                            <i data-toggle="tooltip" data-placement="bottom" title="Custom Service help " class="fa-regular fa-circle-question"></i>
+                        </a>
+                    </div>
+                    <div class="property">
+                        <a target="_blank" href="/property.html"><p>List your property</p></a>
+                    </div>
+                    <div class="register">
+                        <a asp-controller="account" asp-action="register"><span> Register</span></a>
+                    </div>
+                    <div class="signIn">
+                        <a asp-controller ="account" asp-action="login"><span> Sign in</span></a>
+                    </div>
+                </div>
+                <div class="hide">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <button data-toggle="tooltip" data-placement="bottom" title="Select your language " type="btn" value="button"><img src="~/img/UkFlag.png" alt="chooce your language"></button>
+                        <p>More</p>
+                        <a asp-controller="account" asp-action="login"><i class="fa-regular fa-user"></i>Account</a>
+                        <a href="/property.html"><i class="fa-solid fa-house-circle-check"></i>List your property</a>
+                        <a asp-controller="contact" asp-action="index"><i class="fa-regular fa-circle-question"></i>Contact</a>
+                        <a href="#"></a>
+                    </div>
+
+                    <span class="burger" style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- NAV  START-->
+        <nav>
+            <div id="navmenu">
+                <div id="navmenu_icon_container" class="attraction">
+                    <div><a asp-controller="home" asp-action="index"><i class="fa-solid fa-bed"></i> <span id="title"> Stays</span> </a></div>
+                    <div id="letsFly"><a asp-controller="flight" asp-action="index"><i class="fa-solid fa-plane"></i><span id="title"> Flights</span></a></div>
+                    <div><a asp-controller="rental" asp-action="index"><i class="fa-solid fa-car"></i><span id="title">Car Rentals</span></a></div>
+                    <div><a asp-controller="attraction" asp-action="index"><i class="fa-solid fa-mountain-sun"></i><span id="title">Attractions</span></a></div>
+                    <div id="hide_taxis"><a asp-controller="airtaxis" asp-action="index"><i class="fa-solid fa-taxi"></i><span id="title">Airport taxis</span></a></div>
+                </div>
+            </div>
+        </nav>
+        <!-- NAV END -->
+    </header>
+
+    <!-- HEADER END -->
+    <!-- Back ground image and heading -->
+    <div id="Attraction_backimage">
+        <div id="backimage">
+            <div>
+                <p class="heading">Book top attractions for less with a Getaway Deal</p>
+                <p class="tagline">Save money on tickets for top sights, tours and experiences with a Getaway Deal.</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="Attraction_search">
+        <div id="searchBar">
+            <div id="searchCity">
+                <i class="fa-solid fa-mountain-sun"></i>
+                <input id="query" type="text" placeholder="Where Are You Going?">
+            </div>
+
+            <div id="dates">
+                <p>Select your dates</p><input id="skCheckin" type="date" name="trip-start" value="2023-09-5" min="2023-08-29" max="2024-03-31">
+                <p>Select yur dates</p><input id="skCheckout" type="date" name="trip-start" value="2023-09-10" min="2023-09-10" max="2024-03-31">
+            </div>
+
+            <div class="searchBtn">
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="RecentSearches"></div>
+    <div class="offers">
+        <h2 id="offerH2">Top destinations</h2>
+    </div>
+
+    <section id="trend">
+        <div class="course-area pt-150 pb-150">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="single-course mb-70">
+                            <div class="course-img">
+                                <a href="/product.html">
+                                    <img src="https://cf.bstatic.com/xdata/images/city/640x640/654659.webp?k=9c4ac59d35869485631346dc1ee16d28e82ec5f79654bf56b4b4eaeef3388299&o=" alt="course">
+                                </a>
+                                <p class="upper">Dubai</p>
+                                <p class="bottom">810 things to do</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="single-course mb-70">
+                            <div class="course-img">
+                                <a href="/product.html">
+                                    <img src="https://cf.bstatic.com/xdata/images/city/640x640/691464.webp?k=9d065dc574012a9e15ef4f2fe25dc035d69f7061ad2c77d54eddb3dbbde8d6d3&o=" alt="course">
+
+                                </a>
+                                <p>London</p>
+                                <p class="bottom">810 things to do</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="single-course mb-70">
+                            <div class="course-img">
+                                <a href="/product.html">
+                                    <img src="https://cf.bstatic.com/xdata/images/city/640x640/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&o=" alt="course">
+
+                                </a>
+                                <p>Istanbul</p>
+                                <p class="bottom">810 things to do</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="single-course mb-70">
+                            <div class="course-img">
+                                <a href="/product.html">
+                                    <img src="https://cf.bstatic.com/xdata/images/city/640x640/691621.webp?k=c42cfe573c89d884b935ea9b3936e0aa985622df29d7608c9b4a8cd2ec403c5c&o=" alt="course">
+
+                                </a>
+                                <p>New York</p>
+                                <p class="bottom">810 things to do</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="single-course mb-70">
+                            <div class="course-img">
+                                <a href="/product.html">
+                                    <img src="https://cf.bstatic.com/xdata/images/city/640x640/654502.webp?k=59e22b717abdc899512441630bb0b844d39240c521d882e8debf1418636ee3fd&o=" alt="course">
+
+                                </a>
+                                <p>Las Vegas</p>
+                                <p class="bottom">810 things to do</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="single-course mb-70">
+                            <div class="course-img">
+                                <a href="/product.html">
+                                    <img src="https://cf.bstatic.com/xdata/images/city/640x640/691068.webp?k=612f346134e1f9d25d74c1e0842cd90084f3f6cde308a996172b8be2bf7bb712&o=" alt="course">
+
+                                </a>
+                                <p>Paris</p>
+                                <p class="bottom">810 things to do</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="save_time">
+        <div class="save_time">
+            <p class="top">Sign in to save time</p>
+            <p class="bot">Your Booking.com account lets you book using your saved details</p>
+            <a href="/signup.html">Sign in</a>
+        </div>
+    </section>
+
+    <section id="covered">
+        <hr>
+        <h2>We've got you covered</h2>
+
+        <div class="all">
+            <div class="help">
+                <i class="fa-solid fa-mountain-sun"></i>
+                <span>Explore top attractions</span>
+                <p>Experience the best of your destination, with attractions, tours, activities and more</p>
+            </div>
+            <div class="help">
+                <i class="fa-regular fa-calendar-check"></i>
+                <span>Fast and flexible</span>
+                <p>Book tickets online in minutes, with free cancellation on many attractions</p>
+            </div>
+            <div class="help">
+                <i class="fa-solid fa-headset"></i>
+                <span>Support when you need it</span>
+                <p>Booking.com's global Customer Service team is here to help 24/7</p>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+
+    <div class="offers">
+        <h4 id="offerH4">Explore more destinations</h4>
+        <p id="offerP">Find things to do in cities around the world</p>
+    </div>
+
+    <section id="explore_more_destinations">
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Europe</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">North America</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Asia</button>
+            <button class="tablinks" onclick="openCity(event, 'Africa')">Africa</button>
+            <button class="tablinks" onclick="openCity(event, 'Oceania')">Oceania</button>
+            <button class="tablinks" onclick="openCity(event, 'Middle_east')">Middle East</button>
+            <button class="tablinks" onclick="openCity(event, 'South_america')">South America</button>
+            <button class="tablinks" onclick="openCity(event, 'Caribbean')">Caribbean</button>
+            <button class="tablinks" onclick="openCity(event, 'Central_america')">Central America</button>
+        </div>
+
+        <div id="London" class="tabcontent">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>London</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Istanbul</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Paris</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Hamburg</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Amsterdam</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Lisbon</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Rome</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Athens</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Paris" class="tabcontent">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>London</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Istanbul</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Paris</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Hamburg</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Amsterdam</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Lisbon</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Rome</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Athens</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Tokyo" class="tabcontent">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>London</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Istanbul</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Paris</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Hamburg</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Amsterdam</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Lisbon</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Rome</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Athens</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Africa" class="tabcontent">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>London</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Istanbul</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Paris</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Hamburg</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Amsterdam</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Lisbon</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Rome</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Athens</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Oceania" class="tabcontent">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>London</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Istanbul</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Paris</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Hamburg</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Amsterdam</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Lisbon</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Rome</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Athens</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Middle_east" class="tabcontent">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>London</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Istanbul</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Paris</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Hamburg</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Amsterdam</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Lisbon</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Rome</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Athens</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="South_america" class="tabcontent">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>London</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Istanbul</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Paris</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Hamburg</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Amsterdam</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Lisbon</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Rome</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Athens</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Caribbean" class="tabcontent">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>London</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Istanbul</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Paris</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Hamburg</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Amsterdam</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Lisbon</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Rome</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>Athens</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Central_america" class="tabcontent">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="tab-img">
+                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
+                            <p>London</p>
+                            <span>672 things to do</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer class="footer_atr">
+
+        <div id="Footer_part1">
+            <div class="footer_list_container">
+                <ul>
+                    <p>Support</p>
+                    <a href="">
+                    <li>Coronavirus (COVID-19) FAQs</li></a>
+                    <a href="">
+                    <li>Manage your trips</li></a>
+                    <a href="">
+                    <li>Attractions help centre</li></a>
+                    <a href="">
+                    <li>Safety resource centre</li></a>
+                </ul>
+            </div>
+            <div class="footer_list_container">
+                <ul>
+                    <p>Discover</p>
+                    <a href="">
+                    <li>Genius loyalty programme</li></a>
+                    <a href="">
+                    <li>Seasonal and holiday deals</li></a>
+                    <a href="">
+                    <li>Travel articles</li></a>
+                    <a href="">
+                    <li>Booking.com for Business</li></a>
+                </ul>
+            </div>
+            <div class="footer_list_container">
+                <ul>
+                    <p>Terms and settings</p>
+                    <a href="">
+                    <li>Privacy & cookies</li></a>
+                    <a href="">
+                    <li>Terms and conditions</li></a>
+                    <a href="">
+                    <li>Partner dispute</li></a>
+                    <a href="">
+                    <li>MSA Statement</li></a>
+                </ul>
+            </div>
+            <div class="footer_list_container">
+                <ul>
+                    <p>Partners</p>
+                    <a href="">
+                    <li>Extranet login</li></a>
+                    <a href="">
+                    <li>Partner help</li></a>
+                    <a href="">
+                    <li>List your property</li></a>
+                    <a href="">
+                    <li>Become an affiliate</li></a>
+                </ul>
+            </div>
+            <div class="footer_list_container">
+                <ul>
+                    <p>About</p>
+                    <a href="">
+                    <li>About Booking.com</li></a>
+                    <a href="">
+                    <li>How we work</li></a>
+                    <a href="">
+                    <li>Sustainability</li></a>
+                    <a href="">
+                    <li>Press centre</li></a>
+                    <a href="">
+                    <li>Careers</li></a>
+                    <a href="">
+                    <li>Investor relations</li></a>
+                    <a href="">
+                    <li>Corporate contact</li></a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div id="Footer_part3"><p>Copyright © 1996-2023 Yanbukhtin™. All rights reserved.</p></div>
+        <div id="Footer_part4"><p>Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.</p></div>
+
+        <div id="Footer_part_5">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_rentalcars/6bc5ec89d870111592a378bbe7a2086f0b01abc4.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png" alt="">
+        </div>
+
+    </footer>
+
+    <!-- FOOTER END -->
+    </div>
+
+    <script type="module" src="~/js/main.js"></script>
+    <script src="~/js/attractions.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>
