@@ -12,5 +12,6 @@ namespace BOOking.DAL.Entities
         public string PropertiesCount { get; set; }
         public string ImageUrl { get; set; }
         public string? PageUrl { get; set; }
+        public ICollection<Hotel> Hotels { get; set; }
     }
 }

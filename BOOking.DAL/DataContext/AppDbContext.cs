@@ -31,5 +31,6 @@ namespace BOOking.DAL.DataContext
         public DbSet<CitiesWorlwide> CitiesWorlwides { get; set; }
         public DbSet<Explore> Explores { get; set; }
         public DbSet<Hotel> Hotels { get; set; }
+        public DbSet<Gateway> Gateways { get; set; }
     }
 }

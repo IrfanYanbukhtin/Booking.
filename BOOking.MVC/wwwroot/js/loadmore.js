@@ -29,15 +29,15 @@ $(document).on('click', '#loadMore', function () {
 --------------------------------------*/
 var skip = 4;
 $(document).on('click', '#loadMore', function () {
-    var teacherCount = $("#teacherCount").val();
+    var hotelCount = $("#hotelCount").val();
     $.ajax({
-        url: "/teacher/loadTeachers?skip=" + skip,
+        url: "/stays/loadHotels?skip=" + skip,
         type: "GET",
         success: function (response) {
-            $("#teacherRow").append(response);
+            $("#hotelrow").append(response);
             skip += 4;
 
-            if (skip >= teacherCount)
+            if (skip >= hotelCount)
                 $("#loadMore").remove();
 
             console.log(response);

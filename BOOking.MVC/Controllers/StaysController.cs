@@ -19,7 +19,7 @@ namespace BOOking.MVC.Controllers
         {
             ViewBag.HotelCount = _hotelCount;
 
-            var hotel = _dbContext.Hotels.ToList();
+            var hotel = _dbContext.Hotels.Take(4).ToList();
             var explore = _dbContext.Explores.ToList();
 
             var model = new StaysViewModel
@@ -39,6 +39,14 @@ namespace BOOking.MVC.Controllers
             var hotel = _dbContext.Hotels.Find(id);
 
             return View(hotel);
+        }
+
+        public IActionResult LoadHotels(int skip)
+        {
+            if (skip >= _hotelCount) return BadRequest();
+            var teachers = _dbContext.Hotels.Skip(skip).Take(4).ToList();
+
+            return PartialView("_StaysPartial", teachers);
         }
     }
 }

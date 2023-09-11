@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6bWRZPVszO3Av4QuIrkQvjAB2iRA2E4YtokneUPw9hU=",
+  "Hash": "15qR8bkAEgnyrWXxv8uKJNHRDyEiGM6JXk7WngnIs5c=",
   "Source": "BOOking.MVC",
   "BasePath": "_content/BOOking.MVC",
   "Mode": "Default",
@@ -3619,23 +3619,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\main.js"
-    },
-    {
-      "Identity": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\js\\product.js",
-      "SourceId": "BOOking.MVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\",
-      "BasePath": "_content/BOOking.MVC",
-      "RelativePath": "js/product.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\product.js"
     }
   ]
 }

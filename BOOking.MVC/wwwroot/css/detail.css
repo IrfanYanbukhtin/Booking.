@@ -13,6 +13,9 @@ body {
 .hotel-details-area {
   margin-top: 5rem;
 }
+.hotel-details-area .teacher-details-img img {
+  width: 100%;
+}
 .hotel-details-area .hotel-details-content {
   margin-top: 26px;
 }
@@ -55,23 +58,22 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
+.hotel-details-area .hotel-contact {
+  margin-top: 58px;
+}
 .hotel-details-area .hotel-contact ul {
   margin-top: 30px;
 }
 .hotel-details-area .hotel-contact ul li {
   font-weight: 600;
-  color: #606060;
+  color: #080a68;
   display: inline-block;
   margin-right: 5px;
 }
-.hotel-details-area .hotel-contact ul li:hover a i {
-  color: #F6F6F6;
-  background: #2c2b5e;
-}
 .hotel-details-area .hotel-contact ul li a i {
   font-size: 15px;
-  color: #2c2b5e;
-  background: #F6F6F6;
+  color: #7c7bb3;
+  background: #cecccc;
   text-align: center;
   line-height: 30px;
   width: 34px;
@@ -86,13 +88,13 @@ body {
 }
 .hotel-details-area .hotel-contact p {
   font-weight: 600;
-  color: #606060;
+  color: #494949;
   margin-bottom: 10px;
 }
 .hotel-details-area .hotel-contact p span {
   font-size: 14px;
   font-weight: 700;
-  color: #303030;
+  color: #0c0c0c;
   text-transform: uppercase;
 }
 .hotel-details-area .skill-area {
@@ -111,7 +113,7 @@ body {
   margin-left: 40px;
 }
 .hotel-details-area .skill-bar-item span {
-  color: #606060;
+  color: #222222;
   display: block;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -120,14 +122,14 @@ body {
   text-transform: capitalize;
 }
 .hotel-details-area .skill-bar-item .progress {
-  background-color: #e8e8e8;
+  background-color: #ffffff;
   border-radius: 0;
   height: 40px;
   margin-bottom: 40px;
   overflow: visible;
 }
 .hotel-details-area .skill-bar-item .progress .progress-bar {
-  background-color: #d4d3d3;
+  background-color: #b9c7f7;
   position: relative;
   box-shadow: none;
 }
@@ -141,25 +143,6 @@ body {
   right: 0;
   top: -38px;
   z-index: 8;
-}
-.hotel-details-area .skill-bar-item .progress .progress-bar span .text-top ::after {
-  -moz-border-bottom-colors: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
-  border-color: #e6e6e6 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
-  -o-border-image: none;
-     border-image: none;
-  border-style: solid;
-  border-width: 7px;
-  bottom: -14px;
-  content: "";
-  height: 0;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  width: 0;
 }
 
 footer {

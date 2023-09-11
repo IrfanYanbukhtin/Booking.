@@ -7,25 +7,7 @@
         <div class="row">
             <div class="col-md-5 col-sm-5 col-xs-12">
                 <div class="teacher-details-img">
-                    <div style="text-align:center">
-                        <h2>Tabbed Image Gallery</h2>
-                        <p>Click on the images below:</p>
-                    </div>
-
-                    <!-- The four columns -->
-                    <div class="row">
-                        <div class="col-md-5 col-sm-5 col-xs-12">
-                            <div class="hotel-details-img">
-                                <img src="@Model.ImageUrl" alt="teacher">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="container">
-                        <span onclick="this.parentElement.style.display='none'" class="closebtn">×</span>
-                        <img id="expandedImg" style="width:100%">
-                        <div id="imgtext"></div>
-                    </div>
+                    <img src="@Model.ImageUrl" alt="teacher">
                 </div>
             </div>
             <div class="col-md-7 col-sm-7 col-xs-12">
@@ -37,7 +19,7 @@
                     <ul>
                         <li><span>Rate :</span>@Model.Rate</li>
                         <li><span>Available:</span> @Model.ShortDescription </li>
-                        <li><span>Location: </span>@Model.Location</li>
+                        <li><span>Location: </span>@Model.Location from centre</li>
                         <li><span>Price: </span>@Model.Price</li>
                     </ul>
                 </div>
@@ -51,16 +33,16 @@
                     <p><span>make a call : </span>(+994) 333 64 25</p>
                     <p><span>Telegram: </span> "#BOOking"</p>
                     <ul>
-                        <li><a href="https://www.facebook.com/devitems/?ref=bookmarks"><i class="zmdi zmdi-facebook"></i></a></li>
-                        <li><a href="https://www.pinterest.com/devitemsllc/"><i class="zmdi zmdi-pinterest"></i></a></li>
-                        <li><a href="#"><i class="zmdi zmdi-vimeo"></i></a></li>
-                        <li><a href="https://twitter.com/devitemsllc"><i class="zmdi zmdi-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/WoOlFYkO/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.facebook.com/WoOlFYkO/"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a href="https://www.facebook.com/WoOlFYkO/"><i class="fa-brands fa-vimeo-v"></i></a></li>
+                        <li><a href="https://twitter.com/IYanbukhtin"><i class="fa-brands fa-twitter"></i></a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-9 col-sm-8">
                 <div class="skill-area">
-                    <h4>skills</h4>
+                    <h4>Progress</h4>
                 </div>
                 <div class="skill-wrapper">
                     <div class="row">
@@ -76,7 +58,7 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="skill-bar-item">
-                                <span>Rate</span>
+                                <span>Loyalty</span>
                                 <div class="progress">
                                     <div data-wow-delay="1.2s" data-wow-duration="1.5s" style="width: 90%; visibility: visible; animation-duration: 1.5s; animation-delay: 1.2s; animation-name: fadeInLeft;" data-progress="50%" class="progress-bar wow fadeInLeft">
                                         <span class="text-top">90%</span>

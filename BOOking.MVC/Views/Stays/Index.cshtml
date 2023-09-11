@@ -100,7 +100,7 @@
     <!-- HEADER END -->
     <div class="hotel-area pt-150 pb-150">
         <div class="container">
-            <div class="row">
+            <div class="row ">
                 <div class="col-xs-12">
                     <div class="hotel-title">
                         <h3>Search hotel</h3>
@@ -113,31 +113,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                @foreach(var item in hotel)
-                {
-                    <div class="col-md-3 col-sm-6 col-xs-12 box">
-                        <div class="single-course mb-70">
-                            <div class="hotel-img">
-                                <a asp-controller="stays" asp-action="details" asp-route-id="@item.Id">
-                                    <img src="@item.ImageUrl" alt="course">
-                                    <div class="hotel-hover">
-                                        <i class="fa fa-link"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="hotel-content">
-                                <h3><a href="#">@item.Name</a></h3>
-                                <p>@item.ShortDescription</p>
-
-                                <h3>@item.Reviews</h3>
-                                <div><h4>@item.Rate</h4></div>
-                                <a class="default-btn" href="#">read more</a> <h1>@item.Price</h1>
-
-                            </div>
-                        </div>
-                    </div>
-                }
+            <div class="row" id="hotelrow">
+               <partial name="_StaysPartial" model="@hotel"></partial>
                 <div class="row justify-content-center">
                     <input value="@ViewBag.HotelCount" type="hidden" id="hotelCount" />
                     <button class="btn btn-primary" id="loadMore">Load more</button>

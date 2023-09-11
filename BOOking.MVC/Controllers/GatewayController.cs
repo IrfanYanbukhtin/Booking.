@@ -1,4 +1,5 @@
 ﻿using BOOking.DAL.DataContext;
+using BOOking.MVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BOOking.MVC.Controllers
@@ -13,7 +14,15 @@ namespace BOOking.MVC.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            var gateway = _dbContext.Gateways.ToList();
+            
+
+            var model = new GatewayViewModel
+            {
+                Gateways = gateway,
+            };
+
+            return View(model);
         }
     }
 }

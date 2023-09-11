@@ -67,7 +67,13 @@
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+.hotel-area .hotel-content h1 {
+  margin-top: 2rem;
+}
+.hotel-area .hotel-content div h4 {
+  margin: 1rem;
 }
 .hotel-area .hotel-content p {
   font-size: 14px;
