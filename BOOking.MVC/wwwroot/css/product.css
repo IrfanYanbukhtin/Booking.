@@ -10,389 +10,109 @@
   height: 250px;
 }
 
-#Product_search #searchBar {
-  position: absolute;
-  display: flex;
-  gap: 7px;
-  width: 70%;
-  margin: auto;
-  height: 50px;
-  background-color: #febb02;
-  padding: 4px;
-  border-radius: 5px;
-  top: 140px;
-  left: 14%;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+.hotel-area .hotel-form form {
+  position: relative;
+  margin-bottom: 50px;
 }
-#Product_search #searchBar #searchCity {
-  width: 30%;
-  background-color: white;
-  border: 0px solid red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding-left: 6px;
-}
-#Product_search #searchBar #searchCity i {
-  color: #0071c2;
-  font-size: 17px;
-}
-#Product_search #searchBar #searchCity #query {
-  border: none;
-  width: 90%;
-  height: 90%;
-}
-#Product_search #searchBar #searchCity #query ::-moz-placeholder {
-  color: black;
-  font-family: sans-serif;
-  font-size: 15px;
-}
-#Product_search #searchBar #searchCity #query ::placeholder {
-  color: black;
-  font-family: sans-serif;
-  font-size: 15px;
-}
-#Product_search #searchBar #searchCity #query :focus {
-  outline: 0px;
-  border: 0px solid white;
-  font-size: 15px;
-  color: black;
-}
-#Product_search #searchBar #dates {
-  border: 0px solid blue;
-  width: 40%;
-  display: flex;
-  align-items: center;
-  background-color: white;
-  padding: 10px;
-  font-family: sans-serif;
-  font-size: 14px;
-  gap: 10px;
-}
-#Product_search #searchBar #dates p {
-  font-family: sans-serif;
-}
-#Product_search #searchBar #dates #skCheckin {
-  color: black;
-  border: none;
-  width: 30%;
-  font-family: sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-#Product_search #searchBar #dates #skCheckin :focus {
-  outline: 0px;
-}
-#Product_search #searchBar #dates #skCheckout {
-  color: black;
-  border: none;
-  width: 30%;
-  font-family: sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-#Product_search #searchBar #dates #skCheckout :focus {
-  outline: 0px;
-}
-#Product_search #searchBar #skPerson {
-  border: 0px solid black;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 10px;
-  background-color: white;
-  border: none;
-  padding-left: 10px;
-  padding-right: 10px;
-  cursor: pointer;
-  font-family: sans-serif;
-  font-size: 14px;
-}
-#Product_search #searchBar #skPerson i {
-  color: #0071c2;
-}
-#Product_search #searchBar #skPerson:hover {
-  background-color: #f2f2f2;
-}
-#Product_search #searchBar .searchBtn {
-  border: 0px solid black;
-  width: 21%;
-}
-#Product_search #searchBar .searchBtn #searchBtn {
-  height: 100%;
+.hotel-area .hotel-form form input {
   width: 100%;
-  background-color: #0071c2;
-  color: white;
-  border: none;
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  cursor: pointer;
+  border: 1px solid #EBEBEB;
+  background: #F8F8F8;
+  padding: 14px 195px 14px 25px;
 }
-#Product_search #skPersonDiv {
-  border: 0px solid black;
-  width: 20%;
-  margin-top: 50px;
-  margin-left: 800px;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-#Product_search #skPersonDiv #AdultDiv, #Product_search #skPersonDiv #childDiv, #Product_search #skPersonDiv #roomDiv {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-family: sans-serif;
-}
-#Product_search #skPersonDiv #adultsForm, #Product_search #skPersonDiv #childForm, #Product_search #skPersonDiv #roomsForm {
-  border: 0px solid black;
-}
-#Product_search #skPersonDiv #adultsForm .value-button, #Product_search #skPersonDiv #childForm .value-button, #Product_search #skPersonDiv #roomsForm .value-button {
-  display: inline-block;
-  border: 0px solid #ddd;
-  margin: 0px;
-  width: 40px;
-  height: 30px;
-  text-align: center;
-  vertical-align: middle;
-  padding: 11px 0;
-}
-#Product_search #skPersonDiv #adultsForm .value-button:hover, #Product_search #skPersonDiv #childForm .value-button:hover, #Product_search #skPersonDiv #roomsForm .value-button:hover {
-  cursor: pointer;
-}
-#Product_search #skPersonDiv #adultsForm #decreaseAdult, #Product_search #skPersonDiv #adultsForm #decreaseChild, #Product_search #skPersonDiv #adultsForm #decreaseRoom, #Product_search #skPersonDiv #childForm #decreaseAdult, #Product_search #skPersonDiv #childForm #decreaseChild, #Product_search #skPersonDiv #childForm #decreaseRoom, #Product_search #skPersonDiv #roomsForm #decreaseAdult, #Product_search #skPersonDiv #roomsForm #decreaseChild, #Product_search #skPersonDiv #roomsForm #decreaseRoom {
-  border: 2px solid #0071c2;
-  background-color: none;
-}
-#Product_search #skPersonDiv #adultsForm #increaseAdult, #Product_search #skPersonDiv #adultsForm #increaseChild, #Product_search #skPersonDiv #adultsForm #increaseRoom, #Product_search #skPersonDiv #childForm #increaseAdult, #Product_search #skPersonDiv #childForm #increaseChild, #Product_search #skPersonDiv #childForm #increaseRoom, #Product_search #skPersonDiv #roomsForm #increaseAdult, #Product_search #skPersonDiv #roomsForm #increaseChild, #Product_search #skPersonDiv #roomsForm #increaseRoom {
-  border: 2px solid #0071c2;
-}
-#Product_search #skPersonDiv #adultsForm #Adultnumber, #Product_search #skPersonDiv #adultsForm #Childnumber, #Product_search #skPersonDiv #adultsForm #Roomnumber, #Product_search #skPersonDiv #childForm #Adultnumber, #Product_search #skPersonDiv #childForm #Childnumber, #Product_search #skPersonDiv #childForm #Roomnumber, #Product_search #skPersonDiv #roomsForm #Adultnumber, #Product_search #skPersonDiv #roomsForm #Childnumber, #Product_search #skPersonDiv #roomsForm #Roomnumber {
-  text-align: center;
-  border: none;
-  border-top: 0px solid #ddd;
-  border-bottom: 0px solid #ddd;
-  margin: 0px;
-  width: 40px;
-  height: 40px;
-  color: #0071c2;
-  font-weight: bold;
-}
-#Product_search .popup, #Product_search .searchPopUp {
-  text-align: center;
-  transform: scale(0.1);
-  background-color: white;
+.hotel-area .hotel-form form button {
   position: absolute;
-  visibility: hidden;
-  transition: transform 0.2s, top 0.1s;
-  z-index: 5;
-}
-#Product_search .open_popup, #Product_search .openSearch_popup {
-  visibility: visible;
-  transform: scale(1);
-}
-#Product_search #cross {
-  font-size: 15px;
-  cursor: pointer;
-  border: 1px solid #0071c2;
-  font-family: sans-serif;
-  width: 45%;
-  border-radius: 5px;
-  margin-left: 120px;
-}
-#Product_search #cross:hover {
-  background-color: #ddd;
-}
-#Product_search #searchpopupdiv {
-  border: 0px solid black;
-  width: 20%;
-  margin-top: 35px;
-  margin-left: 205px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-#Product_search #searchpopupdiv div {
-  border: 0px solid blue;
-  font-family: sans-serif;
-  text-align: left;
-  height: 90px;
-  align-items: center;
-  cursor: pointer;
-  padding-left: 20px;
-}
-#Product_search #searchpopupdiv div p {
-  color: #6b6b6b;
-  margin-left: 20px;
-}
-#Product_search #searchpopupdiv div:hover {
-  background-color: #ddd;
-}
-#Product_search #searchpopupdiv div #cityicon {
-  display: flex;
-  gap: 10px;
-  height: 50px;
-}
-#Product_search #searchpopupdiv div #cityicon option {
-  font-weight: bold;
-}
-#Product_search #searchpopupdiv div #cityicon i {
-  color: #6b6b6b;
-}
-
-.main {
-  width: 97%;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-  margin: auto;
-  display: flex;
-  margin-bottom: 25px;
-}
-.main .filter {
-  border: 1px solid gray;
-  width: 25%;
-  height: 720px;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-  position: sticky;
+  right: 0;
   top: 0;
-  padding: 10px;
-  margin-right: 15px;
-  margin-top: 5px;
+  background: #febb02;
+  color: #fff;
+  height: 50px;
+  width: 185px;
+  content: "";
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
 }
-.main .filter h3 {
-  color: blue;
+.hotel-area .box {
+  margin-top: 3rem;
 }
-.main .filter h4 {
-  margin: 10px 0px;
+.hotel-area .hotel-title h3 {
+  background: #003580;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+  padding: 16px 93px 16px 27px;
+  display: inline-block;
+  position: relative;
 }
-.main .filter .sort .sort-box {
-  border: 0px;
-  background-color: rgb(38, 80, 197);
-  color: white;
-  font-size: 17px;
-  padding: 10px 20px;
-  border-radius: 15px;
-  margin-bottom: 10px;
+.hotel-area .hotel-title h3::after {
+  background: #fff none repeat scroll 0 0;
+  content: "";
+  height: 85px;
+  position: absolute;
+  right: -26px;
+  top: -17px;
+  transform: rotate(-30deg);
+  width: 45px;
 }
-.main .filter .sort .sort-box:hover {
-  cursor: pointer;
-  border: 0px;
-  background-color: rgb(82, 206, 228);
-  color: black;
+.hotel-area .hotel-content {
+  padding: 22px 30px 25px;
+  text-align: left;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
 }
-.main .filter .sort .sort-box option {
-  display: block;
-  font-size: 20px;
-  color: white;
-  height: 200px;
-  padding: 10px;
-}
-.main .filter .box {
-  width: 20px;
-  height: 20px;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-  margin-right: 10px;
-}
-.main .filter .box:hover {
-  cursor: pointer;
-}
-.main .product {
-  width: 75%;
-  padding: 5px;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-}
-.main .product .product-box {
-  border: 1px solid #78c7ff;
-  border-radius: 10px;
-  height: 260px;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  margin-bottom: 15px;
-  box-shadow: 0px 0px 8px 0px rgb(115, 188, 248);
-}
-.main .product .product-box .image {
-  width: 25%;
-}
-.main .product .product-box .image img {
-  width: 90%;
-}
-.main .product .product-box .mid {
-  width: 50%;
-  padding: 10px;
-}
-.main .product .product-box .mid p {
-  color: rgb(46, 42, 42);
-}
-.main .product .product-box .mid h3 {
-  color: rgb(64, 127, 209);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-.main .product .product-box .mid h3:hover {
-  cursor: pointer;
-  color: rgb(63, 50, 50);
-}
-.main .product .product-box .mid .material-symbols-outlined {
-  color: blueviolet;
-  margin-right: 7px;
-}
-.main .product .product-box .right {
-  width: 20%;
-  text-align: end;
-  padding: 10px;
-}
-.main .product .product-box .right h2 {
-  margin: 0px;
-}
-.main .product .product-box .right p {
-  font-size: 13px;
-  color: gray;
-  margin: 0px;
-  margin-bottom: 1rem;
-}
-.main .product .product-box .right a {
-  background-color: #0071c2;
-  color: white;
-  font-size: 16px;
-  border: 0px;
-  border-radius: 3px;
-  padding: 10px 20px;
+.hotel-area .hotel-content a {
   text-decoration: none;
 }
-.main .product .product-box .right a:hover {
-  background-color: rgb(28, 28, 114);
-  transition: 200ms;
-  transform: scale(1.1);
+.hotel-area .hotel-content h3 {
+  font-size: 22px;
+  color: #303030;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
 }
-.main .product .product-box .right .review {
+.hotel-area .hotel-content p {
+  font-size: 14px;
+  color: #606060;
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 20px;
 }
-.main .product .product-box .right .review h3 {
-  color: rgb(12, 114, 12);
-  margin-top: -12px;
-  margin-right: 60px;
-  font-size: 19px;
+.hotel-area .hotel-content .default-btn {
+  font-size: 14px;
+  padding: 9px 16px;
+  transition: all 0.5s ease 0s;
+  background-color: #febb02;
 }
-.main .product .product-box .right .review div {
-  width: 30px;
-  height: 30px;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 3px 15px 6px 1px;
-  margin-left: 65%;
-  margin-top: -5px;
-  background-color: #02548f;
+.hotel-area .hotel-content .default-btn:hover {
+  background: #2C2B5E;
+  color: #fff;
 }
-.main .product .product-box .right .review div h4 {
-  font-size: 18px;
-  color: white;
+.hotel-area .hotel-img {
+  position: relative;
+}
+.hotel-area .hotel-img img {
+  width: 100%;
+}
+.hotel-area .hotel-img a {
+  text-decoration: none;
+  display: block;
+  line-height: 0;
+  position: relative;
+}
+.hotel-area .hotel-img .hotel-hover {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: "";
+  opacity: 0;
+  transform: translate(-50% -50%);
+  margin: auto;
+  z-index: 1;
+  transition: all 0.5s ease 0s;
 }
 
 #lower_seachbar_container {

@@ -55,18 +55,19 @@ header .header .list-bt .btn span {
   text-align: start;
   width: auto;
 }
-header .header .list-bt .flaq {
-  width: 10px;
-  margin-left: 10px;
+header .header .list-bt .lang {
+  display: flex;
+  justify-content: start;
+  border: 1px solid #febb02;
+  border-radius: 2px;
+  position: relative;
 }
-header .header .list-bt .flaq:hover {
-  background-color: rgba(90, 83, 197, 0.4509803922);
-  border-radius: 5px;
-}
-header .header .list-bt .flaq img {
-  width: 23px;
-  height: 24px;
-  align-items: center;
+header .header .list-bt .lang a {
+  text-decoration: none;
+  color: white;
+  padding: 4px;
+  font-size: 12px;
+  border-right: 1px solid white;
 }
 header .header .list-bt .help {
   margin-top: 2px;

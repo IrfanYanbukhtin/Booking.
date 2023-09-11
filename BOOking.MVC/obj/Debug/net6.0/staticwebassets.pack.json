@@ -545,6 +545,18 @@
       "PackagePath": "staticwebassets\\css\\contact.scss"
     },
     {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\detail.css",
+      "PackagePath": "staticwebassets\\css\\detail.css"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\detail.css.map",
+      "PackagePath": "staticwebassets\\css\\detail.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\detail.scss",
+      "PackagePath": "staticwebassets\\css\\detail.scss"
+    },
+    {
       "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\css\\flights.css",
       "PackagePath": "staticwebassets\\css\\flights.css"
     },

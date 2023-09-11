@@ -1,5 +1,4 @@
 ﻿using BOOking.DAL.DataContext;
-using BOOking.DAL.Entities;
 using BOOking.MVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;

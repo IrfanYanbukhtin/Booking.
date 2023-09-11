@@ -24,8 +24,10 @@
                     <h2><a asp-controller="home" asp-action="index">Booking.com</a></h2>
                 </div>
                 <div class="list-bt d-flex">
-                    <div class="flaq">
-                        <button type="btn" value="button"><img src="~/img/UkFlag.png" alt="chooce your language"></button>
+                    <div data-toggle="tooltip" data-placement="bottom" title="Select your language " class="lang">
+                        <a href="#" class="d-none">AZ</a>
+                        <a href="#">EN</a>
+                        <a href="#">RU</a>
                     </div>
                     <div class="help">
                         <a asp-controller="contact" asp-action="index">

@@ -1,5 +1,4 @@
 ﻿using BOOking.DAL.DataContext;
-using BOOking.DAL.Entities;
 using BOOking.MVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -32,7 +31,7 @@ namespace BOOking.MVC.Controllers
 
             var model = new RentalViewModel
             {
-                CarHires= carhire,
+                CarHires = carhire,
                 AirportWorldWides = AirportWorldWide,
                 AirportInCountries = AirportInCountry,
                 CitiesWorlwides = CitiesWorldwide,

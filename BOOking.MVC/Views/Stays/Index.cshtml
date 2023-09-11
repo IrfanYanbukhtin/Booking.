@@ -53,8 +53,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flaq">
-                        <button data-toggle="tooltip" data-placement="bottom" title="Select your language " type="btn" value="button"><img src="~/img/UkFlag.png" alt="chooce your language"></button>
+                    <div data-toggle="tooltip" data-placement="bottom" title="Select your language " class="lang">
+                        <a href="#" class="d-none">AZ</a>
+                        <a href="#">EN</a>
+                        <a href="#">RU</a>
                     </div>
                     <div class="help">
                         <a asp-controller="contact" asp-action="index">
@@ -90,152 +92,142 @@
     </header>
 
     <!-- HEADER END -->
-    <!-- Search bar  -->
-    <section id="Product_search">
-        <div id="searchBar">
-            <div id="searchCity">
-                <i class="fa-solid fa-bed"></i>
-                <input id="query" type="text" placeholder="Where Are You Going?">
-            </div>
-            <div id="dates">
-                <p>Checkin</p><input id="skCheckin" type="date" name="trip-start" value="2023-09-5" min="2023-08-29" max="2024-03-31">
-                <p>Checkout</p><input id="skCheckout" type="date" name="trip-start" value="2023-09-10" min="2023-09-10" max="2024-03-31">
-            </div>
-            <div id="skPerson">
-                <i class="fa-solid fa-user"></i>
-                <p id="adult"></p><span>Adult</span>
-                <p id="child"></p><span>Child</span>
-                <p id="room"></p><span>Room</span>
-            </div>
-            <div class="searchBtn">
-                <button id="searchBtn">Search</button>
-            </div>
-        </div>
-        <div class="searchPopUp" id="searchpopupdiv">
-            <!-- <p id="closesearch">Close</p> -->
-            <div class="sgnCityBak">
-                <div id="cityicon">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <option id="SearchOptionBaku" value="baku">Baku</option>
-                </div>
-                <p>Azerbaijan</p>
-            </div>
-            <div class="sgnCityDivQab">
-                <div id="cityicon">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <option id="SearchOptionQabala" value="qabala">Qabala</option>
-                </div>
-                <p>Azerbaijan</p>
-            </div>
-            <div class="sgnCityDivQuba">
-                <div id="cityicon">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <option id="SearchOptionQuba" value="quba">Quba</option>
-                </div>
-                <p>Azerbaijan</p>
-            </div>
-            <div class="sgnCityDivShek">
-                <div id="cityicon">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <option id="SearchOptionShek" value="sheki">Sheki</option>
-                </div>
-                <p>Azerbaijan</p>
-            </div>
-        </div>
-        <!-- increse decrese the values of number of persons -->
-        <div class="popup" id="skPersonDiv">
-            <p id="cross">Close</p>
-            <div id="AdultDiv">
-                <p>Adult</p>
-                <form action="" id="adultsForm">
-                    <div class="value-button" id="decreaseAdult" value="Decrease Value"><span id="minus">-</span></div>
-                    <input type="number" id="Adultnumber" value="1" />
-                    <div class="value-button" id="increaseAdult" value="Increase Value"><span id="plus">+</span></div>
-                </form>
-            </div>
-            <div id="childDiv">
-                <p>Child</p>
-                <form action="" id="childForm">
-                    <div class="value-button" id="decreaseChild" value="Decrease Value"><span id="minus">-</span></div>
-                    <input type="number" id="Childnumber" value="0" />
-                    <div class="value-button" id="increaseChild" value="Increase Value"><span id="plus">+</span></div>
-                </form>
-            </div>
-            <div id="roomDiv">
-                <p>Rooms</p>
-                <form action="" id="roomsForm">
-                    <div class="value-button" id="decreaseRoom" value="Decrease Value"><span id="minus">-</span></div>
-                    <input type="number" id="Roomnumber" value="0" />
-                    <div class="value-button" id="increaseRoom" value="Increase Value"><span id="plus">+</span></div>
-                </form>
-            </div>
-
-        </div>
-        </div>
-
-    </section>
-    <!-- SEARCHBOX END -->
-    <!-- ------------product-page----------- -->
-    <div class="main">
-        <div class="filter">
-            <div class="sort">
-                <h3>Sort by:</h3>
-                <select class="sort-box">
-                    <option value="Our Top Picks">Our Top Picks</option>
-                    <option value="P_LTH">Price(Lowest first)</option>
-                    <option value="P_HTL">Price(Highest)</option>
-                    <option value="R_LTH">Rating(Low to High)</option>
-                    <option value="R_HTL">Rating(High to Low)</option>
-                    <option value="D_LTH">Distance(Low to High)</option>
-                </select>
-            </div>
-            <hr>
-            <h3>Filter by:</h3>
-            <hr>
-            <h4>Review</h4>
-            <input class="box" type="checkbox" value="Good"><span>Good</span><br>
-            <input class="box" type="checkbox" value="Very Good"><span>Very Good</span><br>
-            <input class="box" type="checkbox" value="Excellent"><span>Excellent</span><br>
-            <input class="box" type="checkbox" value="Wonderful"><span>Wonderful</span><br>
-            <hr>
-            <h4>Rating</h4>
-            <input class="box" type="checkbox" value="7"><span>Above 7+</span><br>
-            <input class="box" type="checkbox" value="8"><span>Above 8+</span><br>
-            <input class="box" type="checkbox" value="9"><span>Above 9+</span><br>
-            <hr>
-            <h4>Price</h4>
-            <input class="box" type="checkbox" value="4000"><span>Rs.0-Rs.4,000</span><br>
-            <input class="box" type="checkbox" value="8000"><span>Rs.4,000-Rs.8,000</span><br>
-            <input class="box" type="checkbox" value="8001"><span>Rs.8,000-Rs.10,000</span><br>
-            <input class="box" type="checkbox" value="10000"><span>Rs.10,000+</span><br>
-        </div>
-        <div class="product col-md-6">
-            <div class="product-box ">
-                <div class="image">
-                    <img src="https://cf.bstatic.com/xdata/images/hotel/square200/437739842.webp?k=1fb9ad5d5f6369a8c100f1637b29859ec95fc1c08b8c3339e2ad21fd6048c5aa&o=" alt="">
-                </div>
-                <div class="mid">
-                    <h3> Ariva Center Hotel </h3>
-                    <p>
-                        <span class="material-symbols-outlined">
-                            my_location
-                        </span>2.4 km from centre
-                    </p>
-                    <p>Featuring 3-star accommodation, Ariva Center Hotel is located in Baku, 1.8 km from Freedom Square and 3.6 km from Baku Railway Station. This 3-star hotel offers a tour desk and luggage storage space. The accommodation provides a 24-hour front desk, airport transfers, room service and free WiFi throughout the property.</p>
-                </div>
-                <div class="right">
-                    <div class="review">
-                        <h3>Good</h3>
-                        <div><h4>7.2</h4></div>
+    <div class="hotel-area pt-150 pb-150">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="hotel-title">
+                        <h3>Search hotel</h3>
                     </div>
-                    <p>3 nights, 2 adults</p>
-                    <h2>AZN 80</h2>
-                    <p>+AZN 30 taxes and charges</p>
-                    <a href="">See availablility</a>
+                    <div class="hotel-form">
+                        <form id="search" action="#">
+                            <input type="search" placeholder="Search..." name="search" />
+                            <button type="submit">search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12 box">
+                    <div class="single-course mb-70">
+                        <div class="hotel-img">
+                            <a href="#">
+                                <img src="~/img/appart.jpeg" alt="course">
+                                <div class="hotel-hover">
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hotel-content">
+                            <h3><a href="#">Buta Hotel</a></h3>
+                            <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
+
+                            <h3>Good</h3>
+                            <div><h4>7.2</h4></div>
+                            <a class="default-btn" href="#">read more</a> <h1>PRICE</h1>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 box">
+                    <div class="single-course mb-70">
+                        <div class="hotel-img">
+                            <a href="#">
+                                <img src="~/img/appart.jpeg" alt="course">
+                                <div class="hotel-hover">
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hotel-content">
+                            <h3><a href="#">flametowers</a></h3>
+                            <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
+
+                            <h3>Good</h3>
+                            <div><h4>7.2</h4></div>
+                            <a class="default-btn" href="#">read more</a><h1>PRICE</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 box">
+                    <div class="single-course mb-70">
+                        <div class="hotel-img">
+                            <a href="#">
+                                <img src="~/img/appart.jpeg" alt="course">
+                                <div class="hotel-hover">
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hotel-content">
+                            <h3><a href="#">hotelBAnm</a></h3>
+                            <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
+
+                            <h3>Good</h3>
+                            <div><h4>7.2</h4></div>
+                            <a class="default-btn" href="#">read more</a><h1>PRICE</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 box">
+                    <div class="single-course mb-70">
+                        <div class="hotel-img">
+                            <a href="#">
+                                <img src="~/img/appart.jpeg" alt="course">
+                                <div class="hotel-hover">
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hotel-content">
+                            <h3><a href="#">ASDAS</a></h3>
+                            <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
+                            <h3>Good</h3>
+                            <div><h4>7.2</h4></div>
+                            <a class="default-btn" href="#">read more</a> <h1>PRICE</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 box">
+                    <div class="single-course mb-70">
+                        <div class="hotel-img">
+                            <a href="#">
+                                <img src="~/img/appart.jpeg" alt="course">
+                                <div class="hotel-hover">
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hotel-content">
+                            <h3><a href="#">digital marketing</a></h3>
+                            <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
+                            <h3>Good</h3>
+                            <div><h4>7.2</h4></div>
+                            <a class="default-btn" href="#">read more</a><h1>PRICE</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 box">
+                    <div class="single-course mb-70">
+                        <div class="hotel-img">
+                            <a href="#">
+                                <img src="~/img/appart.jpeg" alt="course">
+                                <div class="hotel-hover">
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hotel-content">
+                            <h3><a href="#">html5 &amp; css3</a></h3>
+                            <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
+                            <h3>Good</h3>
+                            <div><h4>7.2</h4></div>
+                            <a class="default-btn" href="#">read more</a><h1>PRICE</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
 

@@ -44,7 +44,7 @@ namespace BOOking.MVC.Data
                 return;
             }
 
-            var user = new AppUser
+            var Admin = new AppUser
             {
                 UserName = "Admin",
                 Fullname = "Admin",
@@ -52,9 +52,9 @@ namespace BOOking.MVC.Data
                 EmailConfirmed = true,
             };
 
-            var result = await _userManager.CreateAsync(user, "18071998");
+            var result = await _userManager.CreateAsync(Admin, "18071998");
 
-            result = await _userManager.AddToRoleAsync(user, RoleConstants.AdminRole);
+            result = await _userManager.AddToRoleAsync(Admin, RoleConstants.AdminRole);
         }
     }
 }

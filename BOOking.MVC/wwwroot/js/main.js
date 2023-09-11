@@ -544,7 +544,23 @@ cate3.addEventListener("click", function(){
   cate2.style.border = "none";
 });
 
+// Change language
+let langs = document.querySelectorAll('.nav-bar .lang a')
 
+for(let lang of langs) {
+    lang.onclick = function(e) {
+        e.preventDefault()
+        
+        for(let lang of langs) {
+            this.classList.add('d-none')
+            lang.classList.remove('d-none')
+
+            if(lang.innerHTML == 'RU') {
+                this.classList.add('d-none')
+            }
+        }
+    }
+}
 
 
 

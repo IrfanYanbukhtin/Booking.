@@ -14,11 +14,11 @@ namespace BOOking.MVC.Controllers
         }
         public IActionResult Index()
         {
-            
+
 
             var model = new AttractionViewModel
             {
-              
+
             };
 
             return View(model);
