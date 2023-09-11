@@ -1,6 +1,12 @@
-﻿
+﻿@using BOOking.DAL.Entities;
+
 @{
+    StaysViewModel model = Model;
+    var hotel = model.Hotels;
+    var explore = model.Explores;
+
     Layout = null;
+    
 }
 
 <!DOCTYPE html>
@@ -54,8 +60,8 @@
                         </div>
                     </div>
                     <div data-toggle="tooltip" data-placement="bottom" title="Select your language " class="lang">
-                        <a href="#" class="d-none">AZ</a>
-                        <a href="#">EN</a>
+                        <a href="#" class="d-none">EN</a>
+                        <a href="#">AZ</a>
                         <a href="#">RU</a>
                     </div>
                     <div class="help">
@@ -108,123 +114,33 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-12 box">
-                    <div class="single-course mb-70">
-                        <div class="hotel-img">
-                            <a href="#">
-                                <img src="~/img/appart.jpeg" alt="course">
-                                <div class="hotel-hover">
-                                    <i class="fa fa-link"></i>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="hotel-content">
-                            <h3><a href="#">Buta Hotel</a></h3>
-                            <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
+                @foreach(var item in hotel)
+                {
+                    <div class="col-md-3 col-sm-6 col-xs-12 box">
+                        <div class="single-course mb-70">
+                            <div class="hotel-img">
+                                <a asp-controller="stays" asp-action="details" asp-route-id="@item.Id">
+                                    <img src="@item.ImageUrl" alt="course">
+                                    <div class="hotel-hover">
+                                        <i class="fa fa-link"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hotel-content">
+                                <h3><a href="#">@item.Name</a></h3>
+                                <p>@item.ShortDescription</p>
 
-                            <h3>Good</h3>
-                            <div><h4>7.2</h4></div>
-                            <a class="default-btn" href="#">read more</a> <h1>PRICE</h1>
+                                <h3>@item.Reviews</h3>
+                                <div><h4>@item.Rate</h4></div>
+                                <a class="default-btn" href="#">read more</a> <h1>@item.Price</h1>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 box">
-                    <div class="single-course mb-70">
-                        <div class="hotel-img">
-                            <a href="#">
-                                <img src="~/img/appart.jpeg" alt="course">
-                                <div class="hotel-hover">
-                                    <i class="fa fa-link"></i>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="hotel-content">
-                            <h3><a href="#">flametowers</a></h3>
-                            <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
-
-                            <h3>Good</h3>
-                            <div><h4>7.2</h4></div>
-                            <a class="default-btn" href="#">read more</a><h1>PRICE</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 box">
-                    <div class="single-course mb-70">
-                        <div class="hotel-img">
-                            <a href="#">
-                                <img src="~/img/appart.jpeg" alt="course">
-                                <div class="hotel-hover">
-                                    <i class="fa fa-link"></i>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="hotel-content">
-                            <h3><a href="#">hotelBAnm</a></h3>
-                            <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
-
-                            <h3>Good</h3>
-                            <div><h4>7.2</h4></div>
-                            <a class="default-btn" href="#">read more</a><h1>PRICE</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 box">
-                    <div class="single-course mb-70">
-                        <div class="hotel-img">
-                            <a href="#">
-                                <img src="~/img/appart.jpeg" alt="course">
-                                <div class="hotel-hover">
-                                    <i class="fa fa-link"></i>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="hotel-content">
-                            <h3><a href="#">ASDAS</a></h3>
-                            <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
-                            <h3>Good</h3>
-                            <div><h4>7.2</h4></div>
-                            <a class="default-btn" href="#">read more</a> <h1>PRICE</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 box">
-                    <div class="single-course mb-70">
-                        <div class="hotel-img">
-                            <a href="#">
-                                <img src="~/img/appart.jpeg" alt="course">
-                                <div class="hotel-hover">
-                                    <i class="fa fa-link"></i>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="hotel-content">
-                            <h3><a href="#">digital marketing</a></h3>
-                            <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
-                            <h3>Good</h3>
-                            <div><h4>7.2</h4></div>
-                            <a class="default-btn" href="#">read more</a><h1>PRICE</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 box">
-                    <div class="single-course mb-70">
-                        <div class="hotel-img">
-                            <a href="#">
-                                <img src="~/img/appart.jpeg" alt="course">
-                                <div class="hotel-hover">
-                                    <i class="fa fa-link"></i>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="hotel-content">
-                            <h3><a href="#">html5 &amp; css3</a></h3>
-                            <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
-                            <h3>Good</h3>
-                            <div><h4>7.2</h4></div>
-                            <a class="default-btn" href="#">read more</a><h1>PRICE</h1>
-                        </div>
-                    </div>
+                }
+                <div class="row justify-content-center">
+                    <input value="@ViewBag.HotelCount" type="hidden" id="hotelCount" />
+                    <button class="btn btn-primary" id="loadMore">Load more</button>
                 </div>
             </div>
         </div>

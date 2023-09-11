@@ -37,6 +37,10 @@
 }
 .hotel-area .box {
   margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.hotel-area .box:hover {
+  border: 1px solid #febb02;
 }
 .hotel-area .hotel-title h3 {
   background: #003580;
@@ -48,16 +52,6 @@
   padding: 16px 93px 16px 27px;
   display: inline-block;
   position: relative;
-}
-.hotel-area .hotel-title h3::after {
-  background: #fff none repeat scroll 0 0;
-  content: "";
-  height: 85px;
-  position: absolute;
-  right: -26px;
-  top: -17px;
-  transform: rotate(-30deg);
-  width: 45px;
 }
 .hotel-area .hotel-content {
   padding: 22px 30px 25px;

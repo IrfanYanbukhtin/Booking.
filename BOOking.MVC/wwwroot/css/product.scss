@@ -43,6 +43,11 @@
     } 
     .box{
         margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        &:hover{
+            border: 1px solid #febb02;
+        }
     }
     .hotel-title{
         h3{
@@ -56,16 +61,7 @@
             display: inline-block;
             position: relative;
 
-            &::after {
-                background: #fff none repeat scroll 0 0;
-                content: "";
-                height: 85px;
-                position: absolute;
-                right: -26px;
-                top: -17px;
-                transform: rotate(-30deg);
-                width: 45px;
-            }
+            
         }
     }
     .hotel-content{
