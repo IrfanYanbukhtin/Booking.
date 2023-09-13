@@ -1,4 +1,11 @@
-﻿<!-- Back ground image and heading -->
+﻿@using BOOking.DAL.Entities;
+@using BOOking.MVC.Models;
+@{
+    GatewayViewModel model = Model;
+    var gateway = model.Gateways;
+}
+
+<!-- Back ground image and heading -->
 <div id="Gateway_backimage">
     <div id="backimage">
         <div>
@@ -11,234 +18,36 @@
 
 
 
-<!-- SEARCHBOX START -->
-<!-- Search bar  -->
-<section id="Gateway_search">
 
-    <div id="searchBar">
-        <div id="searchCity">
-            <i class="fa-solid fa-bed"></i>
-            <input id="query" type="text" placeholder="Where Are You Going?">
-        </div>
-        <div id="dates">
-            <p>Checkin</p><input id="skCheckin" type="date" name="trip-start" value="2023-09-5" min="2023-08-29" max="2024-03-31">
-            <p>Checkout</p><input id="skCheckout" type="date" name="trip-start" value="2023-09-10" min="2023-09-10" max="2024-03-31">
-        </div>
-        <div id="skPerson">
-            <i class="fa-solid fa-user"></i>
-            <p id="adult"></p><span>Adult</span>
-            <p id="child"></p><span>Child</span>
-            <p id="room"></p><span>Room</span>
-        </div>
-        <div class="searchBtn">
-            <button id="searchBtn">Search</button>
-        </div>
-    </div>
-    <div class="searchPopUp" id="searchpopupdiv">
-        <!-- <p id="closesearch">Close</p> -->
-        <div class="sgnCityBak">
-            <div id="cityicon">
-                <i class="fa-solid fa-location-dot"></i>
-                <option id="SearchOptionBaku" value="baku">Baku</option>
-            </div>
-            <p>Azerbaijan</p>
-        </div>
-        <div class="sgnCityDivQab">
-            <div id="cityicon">
-                <i class="fa-solid fa-location-dot"></i>
-                <option id="SearchOptionQabala" value="qabala">Qabala</option>
-            </div>
-            <p>Azerbaijan</p>
-        </div>
-        <div class="sgnCityDivQuba">
-            <div id="cityicon">
-                <i class="fa-solid fa-location-dot"></i>
-                <option id="SearchOptionQuba" value="quba">Quba</option>
-            </div>
-            <p>Azerbaijan</p>
-        </div>
-        <div class="sgnCityDivShek">
-            <div id="cityicon">
-                <i class="fa-solid fa-location-dot"></i>
-                <option id="SearchOptionShek" value="sheki">Sheki</option>
-            </div>
-            <p>Azerbaijan</p>
-        </div>
-    </div>
-    <!-- increse decrese the values of number of persons -->
-    <div class="popup" id="skPersonDiv">
-        <p id="cross">Close</p>
-        <div id="AdultDiv">
-            <p>Adult</p>
-            <form action="" id="adultsForm">
-                <div class="value-button" id="decreaseAdult" value="Decrease Value"><span id="minus">-</span></div>
-                <input type="number" id="Adultnumber" value="1" />
-                <div class="value-button" id="increaseAdult" value="Increase Value"><span id="plus">+</span></div>
-            </form>
-        </div>
-        <div id="childDiv">
-            <p>Child</p>
-            <form action="" id="childForm">
-                <div class="value-button" id="decreaseChild" value="Decrease Value"><span id="minus">-</span></div>
-                <input type="number" id="Childnumber" value="0" />
-                <div class="value-button" id="increaseChild" value="Increase Value"><span id="plus">+</span></div>
-            </form>
-        </div>
-        <div id="roomDiv">
-            <p>Rooms</p>
-            <form action="" id="roomsForm">
-                <div class="value-button" id="decreaseRoom" value="Decrease Value"><span id="minus">-</span></div>
-                <input type="number" id="Roomnumber" value="0" />
-                <div class="value-button" id="increaseRoom" value="Increase Value"><span id="plus">+</span></div>
-            </form>
-        </div>
-
-    </div>
-    </div>
-
-</section>
-
-<!-- SEARCHBOX END -->
 
 <section id="gateway">
 
     <div class="course-area pt-150 pb-150">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="course-img">
-                            <a href="/product.html">
-                                <img src="https://cf.bstatic.com/xdata/images/city/640x640/654659.webp?k=9c4ac59d35869485631346dc1ee16d28e82ec5f79654bf56b4b4eaeef3388299&o=" alt="course">
-                            </a>
-                        </div>
-                        <div class="course-content">
+            <div class="row" id="gatewayRow">
+                @foreach(var item in gateway)
+                {
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="single-course mb-70">
+                            <div class="course-img">
+                                <a asp-controller="home" asp-action="index">
+                                    <img src="@item.ImageUrl" alt="course">
+                                </a>
+                            </div>
+                            <div class="course-content">
 
-                            <p><span class="green">Getaway Deal</span> start from <span class="green_price">AZN 33</span></p>
-                            <a class="default-btn" href="/product.html">View deals</a>
+                                <p><span class="green">Getaway Deal</span> start from <span class="green_price">@item.Price</span></p>
+                                <a class="default-btn" href="/product.html">View deals</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="course-img">
-                            <a href="/product.html">
-                                <img src="https://cf.bstatic.com/xdata/images/city/640x640/691464.webp?k=9d065dc574012a9e15ef4f2fe25dc035d69f7061ad2c77d54eddb3dbbde8d6d3&o=" alt="course">
+                }
+               
+            </div>
 
-                            </a>
-                        </div>
-                        <div class="course-content">
-
-                            <p><span class="green">Getaway Deal</span> start from <span class="green_price">AZN 29</span></p>
-                            <a class="default-btn" href="/product.html">View deals</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="course-img">
-                            <a href="/product.html">
-                                <img src="https://cf.bstatic.com/xdata/images/city/640x640/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&o=" alt="course">
-
-                            </a>
-                        </div>
-                        <div class="course-content">
-
-                            <p><span class="green">Getaway Deal</span> start from <span class="green_price">AZN 12</span></p>
-                            <a class="default-btn" href="/product.html">View deals</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="course-img">
-                            <a href="/product.html">
-                                <img src="https://cf.bstatic.com/xdata/images/city/640x640/691621.webp?k=c42cfe573c89d884b935ea9b3936e0aa985622df29d7608c9b4a8cd2ec403c5c&o=" alt="course">
-
-                            </a>
-                        </div>
-                        <div class="course-content">
-
-                            <p><span class="green">Getaway Deal</span> start from <span class="green_price">AZN 28</span></p>
-                            <a class="default-btn" href="/product.html">View deals</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="course-img">
-                            <a href="/product.html">
-                                <img src="https://cf.bstatic.com/xdata/images/city/640x640/654502.webp?k=59e22b717abdc899512441630bb0b844d39240c521d882e8debf1418636ee3fd&o=" alt="course">
-
-                            </a>
-                        </div>
-                        <div class="course-content">
-
-                            <p><span class="green">Getaway Deal</span> start from <span class="green_price">AZN 59</span></p>
-                            <a class="default-btn" href="/product.html">View deals</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="course-img">
-                            <a href="/product.html">
-                                <img src="https://cf.bstatic.com/xdata/images/city/640x640/691068.webp?k=612f346134e1f9d25d74c1e0842cd90084f3f6cde308a996172b8be2bf7bb712&o=" alt="course">
-
-                            </a>
-                        </div>
-                        <div class="course-content">
-
-                            <p><span class="green">Getaway Deal</span> start from <span class="green_price">AZN 6</span></p>
-                            <a class="default-btn" href="/product.html">View deals</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-course">
-                        <div class="course-img">
-                            <a href="/product.html">
-                                <img src="https://cf.bstatic.com/xdata/images/city/640x640/654763.webp?k=1e195d514be6a824d1427778ad3089dd31e6b986f6e8499c4192cf07715fd3b4&o=" alt="course">
-
-                            </a>
-                        </div>
-                        <div class="course-content">
-
-                            <p><span class="green">Getaway Deal</span> start from <span class="green_price">AZN 118</span></p>
-                            <a class="default-btn" href="/product.html">View deals</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-course">
-                        <div class="course-img">
-                            <a href="/product.html">
-                                <img src="https://cf.bstatic.com/xdata/images/city/640x640/972774.webp?k=ce514cc7edcd6f20d5223676bdaa0ef3f95f6a3b5befcb4934107feaedf8132e&o=" alt="course">
-
-                            </a>
-                        </div>
-                        <div class="course-content">
-
-                            <p><span class="green">Getaway Deal</span> start from <span class="green_price">AZN 55</span></p>
-                            <a class="default-btn" href="/product.html">View deals</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 hidden-sm col-xs-12">
-                    <div class="single-course">
-                        <div class="course-img">
-                            <a href="/product.html">
-                                <img src="https://cf.bstatic.com/xdata/images/city/640x640/654590.webp?k=c564e1c46a0b6cde3d14d69e01ca8d0152d0f4e68a815888a2f775e6e4a8c38e&o=" alt="course">
-
-                            </a>
-                        </div>
-                        <div class="course-content">
-
-                            <p><span class="green">Getaway Deal</span> start from <span class="green_price">AZN 73</span></p>
-                            <a class="default-btn" href="/product.html">View deals</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="row justify-content-center">
+                <input value="@ViewBag.GatewayCount" type="hidden" id="gatewayCount" />
+                <button class="btn btn-primary" id="loadGateway">Load more</button>
             </div>
         </div>
     </div>
