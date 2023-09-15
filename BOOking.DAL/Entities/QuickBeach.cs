@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BOOking.DAL.Entities
 {
-    public class TrendingDestinations : TimeStample
+    public class QuickBeach : TimeStample
     {
-        public string Country { get; set; }
-        public string Flag { get; set; }
+        public string Title { get; set; }
         public string ImageUrl { get; set; }
-        public string? PageUrl { get; set; }
+        public string Location { get; set; }
+        public string PageUrl { get; set; }
     }
 }

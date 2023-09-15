@@ -1,4 +1,6 @@
 ﻿using BOOking.DAL.DataContext;
+using BOOking.DAL.Entities;
+using BOOking.MVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BOOking.MVC.Controllers
@@ -16,7 +18,12 @@ namespace BOOking.MVC.Controllers
         {
             var samaxiHotel = _dbContext.SamaxiHotels.ToList();
 
-            return View(samaxiHotel);
+            var model = new SamaxiViewModel
+            {
+                SamaxiHotels = samaxiHotel,
+            };
+
+            return View(model);
         }
 
         public IActionResult Details(int? id)

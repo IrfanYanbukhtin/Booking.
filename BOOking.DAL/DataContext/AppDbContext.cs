@@ -43,5 +43,14 @@ namespace BOOking.DAL.DataContext
         public DbSet<SamaxiHotel> SamaxiHotels { get; set; }
         public DbSet<ShahdagHotel> ShahdagHotels { get; set; }
         public DbSet<BakuHotel> BakuHotels { get; set; }
+        public DbSet<QaxHotel> QaxHotels { get; set; }
+        public DbSet<QusarHotel> QusarHotels { get; set; }
+        public DbSet<TrendingDestination> TrendingDestinations { get; set; }
+        public DbSet<Browse> Browses { get; set; }
+        public DbSet<QuickCity> QuickCities { get; set; }
+        public DbSet<QuickRomance> QuickRomances { get; set;}
+        public DbSet<QuickBeach> quickBeaches { get; set; }
+        public DbSet<QuickOutdoors> quickOutdoors { get; set;}
+        public DbSet<QuickRelax> QuickRelaxes { get; set; }
     }
 }

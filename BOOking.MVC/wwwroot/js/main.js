@@ -249,7 +249,7 @@ document.querySelector("#rtbrarrow").onclick = () => {
     return;
   }
   count2++;
-  let val = count2 * 395;
+  let val = count2 * 390;
   document.querySelector("#browse_container").style.transform = `translateX(-${val}px)`;
 };
 

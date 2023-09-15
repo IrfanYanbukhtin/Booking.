@@ -4,6 +4,6 @@ namespace BOOking.MVC.Models
 {
     public class GabalaViewModel
     {
-        public List<GabalaHotel> GabalaHotels { get; set; }
+        public List<GabalaHotel> GabalaHotels = new List<GabalaHotel>();
     }
 }

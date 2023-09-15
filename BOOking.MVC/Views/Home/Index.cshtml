@@ -4,7 +4,15 @@
     HomeViewModel model = Model;
     var staysBackImage = model.StaysBackImages;
     var explore = model.Explores;
-  
+    var trending = model.TrendingDestinations;
+    var browse = model.Browses;
+    var quickCity = model.QuickCities;
+    var quickRomance = model.QuickRomances;
+    var quickBeach = model.QuickBeaches;
+    var quickOutdoors = model.QuickOutdoors;
+    var quickRelaxes = model.QuickRelaxes;
+    var bakuHotel = model.BakuHotels;
+
 }
 
  <!-- Back ground image and heading -->
@@ -150,16 +158,20 @@
 </div>
 
 <section id="trend">
-    <div id="collage1">
-        <div id="collage_img1"><a asp-controller="baku" asp-action="index"><p class="collage_heading">Baku<img src="https://w7.pngwing.com/pngs/478/548/png-transparent-flag-of-azerbaijan-azerbaijanis-flag-of-azerbaijan-flag-sphere-republic.png" alt=""></p></a></div>
-        <div id="collage_img2"><a asp-controller="gabala" asp-action="index"><p class="collage_heading">GABALA <img src="https://w7.pngwing.com/pngs/478/548/png-transparent-flag-of-azerbaijan-azerbaijanis-flag-of-azerbaijan-flag-sphere-republic.png" alt=""></p></a></div>
-    </div>
+    @foreach(var item in trending)
+    {
+        <div id="collage1">
+            <div id="collage_img1"><a asp-controller="baku" asp-action="index"><p class="collage_heading">Baku<img src="@item.ImageUrl" alt=""></p></a></div>
+            <div id="collage_img2"><a asp-controller="gabala" asp-action="index"><p class="collage_heading">GABALA <img src="@item.ImageUrl" alt=""></p></a></div>
+        </div>
 
-    <div id="collage2">
-        <div id="collage2_img1"><a asp-controller="sheki" asp-action="index"><p class="collage_heading">Sheki <img src="https://w7.pngwing.com/pngs/478/548/png-transparent-flag-of-azerbaijan-azerbaijanis-flag-of-azerbaijan-flag-sphere-republic.png" alt=""></p></a></div>
-        <div id="collage2_img2"><a asp-controller="samaxi" asp-action="index"><p class="collage_heading">Samaxi <img src="https://w7.pngwing.com/pngs/478/548/png-transparent-flag-of-azerbaijan-azerbaijanis-flag-of-azerbaijan-flag-sphere-republic.png" alt=""></p></a></div>
-        <div id="collage2_img3"><a asp-controller="shahdag" asp-action="index"><p class="collage_heading">Shahdaq <img src="https://w7.pngwing.com/pngs/478/548/png-transparent-flag-of-azerbaijan-azerbaijanis-flag-of-azerbaijan-flag-sphere-republic.png" alt=""></p></a></div>
-    </div>
+        <div id="collage2">
+            <div id="collage2_img1"><a asp-controller="sheki" asp-action="index"><p class="collage_heading">Sheki <img src="@item.ImageUrl" alt=""></p></a></div>
+            <div id="collage2_img2"><a asp-controller="samaxi" asp-action="index"><p class="collage_heading">Samaxi <img src="@item.ImageUrl" alt=""></p></a></div>
+            <div id="collage2_img3"><a asp-controller="shahdag" asp-action="index"><p class="collage_heading">Shahdaq <img src="@item.ImageUrl" alt=""></p></a></div>
+        </div>
+    }
+    
 </section>
 
 <!-- TREND END -->
@@ -195,73 +207,15 @@
 
 <section id="browse_carousel">
     <div id="browse_container">
-        <div class="browse_img_card">
-            <a href="">
-                <img src="https://r-xx.bstatic.com/xdata/images/xphoto/263x210/57584488.jpeg?k=d8d4706fc72ee789d870eb6b05c0e546fd4ad85d72a3af3e30fb80ca72f0ba57&o="><p class="browse_heading">Hotels</p><p class="browse_desc">
-                    30 Aug-2 Sept, 2 adults
-                    196 available
-                </p>
-            </a>
-        </div>
-        <div class="browse_img_card">
-            <a href="">
-                <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/119467716.jpeg?k=f3c2c6271ab71513e044e48dfde378fcd6bb80cb893e39b9b78b33a60c0131c9&o="><p class="browse_heading">Apartments</p><p class="browse_desc">
-                    30 Aug-2 Sept, 2 adults
-                    161 available
-                </p>
-            </a>
-        </div>
-        <div class="browse_img_card">
-            <a href="">
-                <img src="https://r-xx.bstatic.com/xdata/images/xphoto/263x210/45450084.jpeg?k=f8c2954e867a1dd4b479909c49528531dcfb676d8fbc0d60f51d7b51bb32d1d9&o="><p class="browse_heading">Resorts</p><p class="browse_desc">
-                    30 Aug-2 Sept, 2 adults
-                    7 available
-                </p>
-            </a>
-        </div>
-        <div class="browse_img_card">
-            <a href="">
-                <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/100235855.jpeg?k=5b6e6cff16cfd290e953768d63ee15f633b56348238a705c45759aa3a81ba82b&o="><p class="browse_heading">Villas</p><p class="browse_desc">
-                    30 Aug-2 Sept, 2 adults
-                    5 available
-                </p>
-            </a>
-        </div>
-        <div class="browse_img_card">
-            <a href="">
-                <img src="https://r-xx.bstatic.com/xdata/images/xphoto/263x210/45450113.jpeg?k=76b3780a0e4aacb9d02ac3569b05b3c5e85e0fd875287e9ac334e3b569f320c7&o="><p class="browse_heading">Holiday homes</p><p class="browse_desc">
-                    30 Aug-2 Sept, 2 adults
-                    4 available
-                </p>
-            </a>
-        </div>
-        <div class="browse_img_card">
-            <a href="">
-                <img src="https://q-xx.bstatic.com/xdata/images/xphoto/263x210/45450073.jpeg?k=795a94c30433de1858ea52375e8190a962b302376be2e68aa08be345d936557d&o="><p class="browse_heading">Guest houses</p><p class="browse_desc">
-                    30 Aug-2 Sept, 2 adults
-                    3 available
-                </p>
-            </a>
-        </div>
-        <div class="browse_img_card">
-            <a href="">
-                <img src="https://q-xx.bstatic.com/xdata/images/xphoto/263x210/45450082.jpeg?k=beb101b827a729065964523184f4db6cac42900c2415d71d516999af40beb7aa&o="><p class="browse_heading">Hostels</p><p class="browse_desc">
-                    30 Aug-2 Sept, 2 adults
-                    16 available
-                </p>
-            </a>
-        </div>
-        <div class="browse_img_card">
-            <a href="">
-                <img src="https://q-xx.bstatic.com/xdata/images/xphoto/263x210/45450056.jpeg?k=251e2507d43a24a4c58bb961b8d157147d56efbf91b49f9606bc768c58f581e4&o="><p class="browse_heading">B&Bs</p><p class="browse_desc">
-                    30 Aug-2 Sept, 2 adults
-                    2 available
-                </p>
-            </a>
-        </div>
-        <div class="browse_img_card"><a href=""><img src="https://r-xx.bstatic.com/xdata/images/xphoto/263x210/45450066.jpeg?k=4adfab312f5d26da9f81da48d8c95ca8f108215b2c84085590891a9e0e17b144&o="><p class="browse_heading">Homestays</p><p class="browse_desc">Unavailable for your dates</p></a></div>
-        <div class="browse_img_card"><a href=""><img src="https://r-xx.bstatic.com/xdata/images/xphoto/263x210/45450103.jpeg?k=a1fa72362160b1df6e288050afa7ce1aade80871acd368ddd4a4ebf6ad87764e&o="><p class="browse_heading">Country houses</p><p class="browse_desc">Unavailable for your dates</p></a></div>
-        <div class="browse_img_card"><a href=""><img src="https://q-xx.bstatic.com/xdata/images/xphoto/263x210/45450095.jpeg?k=cd5e46e632dab722d22217813485efde31fbe82f5f26a624166edccdbe8187bc&o="><p class="browse_heading">Boats</p><p class="browse_desc">Unavailable for your dates</p></a></div>
+        @foreach(var item in browse)
+        {
+            <div class="browse_img_card">
+                <a href="">
+                    <img src="@item.ImageUrl"><p class="browse_heading">@item.Title</p>
+                </a>
+            </div>
+        }
+       
     </div>
     <i class="fa-solid fa-angle-left" id="ltbrarrow"></i>
     <i class="fa-solid fa-angle-right" id="rtbrarrow"></i>
@@ -287,26 +241,41 @@
     <div id="Travel">
         <div id="Travel_container">
             <div id="city">
-                <div class="Travel_carousel_card"><a href=""><img src="https://cf.bstatic.com/xdata/images/xphoto/800x640/140050975.jpg?k=199651add50b8eada9c51b9f5bde5b2a85d676fda6298c5f5455c99ffea23aad&o="><p class="travel_heading">Peledo, Itlay</p><p class="travel_desc">4.1 Km away</p></a></div>
-                <div class="Travel_carousel_card"><a href=""><img src="https://cf.bstatic.com/xdata/images/xphoto/800x640/140041661.jpg?k=ed8dab08e2b8e53b7914dba9284ff048bd4a0eca7b683c6a0abffbe1cb3b0cc2&o="><p class="travel_heading">Tanaunella, Itlay</p><p class="travel_desc">4.1 Km away</p></a></div>
+                @foreach(var item in quickCity)
+                {
+                    <div class="Travel_carousel_card"><a asp-controller="@item.PageUrl" asp-action="index"><img src="@item.ImageUrl"><p class="travel_heading">@item.Title</p><p class="travel_desc">@item.Location</p></a></div>
+                }
+              
             </div>
 
             <div id="romance">
-                <div class="Travel_carousel_card"><a href=""><img src="https://cf.bstatic.com/xdata/images/xphoto/800x640/140045010.jpg?k=add40a1b3d2b9b5f42006114c5f9a195e371490f46339ee65b02520e7eb8a7dc&o="><p class="travel_heading">Stari Grad, Crotia</p><p class="travel_desc">4.1 Km away</p></a></div>
-                <div class="Travel_carousel_card"><a href=""><img src="https://cf.bstatic.com/xdata/images/xphoto/800x640/140025854.jpg?k=8f9aacfe8aa4252145b708d404730de171eec7b809fa76fe5b35c6d958465823&o="><p class="travel_heading">Saint_martin-de-Bromes, France</p><p class="travel_desc">4.1 Km away</p></a></div>
+                @foreach(var item in quickRomance)
+                {
+                    <div class="Travel_carousel_card"><a asp-controller="@item.PageUrl" asp-action="index"><img src="@item.ImageUrl"><p class="travel_heading">@item.Title</p><p class="travel_desc">@item.Location</p></a></div>
+                }
+
             </div>
 
             <div id="beach">
-                <div class="Travel_carousel_card"><a href=""><img src="https://cf.bstatic.com/xdata/images/xphoto/800x640/140042637.jpg?k=7f0d1450879be276d9f6dc22c87b18d53adfa2d07aa989d399fdf959ed36f6f6&o="><p class="travel_heading">Partinico, Itlay</p><p class="travel_desc">4.1 Km away </p></a></div>
-                <div class="Travel_carousel_card"><a href=""><img src="https://cf.bstatic.com/xdata/images/xphoto/800x640/140044693.jpg?k=a25905b4001b6f436c6cd35c5e4f46fcf8d66e129f66475995b9b0358a40d6a5&o="><p class="travel_heading">Amendloro, Itlay</p><p class="travel_desc">4.1 Km away </p></a></div>
+                @foreach(var item in quickBeach)
+                {
+                    <div class="Travel_carousel_card"><a asp-controller="@item.PageUrl" asp-action="index"><img src="@item.ImageUrl"><p class="travel_heading">@item.Title</p><p class="travel_desc">@item.Location </p></a></div>
+                }
+               
             </div>
 
             <div id="outdoors">
-                <div class="Travel_carousel_card"><a href=""><img src="https://cf.bstatic.com/xdata/images/xphoto/800x640/140028840.jpg?k=5487dcc8f363ef382bed6172eebee6d6d5b44dfedba01f4614dba9e1fce38ff4&o="><p class="travel_heading">Charnay-les-Macon, France</p><p class="travel_desc">4.1 Km away</p></a></div>
+                @foreach(var item in quickOutdoors)
+                {
+                    <div class="Travel_carousel_card"><a asp-controller="@item.PageUrl" asp-action="index"><img src="@item.ImageUrl"><p class="travel_heading">@item.Title</p><p class="travel_desc">@item.Location</p></a></div>
+                }
             </div>
 
             <div id="relax">
-                <div class="Travel_carousel_card"><a href=""><img src="https://cf.bstatic.com/xdata/images/xphoto/800x640/140028840.jpg?k=5487dcc8f363ef382bed6172eebee6d6d5b44dfedba01f4614dba9e1fce38ff4&o="><p class="travel_heading">Charnay-les-Macon, France</p><p class="travel_desc">4.1 Km away</p></a></div>
+                @foreach(var item in quickRelaxes)
+                {
+                    <div class="Travel_carousel_card"><a asp-controller="@item.PageUrl" asp-action="index"><img src="@item.ImageUrl"><p class="travel_heading">@item.Title</p><p class="travel_desc">@item.Location</p></a></div>
+                }
             </div>
 
         </div>
@@ -346,8 +315,8 @@
 
 <div id="RecentSearches"></div>
 <div class="offers">
-    <h1 id="offerH2">Stay at our top unique properties</h1>
-    <p id="offerP">From castles and villas to boats and igloos, we've got it all</p>
+    <h1 id="offerH2">Looking for the perfect stay?</h1>
+    <p id="offerP">Travellers with similar searches booked these properties</p>
 </div>
 
 <section id="unique">
