@@ -1,12 +1,12 @@
 ﻿@using BOOking.DAL.Entities;
-@model List<Hotel>
+@model List<BakuHotel>
 
 @foreach (var item in Model)
 {
     <div class="col-md-3 col-sm-6 col-xs-12 box">
         <div class="single-course mb-70">
             <div class="hotel-img">
-                <a asp-controller="stays" asp-action="details" asp-route-id="@item.Id">
+                <a asp-controller="baku" asp-action="details" asp-route-id="@item.Id">
                     <img src="@item.ImageUrl" alt="course">
                     <div class="hotel-hover">
                         <i class="fa fa-link"></i>
@@ -14,12 +14,12 @@
                 </a>
             </div>
             <div class="hotel-content">
-                <h3><a asp-controller="stays" asp-action="details" asp-route-id="@item.Id">@item.Name</a></h3>
+                <h3><a asp-controller="baku" asp-action="details" asp-route-id="@item.Id">@item.Name</a></h3>
                 <p>@item.ShortDescription</p>
 
                 <p>@item.Reviews</p>
                 <div><p>@item.Rate</p></div>
-                <a class="default-btn" asp-controller="stays" asp-action="details" asp-route-id="@item.Id">See availability</a> 
+                <a class="default-btn" asp-controller="baku" asp-action="details" asp-route-id="@item.Id">See availability</a> 
                 <h5>@item.Price</h5>
 
             </div>

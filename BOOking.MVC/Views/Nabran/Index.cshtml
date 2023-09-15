@@ -1,13 +1,15 @@
-﻿@using BOOking.DAL.Entities;
-
+﻿@using BOOking.DAL.Entities
 @{
-    StaysViewModel model = Model;
-    var hotel = model.Hotels;
-    var explore = model.Explores;
-
     Layout = null;
-    
+
+    NabranViewModel model = Model;
+    var nabranHotel = model.NabranHotels;
 }
+
+
+
+
+
 
 <!DOCTYPE html>
 <html lang="en" style="overflow: auto">
@@ -73,7 +75,7 @@
                         <a target="_blank" href="/property.html"><p>List your property</p></a>
                     </div>
                     <div class="register">
-                        <a asp-controller ="account" asp-action="register"><span> Register</span></a>
+                        <a asp-controller="account" asp-action="register"><span> Register</span></a>
                     </div>
                     <div class="signIn">
                         <a asp-controller="account" asp-action="login"><span> Sign in</span></a>
@@ -86,11 +88,11 @@
         <nav>
             <div id="navmenu">
                 <div id="navmenu_icon_container">
-                   <div><a asp-controller="home" asp-action="index"><i class="fa-solid fa-bed"></i> <span id="title"> Stays</span> </a></div>
-                <div id="letsFly"><a asp-controller="flight" asp-action="index"><i class="fa-solid fa-plane"></i><span id="title"> Flights</span></a></div>
-                <div><a asp-controller="rental" asp-action="index"><i class="fa-solid fa-car"></i><span id="title">Car Rentals</span></a></div>
-                <div><a asp-controller="attraction" asp-action="index"><i class="fa-solid fa-mountain-sun"></i><span id="title">Attractions</span></a></div>
-                <div id="hide_taxis"><a asp-controller="airtaxis" asp-action="index"><i class="fa-solid fa-taxi"></i><span id="title">Airport taxis</span></a></div>
+                    <div><a asp-controller="home" asp-action="index"><i class="fa-solid fa-bed"></i> <span id="title"> Stays</span> </a></div>
+                    <div id="letsFly"><a asp-controller="flight" asp-action="index"><i class="fa-solid fa-plane"></i><span id="title"> Flights</span></a></div>
+                    <div><a asp-controller="rental" asp-action="index"><i class="fa-solid fa-car"></i><span id="title">Car Rentals</span></a></div>
+                    <div><a asp-controller="attraction" asp-action="index"><i class="fa-solid fa-mountain-sun"></i><span id="title">Attractions</span></a></div>
+                    <div id="hide_taxis"><a asp-controller="airtaxis" asp-action="index"><i class="fa-solid fa-taxi"></i><span id="title">Airport taxis</span></a></div>
                 </div>
             </div>
         </nav>
@@ -114,8 +116,32 @@
                 </div>
             </div>
             <div class="row" id="hotelrow">
-               <partial name="_StaysPartial" model="@hotel"></partial>
-               
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-3 col-sm-6 col-xs-12 box">
+                        <div class="single-course mb-70">
+                            <div class="hotel-img">
+                                <a asp-controller="nabran" asp-action="details" asp-route-id="@item.Id">
+                                    <img src="@item.ImageUrl" alt="course">
+                                    <div class="hotel-hover">
+                                        <i class="fa fa-link"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hotel-content">
+                                <h3><a asp-controller="nabran" asp-action="details" asp-route-id="@item.Id">@item.Name</a></h3>
+                                <p>@item.ShortDescription</p>
+
+                                <p>@item.Reviews</p>
+                                <div><p>@item.Rate</p></div>
+                                <a class="default-btn" asp-controller="nabran" asp-action="details" asp-route-id="@item.Id">See availability</a>
+                                <h5>@item.Price</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                }
+
             </div>
             <div class="row justify-content-center">
                 <input value="@ViewBag.HotelCount" type="hidden" id="hotelCount" />
@@ -142,7 +168,7 @@
         <hr id="lyp_line">
         <div id="lyp_msc">
             <a href="">Mobile Version</a>
-            <a href="/login.html">Your account</a>
+            <a asp-controller="account" asp-action="login">Your account</a>
             <a href="">Make changes to your booking online</a>
             <a data-toggle="tooltip" data-placement="bottom" title="Your Reference ID is 'YAN6U71N' " href="">Customer Service Help</a>
             <a data-toggle="tooltip" data-placement="bottom" title="Become An Affliate " href="">Bacome an affliate</a>

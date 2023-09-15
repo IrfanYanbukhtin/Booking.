@@ -1,0 +1,314 @@
+﻿@using BOOking.DAL.Entities
+@{
+    Layout = null;
+
+    ShekiViewModel model = Model;
+    var shekiHotel = model.ShekiHotels;
+}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" style="overflow: auto">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://cdn.worldvectorlogo.com/logos/bookingcom-1.svg">
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/product.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+    <title>Booking.com</title>
+</head>
+<body style="overflow-x: hidden">
+
+    <!-- HEADER START -->
+    <header class="header_main">
+        <div class="header ">
+            <div class="nav-bar container1 ">
+                <div class="col-lg-12 brand">
+                    <h2><a asp-controller="home" asp-action="index">Booking.com</a></h2>
+                </div>
+                <div class="list-bt">
+                    <div class="d-grid gap-4 d-md-block">
+                        <button class="btn border-0 mx-1" data-bs-toggle="modal"
+                                data-bs-target="#currenciesModal" data-toggle="tooltip" data-placement="bottom" title="Select your currency ">
+                            <span id="val">AZN</span>
+                        </button>
+                    </div>
+                    <div class="modal fade" id="currenciesModal" tabindex="-1" aria-labelledby="currenciesModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 fw-bold" id="currenciesModalLabel">Select your currency</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6 class="fw-bold mb-3">All currencies</h6>
+                                    <div id="currencyModal" class="row">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-toggle="tooltip" data-placement="bottom" title="Select your language " class="lang">
+                        <a href="#" class="d-none">EN</a>
+                        <a href="#">AZ</a>
+                        <a href="#">RU</a>
+                    </div>
+                    <div class="help">
+                        <a asp-controller="contact" asp-action="index">
+                            <i data-toggle="tooltip" data-placement="bottom" title="Custom Service help " class="fa-regular fa-circle-question"></i>
+                        </a>
+                    </div>
+                    <div class="property">
+                        <a target="_blank" href="/property.html"><p>List your property</p></a>
+                    </div>
+                    <div class="register">
+                        <a asp-controller="account" asp-action="register"><span> Register</span></a>
+                    </div>
+                    <div class="signIn">
+                        <a asp-controller="account" asp-action="login"><span> Sign in</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NAV  START-->
+        <nav>
+            <div id="navmenu">
+                <div id="navmenu_icon_container">
+                    <div><a asp-controller="home" asp-action="index"><i class="fa-solid fa-bed"></i> <span id="title"> Stays</span> </a></div>
+                    <div id="letsFly"><a asp-controller="flight" asp-action="index"><i class="fa-solid fa-plane"></i><span id="title"> Flights</span></a></div>
+                    <div><a asp-controller="rental" asp-action="index"><i class="fa-solid fa-car"></i><span id="title">Car Rentals</span></a></div>
+                    <div><a asp-controller="attraction" asp-action="index"><i class="fa-solid fa-mountain-sun"></i><span id="title">Attractions</span></a></div>
+                    <div id="hide_taxis"><a asp-controller="airtaxis" asp-action="index"><i class="fa-solid fa-taxi"></i><span id="title">Airport taxis</span></a></div>
+                </div>
+            </div>
+        </nav>
+        <!-- NAV END -->
+    </header>
+
+    <!-- HEADER END -->
+    <div class="hotel-area pt-150 pb-150">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xs-12">
+                    <div class="hotel-title">
+                        <h3>Search hotel</h3>
+                    </div>
+                    <div class="hotel-form">
+                        <form id="search" action="#">
+                            <input type="search" placeholder="Search..." name="search" />
+                            <button type="submit">search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="hotelrow">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-3 col-sm-6 col-xs-12 box">
+                        <div class="single-course mb-70">
+                            <div class="hotel-img">
+                                <a asp-controller="sheki" asp-action="details" asp-route-id="@item.Id">
+                                    <img src="@item.ImageUrl" alt="course">
+                                    <div class="hotel-hover">
+                                        <i class="fa fa-link"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hotel-content">
+                                <h3><a asp-controller="sheki" asp-action="details" asp-route-id="@item.Id">@item.Name</a></h3>
+                                <p>@item.ShortDescription</p>
+
+                                <p>@item.Reviews</p>
+                                <div><p>@item.Rate</p></div>
+                                <a class="default-btn" asp-controller="sheki" asp-action="details" asp-route-id="@item.Id">See availability</a>
+                                <h5>@item.Price</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+            <div class="row justify-content-center">
+                <input value="@ViewBag.HotelCount" type="hidden" id="hotelCount" />
+                <button class="btn btn-primary" id="loadHotel">Load more</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Lower Search Bar -->
+    <div id="lower_seachbar_container">
+        <p id="subs_head">Save time, save money!<p>
+        <p id="subs_desc">Sign up and we'll send the best deals to you</p>
+        <div>
+            <input id="subs_mail" type="text" placeholder="  Your email address">
+            <button id="subs_btn">Subscribe</button>
+        </div>
+    </div>
+
+
+    <!-- List Your Property -->
+    <div id="lyp">
+        <button id="lyp_btn">List your property</button>
+        <hr id="lyp_line">
+        <div id="lyp_msc">
+            <a href="">Mobile Version</a>
+            <a asp-controller="account" asp-action="login">Your account</a>
+            <a href="">Make changes to your booking online</a>
+            <a data-toggle="tooltip" data-placement="bottom" title="Your Reference ID is 'YAN6U71N' " href="">Customer Service Help</a>
+            <a data-toggle="tooltip" data-placement="bottom" title="Become An Affliate " href="">Bacome an affliate</a>
+            <a href="">Booking.com for Business</a>
+        </div>
+    </div>
+
+    <!-- FOOTER START -->
+
+    <footer>
+
+        <div id="Footer_part1">
+            <div class="footer_list_container">
+                <ul>
+                    <a href="">
+                    <li>Countries</li></a>
+                    <a href="">
+                    <li>Regions</li></a>
+                    <a href="">
+                    <li>Cities</li></a>
+                    <a href="">
+                    <li>Districts</li></a>
+                    <a href="">
+                    <li>Airports</li></a>
+                    <a href="">
+                    <li>Hotels</li></a>
+                    <a href="">
+                    <li>Places of Interest</li></a>
+                </ul>
+            </div>
+            <div class="footer_list_container">
+                <ul>
+                    <a href="">
+                    <li>Homes</li></a>
+                    <a href="">
+                    <li>Apartments</li></a>
+                    <a href="">
+                    <li>Resorts</li></a>
+                    <a href="">
+                    <li>Villas</li></a>
+                    <a href="">
+                    <li>Hostels</li></a>
+                    <a href="">
+                    <li>B&B's</li></a>
+                    <a href="">
+                    <li>Guest houses</li></a>
+                </ul>
+            </div>
+            <div class="footer_list_container">
+                <ul>
+                    <a href="">
+                    <li>Unique places to stay</li></a>
+                    <a href="">
+                    <li>All destinations</li></a>
+                    <a href="">
+                    <li>All flight destinations</li></a>
+                    <a href="">
+                    <li>All car hire locations</li></a>
+                    <a href="">
+                    <li>Discover</li></a>
+                    <a href="">
+                    <li>Reviews</li></a>
+                    <a href="">
+                    <li>Discover monthly stays</li></a>
+                    <a href="">
+                    <li>Unpacked: Travel articles</li></a>
+                    <a href="">
+                    <li>Seaonal and holiday deals</li></a>
+                    <a href="">
+                    <li>Traveller Review Awards</li></a>
+                </ul>
+            </div>
+            <div class="footer_list_container">
+                <ul>
+                    <a href="">
+                    <li>Car hire</li></a>
+                    <a href="">
+                    <li>Flight finder</li></a>
+                    <a href="">
+                    <li>Restaurant reservations</li></a>
+                    <a href="">
+                    <li>Booking.com for Travel Agents</li></a>
+                </ul>
+            </div>
+            <div class="footer_list_container">
+                <ul>
+                    <a href="">
+                    <li>Coronavirus (COVID-19) FAQS</li></a>
+                    <a href="">
+                    <li>About Booking.com</li></a>
+                    <a href="">
+                    <li>Customer Service Help</li></a>
+                    <a href="">
+                    <li>Partner Help</li></a>
+                    <a href=""></a>
+                    <a href="">
+                    <li>Sustainability</li></a>
+                    <a href="">
+                    <li>Press Center</li></a>
+                    <a href="">
+                    <li>Safety Resource Center</li></a>
+                    <a href="">
+                    <li>Investor Relations</li></a>
+                    <a href="">
+                    <li>Terms & Conditions</li></a>
+                    <a href="">
+                    <li>Partner Dispute</li></a>
+                    <a href="">
+                    <li>How we work</li></a>
+                    <a href="">
+                    <li>Privacy & Cookie Statement</li></a>
+                    <a href="">
+                    <li>MSA Statement </li></a>
+                    <a href="">
+                    <li>Corporate Contact</li></a>
+                    <a href="">
+                    <li>Content guidelines</li></a>
+                </ul>
+            </div>
+        </div>
+
+        <div id="Footer_part2"><a href="">Extranet Login</a></div>
+        <div id="Footer_part3"><p>Copyright © 1996-2023 Yanbukhtin™. All rights reserved.</p></div>
+        <div id="Footer_part4"><p>Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.</p></div>
+
+        <div id="Footer_part_5">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_rentalcars/6bc5ec89d870111592a378bbe7a2086f0b01abc4.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png" alt="">
+        </div>
+
+    </footer>
+
+    <!-- FOOTER END -->
+    </div>
+
+    <script type="module" src="~/js/main.js"></script>
+    <script src="~/js/product.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

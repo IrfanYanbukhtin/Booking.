@@ -1,6 +1,13 @@
 ﻿
 @{
     Layout = null;
+
+    AttractionViewModel model = Model;
+    var moreExplore = model.MoreExplores;
+    var paris = model.Paris;
+    var asia = model.Asias;
+    var africa = model.Africas;
+
 }
 
 <!DOCTYPE html>
@@ -263,7 +270,7 @@
 
         <div class="tab">
             <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Europe</button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">North America</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
             <button class="tablinks" onclick="openCity(event, 'Tokyo')">Asia</button>
             <button class="tablinks" onclick="openCity(event, 'Africa')">Africa</button>
             <button class="tablinks" onclick="openCity(event, 'Oceania')">Oceania</button>
@@ -275,309 +282,71 @@
 
         <div id="London" class="tabcontent">
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>London</p>
-                            <span>672 things to do</span>
+                @foreach (var item in moreExplore)
+                {
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-course mb-70">
+                            <div class="tab-img">
+                                <a href=""><img src="@item.ImageUrl" alt="course"></a>
+                                <p>@item.Title</p>
+                                <span>@item.Description things to do</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Istanbul</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Paris</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Hamburg</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Amsterdam</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Lisbon</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Rome</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Athens</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
+                }
             </div>
         </div>
 
         <div id="Paris" class="tabcontent">
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>London</p>
-                            <span>672 things to do</span>
+                @foreach(var item in paris)
+                {
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-course mb-70">
+                            <div class="tab-img">
+                                <a href=""><img src="@item.ImageUrl" alt="course"></a>
+                                <p>@item.Title</p>
+                                <span>@item.Description things to do</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Istanbul</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Paris</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Hamburg</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Amsterdam</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Lisbon</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Rome</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Athens</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
+                }
+               
             </div>
         </div>
 
         <div id="Tokyo" class="tabcontent">
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>London</p>
-                            <span>672 things to do</span>
+                @foreach(var item in asia)
+                {
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-course mb-70">
+                            <div class="tab-img">
+                                <a href=""><img src="@item.ImageUrl" alt="course"></a>
+                                <p>@item.Title</p>
+                                <span>@item.Description things to do</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Istanbul</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Paris</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Hamburg</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Amsterdam</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Lisbon</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Rome</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Athens</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
+                }
+               
             </div>
         </div>
 
         <div id="Africa" class="tabcontent">
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>London</p>
-                            <span>672 things to do</span>
+                @foreach(var item in africa)
+                {
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-course mb-70">
+                            <div class="tab-img">
+                                <a href=""><img src="@item.ImageUrl" alt="course"></a>
+                                <p>@item.Title</p>
+                                <span>@item.Description things to do</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Istanbul</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Paris</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Hamburg</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Amsterdam</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course mb-70">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Lisbon</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Rome</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-course">
-                        <div class="tab-img">
-                            <a href=""><img src="~/img//Baku.jpg" alt="course"></a>
-                            <p>Athens</p>
-                            <span>672 things to do</span>
-                        </div>
-                    </div>
-                </div>
+                }
             </div>
         </div>
 

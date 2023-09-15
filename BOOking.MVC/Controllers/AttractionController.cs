@@ -14,10 +14,17 @@ namespace BOOking.MVC.Controllers
         }
         public IActionResult Index()
         {
-
+            var moreExplore = _dbContext.MoreExplores.Take(8).ToList();
+            var paris = _dbContext.Paris.Take(8).ToList();
+            var asia = _dbContext.Asias.Take(8).ToList();
+            var africa = _dbContext.Africas.Take(8).ToList();
 
             var model = new AttractionViewModel
             {
+                MoreExplores = moreExplore,
+                Paris = paris,
+                Asias = asia,
+                Africas = africa,
 
             };
 

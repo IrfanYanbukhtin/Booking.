@@ -32,5 +32,16 @@ namespace BOOking.DAL.DataContext
         public DbSet<Explore> Explores { get; set; }
         public DbSet<Hotel> Hotels { get; set; }
         public DbSet<Gateway> Gateways { get; set; }
+        public DbSet<MoreExplore> MoreExplores { get; set;}
+        public DbSet<Paris> Paris { get; set; }
+        public DbSet<Asia> Asias  { get; set; }
+        public DbSet<Africa> Africas { get; set; }
+        public DbSet<GabalaHotel> GabalaHotels { get; set; }
+        public DbSet<ShekiHotel> ShekiHotels { get; set; }
+        public DbSet<NabranHotel> NabranHotels { get; set; }
+        public DbSet<GanjaHotel> GanjaHotels { get; set; }
+        public DbSet<SamaxiHotel> SamaxiHotels { get; set; }
+        public DbSet<ShahdagHotel> ShahdagHotels { get; set; }
+        public DbSet<BakuHotel> BakuHotels { get; set; }
     }
 }

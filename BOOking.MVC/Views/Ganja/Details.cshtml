@@ -1,5 +1,5 @@
 ﻿@using BOOking.DAL.Entities;
-@model Hotel
+@model GanjaHotel
 
 
 <div class="hotel-details-area pt-150 pb-60">
@@ -110,7 +110,7 @@
                 </div>
             </div>
         </div>
-       
+
     </div>
 </div>
 
@@ -132,7 +132,7 @@
     <hr id="lyp_line">
     <div id="lyp_msc">
         <a href="">Mobile Version</a>
-        <a href="/login.html">Your account</a>
+        <a asp-controller="account" asp-action="login">Your account</a>
         <a href="">Make changes to your booking online</a>
         <a data-toggle="tooltip" data-placement="bottom" title="Your Reference ID is 'YAN6U71N' " href="">Customer Service Help</a>
         <a data-toggle="tooltip" data-placement="bottom" title="Become An Affliate " href="">Bacome an affliate</a>

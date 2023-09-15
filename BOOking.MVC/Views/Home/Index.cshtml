@@ -152,13 +152,13 @@
 <section id="trend">
     <div id="collage1">
         <div id="collage_img1"><a asp-controller="stays" asp-action="index"><p class="collage_heading">Baku<img src="https://w7.pngwing.com/pngs/478/548/png-transparent-flag-of-azerbaijan-azerbaijanis-flag-of-azerbaijan-flag-sphere-republic.png" alt=""></p></a></div>
-        <div id="collage_img2"><a asp-controller="stays" asp-action="index"><p class="collage_heading">GABALA <img src="https://w7.pngwing.com/pngs/478/548/png-transparent-flag-of-azerbaijan-azerbaijanis-flag-of-azerbaijan-flag-sphere-republic.png" alt=""></p></a></div>
+        <div id="collage_img2"><a asp-controller="gabala" asp-action="index"><p class="collage_heading">GABALA <img src="https://w7.pngwing.com/pngs/478/548/png-transparent-flag-of-azerbaijan-azerbaijanis-flag-of-azerbaijan-flag-sphere-republic.png" alt=""></p></a></div>
     </div>
 
     <div id="collage2">
-        <div id="collage2_img1"><a asp-controller="stays" asp-action="index"><p class="collage_heading">Istanbul <img src="https://cdn.icon-icons.com/icons2/107/PNG/512/turkey_flag_flags_18075.png" alt=""></p></a></div>
-        <div id="collage2_img2"><a asp-controller="stays" asp-action="index"><p class="collage_heading">Tbilisi city <img src="https://static.vecteezy.com/system/resources/previews/015/272/208/non_2x/georgia-3d-rounded-flag-with-transparent-background-free-png.png" alt=""></p></a></div>
-        <div id="collage2_img3"><a asp-controller="stays" asp-action="index"><p class="collage_heading">Dubai <img src="https://www.pngitem.com/pimgs/m/297-2971923_dubai-flag-png-transparent-png.png" alt=""></p></a></div>
+        <div id="collage2_img1"><a asp-controller="sheki" asp-action="index"><p class="collage_heading">Sheki <img src="https://w7.pngwing.com/pngs/478/548/png-transparent-flag-of-azerbaijan-azerbaijanis-flag-of-azerbaijan-flag-sphere-republic.png" alt=""></p></a></div>
+        <div id="collage2_img2"><a asp-controller="samaxi" asp-action="index"><p class="collage_heading">Samaxi <img src="https://w7.pngwing.com/pngs/478/548/png-transparent-flag-of-azerbaijan-azerbaijanis-flag-of-azerbaijan-flag-sphere-republic.png" alt=""></p></a></div>
+        <div id="collage2_img3"><a asp-controller="shahdag" asp-action="index"><p class="collage_heading">Shahdaq <img src="https://w7.pngwing.com/pngs/478/548/png-transparent-flag-of-azerbaijan-azerbaijanis-flag-of-azerbaijan-flag-sphere-republic.png" alt=""></p></a></div>
     </div>
 </section>
 
@@ -176,7 +176,7 @@
         <div id="explore_container">
             @foreach(var item in explore)
     {
-        <div class="explore_carousel_img_container"><a asp-controller="stays" asp-action="index"><img src="@item.ImageUrl"></a><p class="explore_heading">@item.Title</p><p class="explore_desc">@item.PropertiesCount</p></div>
+        <div class="explore_carousel_img_container"><a asp-controller="@item.PageUrl" asp-action="index"><img src="@item.ImageUrl"></a><p class="explore_heading">@item.Title</p><p class="explore_desc">@item.PropertiesCount</p></div>
        
     }
     </div>

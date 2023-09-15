@@ -48,12 +48,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0cmFjdGlvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Baku/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFrdVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Baku/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFrdVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Contact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Flight/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Gabala/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FiYWxhXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Gabala/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FiYWxhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Ganja/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FuamFcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Ganja/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FuamFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Gateway/Index.cshtml]
@@ -64,8 +88,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Nabran/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFicmFuXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Nabran/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFicmFuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Rental/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Samaxi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FtYXhpXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Samaxi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FtYXhpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Shahdag/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhaGRhZ1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Shahdag/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhaGRhZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Shared/Components/Footer/Default.cshtml]
@@ -84,12 +132,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Stays/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RheXNcRGV0YWlscy5jc2h0bWw=
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Sheki/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hla2lcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Stays/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RheXNcSW5kZXguY3NodG1s
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Sheki/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hla2lcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/_ViewImports.cshtml]
