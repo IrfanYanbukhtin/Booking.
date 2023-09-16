@@ -6,6 +6,7 @@ namespace BOOking.MVC.Models
     {
         public List<BakuHotel> BakuHotels  { get; set; }
         public List<Header> Headers { get; set; }
+        public List<Partner> Partners { get; set; }
 
     }
 }

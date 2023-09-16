@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "15qR8bkAEgnyrWXxv8uKJNHRDyEiGM6JXk7WngnIs5c=",
+  "Hash": "h5RzwGPBXvFyupwaFu4ogjPO63aGJ5ZQHYE3WKFkFUQ=",
   "Source": "BOOking.MVC",
   "BasePath": "_content/BOOking.MVC",
   "Mode": "Default",
@@ -3519,6 +3519,23 @@
       "OriginalItemSpec": "wwwroot\\js\\account.js"
     },
     {
+      "Identity": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\js\\app.js",
+      "SourceId": "BOOking.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\",
+      "BasePath": "_content/BOOking.MVC",
+      "RelativePath": "js/app.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\app.js"
+    },
+    {
       "Identity": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\js\\attractions.js",
       "SourceId": "BOOking.MVC",
       "SourceType": "Discovered",
@@ -3602,6 +3619,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\loadmore.js"
+    },
+    {
+      "Identity": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\js\\login.js",
+      "SourceId": "BOOking.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\",
+      "BasePath": "_content/BOOking.MVC",
+      "RelativePath": "js/login.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\login.js"
     },
     {
       "Identity": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\js\\main.js",

@@ -15,6 +15,9 @@ namespace BOOking.MVC.Models
         public List<QuickOutdoors> QuickOutdoors = new List<QuickOutdoors>();
         public List<QuickRelax> QuickRelaxes = new List<QuickRelax>();
         public List<BakuHotel> BakuHotels = new List<BakuHotel>();
+        public List<GuestHomeLove> GuestHomeLoves = new List<GuestHomeLove>();
+        public List<Discount> Discounts { get; set; }
+        public List<Discover> Discovers { get; set; }   
        
     }
 }

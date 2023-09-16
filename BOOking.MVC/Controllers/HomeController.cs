@@ -27,6 +27,9 @@ namespace BOOking.MVC.Controllers
             var quickOutdoors = _dbContext.quickOutdoors.ToList();
             var quickRelaxes = _dbContext.QuickRelaxes.ToList();
             var bakuHotels = _dbContext.BakuHotels.Take(15).ToList();
+            var guestHomeLove = _dbContext.GuestHomeLoves.Take(10).ToList();
+            var discount = _dbContext.Discounts.ToList();
+            var discover = _dbContext.Discovers.ToList();
 
             var model = new HomeViewModel
             {
@@ -40,6 +43,9 @@ namespace BOOking.MVC.Controllers
                 QuickOutdoors = quickOutdoors,
                 QuickRelaxes = quickRelaxes,
                 BakuHotels = bakuHotels,
+                GuestHomeLoves = guestHomeLove,
+                Discounts = discount,
+                Discovers = discover,
             };
 
             return View(model);

@@ -1,25 +1,84 @@
-﻿@model UserProfileViewModel
+﻿
 @{
-    ViewData["Title"] = "UserProfile";
+    Layout = null;
 }
 
-<div class="custom_container">
-    <main>
-        <section>
-            <div class="account_infobox">
-                <i class="fa-solid fa-user-plus log"></i>
-                <span>@Model.Fullname</span>
-                <p>Welcome!</p>
-                <div class="logout">
-                    <div class="logout_option">
-                        <i class="fa-solid fa-key"></i>
-                        @if (User.Identity.IsAuthenticated)
-                        {
-                            <a asp-action="changepassword">Change password</a>
-                        }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn.worldvectorlogo.com/logos/bookingcom-1.svg">
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/signup.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Booking.Az</title>
+</head>
+<body>
+
+    <header>
+        <div class="header ">
+            <div class="nav-bar container1 d-flex justify-content-between">
+                <div class="col-lg-6 brand ">
+                    <h2><a asp-controller="home" asp-action="index">Booking.az</a></h2>
+                </div>
+                <div class="list-bt d-flex">
+                    <div data-toggle="tooltip" data-placement="bottom" title="Select your language " class="lang">
+                        <a href="#" class="d-none">EN</a>
+                        <a href="#">AZ</a>
+                        <a href="#">RU</a>
+                    </div>
+                    <div class="help">
+                        <a asp-controller="contact" asp-action="index">
+                            <i class="fa-regular fa-circle-question"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-</div>
+        </div>
+    </header>
+
+    <!-- User START -->
+    <div class="custom_container">
+        <main>
+            <section>
+                <div class="account_infobox">
+                    <i class="fa-solid fa-user-plus log"></i>
+                    <span>@Model.Fullname</span>
+                    <p>Şəxsi kabinetinə xoş gəlmisən!</p>
+                    <div class="logout">
+                        <div class="logout_option">
+                            <i class="fa-solid fa-key"></i>
+                            
+
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a style="color:white">@User.Identity.Name</a>
+
+                                <a style="color:white" asp-controller="account" asp-action="logout">Exit</a>
+                            }
+
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a asp-action="changepassword">Change password</a>
+
+                                <a asp-controller="dashboard" asp-action="index">Hotels</a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <div class="login">
+        <div class="line1">
+            <p class="p1">All rights reserved.</p>
+            <p class="p1">Copyright (2006-2023) - Yanbukhtin™</p>
+        </div>
+    </div>
+
+</body>
+</html>

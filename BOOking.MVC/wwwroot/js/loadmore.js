@@ -24,29 +24,7 @@ $(document).on('click', '#loadMore', function () {
     });
 });
 
-/*------------------------------------
-        Load More Hotel
---------------------------------------*/
-var skip = 4;
-$(document).on('click', '#loadHotel', function () {
-    var hotelCount = $("#hotelCount").val();
-    $.ajax({
-        url: "/stays/loadHotels?skip=" + skip,
-        type: "GET",
-        success: function (response) {
-            $("#hotelrow").append(response);
-            skip += 4;
 
-            if (skip >= hotelCount)
-                $("#loadHotel").remove();
-
-            console.log(response);
-        },
-        error: function (xhr) {
-
-        }
-    });
-})
 
     /*------------------------------------
             Load More Gateway
@@ -75,3 +53,4 @@ $(document).on('click', '#loadHotel', function () {
  
 
 })(jQuery);	
+

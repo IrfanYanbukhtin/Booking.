@@ -53,5 +53,8 @@ namespace BOOking.DAL.DataContext
         public DbSet<QuickOutdoors> quickOutdoors { get; set;}
         public DbSet<QuickRelax> QuickRelaxes { get; set; }
         public DbSet<Contact> Contacts { get; set; }
+        public DbSet<GuestHomeLove> GuestHomeLoves { get; set; }
+        public DbSet<Discount> Discounts { get; set; }
+        public DbSet<Discover> Discovers { get; set; }
     }
 }

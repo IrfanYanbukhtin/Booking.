@@ -19,6 +19,8 @@ namespace BOOking.MVC.Controllers
             var asia = _dbContext.Asias.Take(8).ToList();
             var africa = _dbContext.Africas.Take(8).ToList();
             var header = _dbContext.Headers.ToList();
+            var footer = _dbContext.Footers.ToList();
+            var partner = _dbContext.Partners.ToList();
 
             var model = new AttractionViewModel
             {
@@ -26,6 +28,9 @@ namespace BOOking.MVC.Controllers
                 Paris = paris,
                 Asias = asia,
                 Africas = africa,
+                Headers = header,
+                Footers = footer,
+                Partners = partner,
 
             };
 

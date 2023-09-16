@@ -821,6 +821,10 @@
       "PackagePath": "staticwebassets\\js\\account.js"
     },
     {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\js\\app.js",
+      "PackagePath": "staticwebassets\\js\\app.js"
+    },
+    {
       "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\js\\attractions.js",
       "PackagePath": "staticwebassets\\js\\attractions.js"
     },
@@ -839,6 +843,10 @@
     {
       "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\js\\loadmore.js",
       "PackagePath": "staticwebassets\\js\\loadmore.js"
+    },
+    {
+      "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\js\\login.js",
+      "PackagePath": "staticwebassets\\js\\login.js"
     },
     {
       "Id": "C:\\Users\\Asery_valha\\source\\repos\\BOOking.com\\BOOking.MVC\\wwwroot\\js\\main.js",

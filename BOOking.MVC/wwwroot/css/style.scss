@@ -121,19 +121,20 @@
             z-index: 666;
            a{
             text-decoration: none;
-            border: 1px solid #003b8d;
             padding: 7px 11px;
             margin-left: 29px;
-            background-color: white;
             border-radius: 4px;
             font-weight: 500;
 
-            span{
+            button{
                 font-size: 14px;
-            }
+                padding: 5px 10px;
+                color: #0071c2;
 
-            &:hover{
-                background-color: #eaf5ff;
+                &:hover{
+                    background-color: #eaf5ff;
+                }
+               
             }
            }
         }
@@ -142,18 +143,19 @@
             z-index: 666;
            a{
             text-decoration: none;
-            border: 1px solid #003b8d;
             padding: 7px 8px;
             margin-left: 8px;
-            background-color: white;
+    
             border-radius: 4px;
             font-weight: 500;
-            span{
+            button{
                 font-size: 14px;
-            }
+                padding: 5px 10px;
+                color: #0071c2;
 
-            &:hover{
-                background-color: #eaf5ff;
+                &:hover{
+                    background-color: #eaf5ff;
+                }
             }
            }
         }

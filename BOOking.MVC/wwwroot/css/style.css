@@ -105,17 +105,17 @@ header .header .list-bt .register {
 }
 header .header .list-bt .register a {
   text-decoration: none;
-  border: 1px solid #003b8d;
   padding: 7px 11px;
   margin-left: 29px;
-  background-color: white;
   border-radius: 4px;
   font-weight: 500;
 }
-header .header .list-bt .register a span {
+header .header .list-bt .register a button {
   font-size: 14px;
+  padding: 5px 10px;
+  color: #0071c2;
 }
-header .header .list-bt .register a:hover {
+header .header .list-bt .register a button:hover {
   background-color: #eaf5ff;
 }
 header .header .list-bt .signIn {
@@ -123,17 +123,17 @@ header .header .list-bt .signIn {
 }
 header .header .list-bt .signIn a {
   text-decoration: none;
-  border: 1px solid #003b8d;
   padding: 7px 8px;
   margin-left: 8px;
-  background-color: white;
   border-radius: 4px;
   font-weight: 500;
 }
-header .header .list-bt .signIn a span {
+header .header .list-bt .signIn a button {
   font-size: 14px;
+  padding: 5px 10px;
+  color: #0071c2;
 }
-header .header .list-bt .signIn a:hover {
+header .header .list-bt .signIn a button:hover {
   background-color: #eaf5ff;
 }
 header .header .list-bt [type=btn] {

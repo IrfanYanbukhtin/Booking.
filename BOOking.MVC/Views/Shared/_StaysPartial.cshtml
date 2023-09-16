@@ -3,7 +3,7 @@
 
 @foreach (var item in Model)
 {
-    <div class="col-md-3 col-sm-6 col-xs-12 box">
+    <div class="col-md-3 col-sm-6 col-xs-12 box " id="BakuBox">
         <div class="single-course mb-70">
             <div class="hotel-img">
                 <a asp-controller="baku" asp-action="details" asp-route-id="@item.Id">
@@ -18,7 +18,7 @@
                 <p>@item.ShortDescription</p>
 
                 <p>@item.Reviews</p>
-                <div><p>@item.Rate</p></div>
+                <div><p>Rate:@item.Rate</p></div>
                 <a class="default-btn" asp-controller="baku" asp-action="details" asp-route-id="@item.Id">See availability</a> 
                 <h5>@item.Price</h5>
 
