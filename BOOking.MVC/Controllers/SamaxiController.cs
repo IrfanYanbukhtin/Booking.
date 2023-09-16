@@ -17,10 +17,12 @@ namespace BOOking.MVC.Controllers
         public IActionResult Index()
         {
             var samaxiHotel = _dbContext.SamaxiHotels.ToList();
+            var header = _dbContext.Headers.ToList();
 
             var model = new SamaxiViewModel
             {
                 SamaxiHotels = samaxiHotel,
+                Headers = header,
             };
 
             return View(model);

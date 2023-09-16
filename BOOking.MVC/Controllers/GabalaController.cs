@@ -15,10 +15,12 @@ namespace BOOking.MVC.Controllers
         public IActionResult Index()
         {
             var gabalaHotel = _dbContext.GabalaHotels.ToList();
+            var header = _dbContext.Headers.ToList();
 
             var model = new GabalaViewModel
             {
                 GabalaHotels = gabalaHotel,
+                Headers = header,
             };
 
             return View(model);

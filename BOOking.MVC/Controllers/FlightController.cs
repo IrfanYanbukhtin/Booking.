@@ -1,4 +1,5 @@
 ﻿using BOOking.DAL.DataContext;
+using BOOking.MVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BOOking.MVC.Controllers
@@ -13,7 +14,14 @@ namespace BOOking.MVC.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            var header = _dbContext.Headers.ToList();
+
+            var model = new FlightViewModel
+            {
+                Headers = header,
+            };
+
+            return View(model);
         }
     }
 }

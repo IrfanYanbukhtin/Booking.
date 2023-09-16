@@ -2,9 +2,8 @@
 
 namespace BOOking.MVC.Models
 {
-    public class QaxViewModel
+    public class ContactViewModel
     {
-        public List<QaxHotel> QaxHotels { get; set; }
         public List<Header> Headers { get; set; }
     }
 }

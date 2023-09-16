@@ -5,10 +5,10 @@ namespace BOOking.MVC.Models
     public class RegisterViewModel
     {
         [Required]
-        public string Username { get; set; }
+        public string Fullname { get; set; }
 
         [Required]
-        public string Fullname { get; set; }
+        public string Username { get; set; }
 
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }

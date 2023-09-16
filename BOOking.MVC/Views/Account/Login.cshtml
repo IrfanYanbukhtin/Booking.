@@ -1,4 +1,5 @@
-﻿@{
+﻿@model LoginViewModel
+@{
     Layout = null;
 }
 
@@ -23,8 +24,10 @@
                     <h2><a asp-controller="home" asp-action="index">Booking.com</a></h2>
                 </div>
                 <div class="list-bt d-flex">
-                    <div class="flaq">
-                        <button type="btn" value="button"><img src="~/img/UkFlag.png" alt="chooce your language"></button>
+                    <div data-toggle="tooltip" data-placement="bottom" title="Select your language " class="lang">
+                        <a href="#" class="d-none">EN</a>
+                        <a href="#">AZ</a>
+                        <a href="#">RU</a>
                     </div>
                     <div class="help">
                         <a asp-controller="contact" asp-action="index">
@@ -38,46 +41,50 @@
 
     <!-- LOGIN START -->
 
+    <div class="container-scroller">
+        <div class="container-fluid page-body-wrapper full-page-wrapper">
+            <div class="content-wrapper d-flex align-items-center auth px-0">
+                <div class="row w-100 mx-0">
+                    <div class="col-lg-4 mx-auto">
+                        <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+                            <div class="row" id="tittle">
+                                <div class="col-lg-6">
+                                    <p style="font-size:2rem">Daxil ol</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a asp-controller="home" asp-action="index">
+                                        <h2>Booking.az</h2>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                            <form class="pt-3" asp-action="login" method="post">
+                                <div class="form-group">
+                                    <input asp-for="Username" class="form-control" placeholder="Username">
+                                    <span asp-validation-for="Username"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input asp-for="Password" class="form-control" placeholder="Password">
+                                    <span asp-validation-for="Password"></span>
+                                </div>
+                                <div class="mt-3">
+                                    <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">Sign in</button>
+                                </div>
+                                <div class="text-center mt-4 font-weight-light">
+                                    <a asp-controller="account" asp-action="forgottenpassword" class="text-primary">Forgot password?</a>
+                                </div>
+                                <div class="text-center mt-4 font-weight-light">
+                                    Create an account <a asp-controller="account" asp-action="register" class="text-primary">Sign up </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="login">
-
-        <div class="form">
-            <h1 class="formheading">Sign in or create an account</h1>
-            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
-            <form action="">
-                <span class="text">Email address</span>
-                <input class="input" type="email" placeholder="  Enter your email address" id="email" required />
-
-                <input class="input" type="password" placeholder="  Enter your password" id="password" required />
-
-                <button asp-action="register" type="submit"><span>Continue with email</span></button>
-            </form>
-        </div>
-
-        <div class="line">
-            <hr class="hr" />
-            <p class="p">or use one of these options</p>
-            <hr class="hr" />
-        </div>
-
-        <div class="authlogin">
-            <button class="google face">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEU6VZ////82Up4zUJ1UbKx4ibswTpyMmsQ5V6EtTJupss8nSJnN0+WVosgqSpo4U56eqcyDksDj5vBwgbb3+PxFXqNabqt9jb3S2OhidbC9xdy3v9l0hLjZ3etLY6bq7fTEyt4dQpdJYqekrs2uttK97JEgAAADFUlEQVR4nO3c2XLiMBBAUUZmM3IsFsNgSIAk/P83TsLzjCNbI3c3de9rqlw+BV7VZDIhIiIiIiIiIiIiIiIiIlJeCM4VxbzsrJDey8G50s/3h91ss3jp7LdJYii8262rbfPr545eem/753y9qWJwjypzwqJuT7E6i0JX7459fOaEvn3r5zMmLPy5r8+W0L9Gn15MCkO9GuAzJHSh9xFoS1hcrsOAVoTzdsghaEhYTAcDbQjdfjjQhDAshx6DRoShrhKAFoR+nQI0ICzaJKABYZlyEFoQ1p9pQPVCd0m4UJgQ+lsiULvQXVKB2oW+1ysZg8KwTAYqF5ZpF3sDQr99cqFLvJ3RL0y+2usXDnw1Y0YYUh58TQiL3X8Aql57Kvschs3xdF/9pftC8fphj3vSalZ6X5tbA/axJ5rtzhdBem+HVEeeaKq55s+po1DHAW/vJj+/yfdifdxX1OYX9LuwjxIejH5Fv3LTGOBJ8eXup+KEH056P4cXJby+S+9mQlHCUy29mwlFCddz6d1MKEq4sXsmjRTOEGoOIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQR27+78qYucRX37GFR7Jrb65ddBQz1Hbv2sCjpSixvEcgEitlhcN+cNenRnZxagThm+wK6ghC4TXiEYSr8tmFwstvIwhb2XX+EYR72St+fmEj6htDuBW+a8svPArPauQXnp9e+CI8jZJfKP38mF8ofDnML2wuwsOn2YVX6ena7MKt9PRpduHt6YUr6eHM7MKF9HBmduGr9OvU7MKp9BR4bmEjDcwulJ9zzy2U/+1hbqH0s1N+4afsq8QRhPKT/LmFB+kb7+xC6Tua7ELhdacRhOLPTtmFCv7ZQOY14LP4xWISlh2FqFkM17UF8VPpF7Hjb3HTJl2nSwXAzp5jnqYrhAj1hxCh/hAi1B9ChPpDiFB/CBHqDyFC/SFEqD+ECPWHEKH+ECLUH0KE+kOIUH8IEeoPIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQfwgR6g8hQv0hRKg/hAj1hxCh/hAi1B9ChD36A+1ASVvVoq0WAAAAAElFTkSuQmCC"
-                     alt="img" />
-            </button>
-
-            <button class="google">
-                <img class="googleimage"
-                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC-KxlZ9aqVMbPO3Ll49gBa3Ro245LV3KdLR2w4kQO4gy_PYVGJTPv4mBaJmVRNK4WPp4&usqp=CAU"
-                     alt="" />
-            </button>
-
-            <button class="google">
-                <i class="fa-solid fa-mobile-screen"></i>
-            </button>
-        </div>
-        <b>
-            <p style="color:rgb(0, 94, 255)">More ways to sign in<p>
-        </b>
         <div class="line1">
             <hr />
             <p class="p1">

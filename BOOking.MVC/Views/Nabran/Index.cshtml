@@ -5,6 +5,7 @@
 
     NabranViewModel model = Model;
     var nabranHotel = model.NabranHotels;
+    var header = model.Headers;
 }
 
 
@@ -37,7 +38,10 @@
         <div class="header ">
             <div class="nav-bar container1 ">
                 <div class="col-lg-12 brand">
-                    <h2><a asp-controller="home" asp-action="index">Booking.com</a></h2>
+                    @foreach (var item in header)
+                    {
+                        <h2><a asp-controller="home" asp-action="index">@item.Title</a></h2>
+                    }
                 </div>
                 <div class="list-bt">
                     <div class="d-grid gap-4 d-md-block">

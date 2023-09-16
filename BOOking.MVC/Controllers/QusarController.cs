@@ -15,10 +15,12 @@ namespace BOOking.MVC.Controllers
         public IActionResult Index()
         {
             var qusarHotel = _dbContext.QusarHotels.ToList();
+            var header = _dbContext.Headers.ToList();
 
             var model = new QusarViewModel
             {
                 QusarHotels = qusarHotel,
+                Headers = header,
             };
 
             return View(model);

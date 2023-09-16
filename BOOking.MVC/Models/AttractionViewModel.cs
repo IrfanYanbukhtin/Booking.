@@ -8,5 +8,6 @@ namespace BOOking.MVC.Models
         public List<Paris> Paris = new List<Paris>();
         public List<Asia> Asias = new List<Asia>();
         public List<Africa> Africas = new List<Africa>();
+        public List<Header> Headers = new List<Header>();
     }
 }

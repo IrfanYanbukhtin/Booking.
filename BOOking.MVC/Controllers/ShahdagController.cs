@@ -16,10 +16,12 @@ namespace BOOking.MVC.Controllers
         public IActionResult Index()
         {
             var shahdagHotel = _dbContext.ShahdagHotels.ToList();
+            var header = _dbContext.Headers.ToList();
 
             var model = new ShahdagViewModel
             {
                 ShahdagHotels = shahdagHotel,
+                Headers = header,
             };
 
             return View(model);

@@ -16,10 +16,12 @@ namespace BOOking.MVC.Controllers
         public IActionResult Index()
         {
             var ganjaHotel = _dbContext.GanjaHotels.ToList();
+            var header = _dbContext.Headers.ToList();
 
             var model = new GanjaViewModel
             {
                GanjaHotels = ganjaHotel,
+                Headers = header,
             };
 
             return View(model);

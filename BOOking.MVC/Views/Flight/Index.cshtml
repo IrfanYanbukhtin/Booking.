@@ -1,6 +1,9 @@
 ﻿
 @{
     Layout = null;
+
+    FlightViewModel model = Model;
+    var header = model.Headers;
 }
 
 <!DOCTYPE html>
@@ -21,7 +24,10 @@
         <div class="header ">
             <div class="nav-bar container1 d-flex justify-content-between">
                 <div class="col-lg-6 brand ">
-                    <h2><a asp-controller="home" asp-action="index">Booking.com</a></h2>
+                    @foreach(var item in header)
+                    {
+                        <h2><a asp-controller="home" asp-action="index">@item.Title</a></h2>
+                    }
                 </div>
                 <div class="list-bt d-flex">
                     <div data-toggle="tooltip" data-placement="bottom" title="Select your language " class="lang">

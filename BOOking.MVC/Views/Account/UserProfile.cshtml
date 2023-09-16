@@ -1,0 +1,25 @@
+﻿@model UserProfileViewModel
+@{
+    ViewData["Title"] = "UserProfile";
+}
+
+<div class="custom_container">
+    <main>
+        <section>
+            <div class="account_infobox">
+                <i class="fa-solid fa-user-plus log"></i>
+                <span>@Model.Fullname</span>
+                <p>Welcome!</p>
+                <div class="logout">
+                    <div class="logout_option">
+                        <i class="fa-solid fa-key"></i>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <a asp-action="changepassword">Change password</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>

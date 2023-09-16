@@ -119,7 +119,7 @@ namespace BOOking.MVC.Controllers
                 return View();
             }
 
-            var existUser = await _userManager.FindByEmailAsync(model.Email);
+            var existUser = await _userManager.FindByEmailAsync(model.Username);
 
             if (existUser == null)
             {
@@ -143,13 +143,13 @@ namespace BOOking.MVC.Controllers
                 return View();
             }
 
-            if (model.Email == "Admin")
+            if (model.Username == "Admin")
             {
                 return RedirectToAction("Index", "Dashboard", new { area = "adminpanel" });
             }
             else
             {
-                var createdUser = await _userManager.FindByEmailAsync(model.Email);
+                var createdUser = await _userManager.FindByEmailAsync(model.Username);
                 var userId = createdUser.Id;
 
                 return RedirectToAction("UserProfile", "Account", new { userId });
