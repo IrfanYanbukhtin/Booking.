@@ -18,7 +18,7 @@ namespace BOOking.MVC.Controllers
         {
             ViewBag.GatewayCount = _gatewayCount;
 
-            var gateway = _dbContext.Gateways.Take(6).ToList();
+            var gateway = _dbContext.Gateways.Take(3).ToList();
             
 
             var model = new GatewayViewModel
@@ -29,7 +29,7 @@ namespace BOOking.MVC.Controllers
             return View(model);
         }
 
-        public IActionResult LoadGateways(int skip)
+        public IActionResult LoadGateways([FromQuery]int skip)
         {
             if (skip >= _gatewayCount) return BadRequest();
             var gateways = _dbContext.Gateways.Skip(skip).Take(3).ToList();

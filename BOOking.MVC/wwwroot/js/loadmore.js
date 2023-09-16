@@ -29,11 +29,11 @@ $(document).on('click', '#loadMore', function () {
     /*------------------------------------
             Load More Gateway
     --------------------------------------*/
-    var skip = 4;
-    $(document).on('click', '#loadGatesay', function () {
+    var skip = 3;
+    $(document).on('click', '#loadGateway', function () {
         var gatewayCount = $("#gatewayCount").val();
         $.ajax({
-            url: "/gateway/loadGateways?skip=" + skip,
+            url: "https://localhost:7037/gateway/loadGateways?skip=" + skip,
             type: "GET",
             success: function (response) {
                 $("#gatewayRow").append(response);
