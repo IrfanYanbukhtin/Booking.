@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Asery_valha\source\repos\BOOking.com\BOOking.MVC
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Areas/AdminPanel/Views/Baku/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xCYWt1XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Areas/AdminPanel/Views/Baku/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xCYWt1XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Areas/AdminPanel/Views/Baku/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xCYWt1XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Areas/AdminPanel/Views/Baku/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xCYWt1XFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Areas/AdminPanel/Views/DashBoard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xEYXNoQm9hcmRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -96,16 +112,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFicmFuXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Qax/Detail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUWF4XERldGFpbC5jc2h0bWw=
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Qax/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUWF4XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Qax/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUWF4XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Qusar/Detail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVzYXJcRGV0YWlsLmNzaHRtbA==
+[C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Qusar/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVzYXJcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Asery_valha/source/repos/BOOking.com/BOOking.MVC/Views/Qusar/Index.cshtml]

@@ -26,7 +26,7 @@ namespace BOOking.MVC.Controllers
             var quickBeach = _dbContext.quickBeaches.ToList();
             var quickOutdoors = _dbContext.quickOutdoors.ToList();
             var quickRelaxes = _dbContext.QuickRelaxes.ToList();
-            var bakuHotels = _dbContext.BakuHotels.Take(15).FirstOrDefault();
+            var bakuHotels = _dbContext.BakuHotels.Take(15).ToList();
 
             var model = new HomeViewModel
             {

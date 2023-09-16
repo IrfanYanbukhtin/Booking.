@@ -1040,7 +1040,7 @@
                 font-size: 16px;
                 font-weight: 700;
                 color: #262626;
-            }            
+            }
         }
     }
 
@@ -1388,6 +1388,16 @@
                 cursor: pointer;
             }
 
+            a{
+                text-decoration: none;
+                text-decoration: white;
+            }
+    
+
+            p{
+                line-height: 3px;
+            }
+
             img{
                 width: 100%;
                 height: 60%;
@@ -1599,7 +1609,7 @@
 
 /*  HOMES QUESTS END */
 
-/* DISCOUNT END  */
+/* DISCOUNT Start  */
 
 #get_discounts{
     border: 1px solid rgb(245, 228, 228);
@@ -1661,6 +1671,10 @@
                 cursor: pointer;
                 background-color: rgb(238, 249, 252);
             }
+
+            a{
+                text-decoration: none;
+            }
         }
 
         #discounts_container_regbtn{
@@ -1676,6 +1690,10 @@
                 cursor: pointer;
                 background-color: rgb(238, 249, 252);
                 border-radius: 5px;
+            }
+
+            a{
+                text-decoration: none;
             }
         }
     }

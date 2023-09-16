@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BOOking.DAL.Entities;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace BOOking.DAL.Entities
+namespace BOOking.MVC.Areas.AdminPanel.Models
 {
-    public class BakuHotel : TimeStample
+    public class BakuHotelCreateViewModel
     {
         public string Name { get; set; }
         public string ShortDescription { get; set; }
